@@ -1,0 +1,19 @@
+project:
+  seed: 42
+dataset:
+  classes: [bottle, backpack]
+  expected:
+    train_per_class: 32
+    val_per_class: 4
+    test_per_class: 4
+yolo_custom:
+  model: yolov5s
+  image_size: 640
+  batch_size: 16
+  epochs: [30, 60]
+yolo_standard:
+  model: yolov5s
+cnn:
+  image_size: [224, 224]
+  batch_size: 8
+  epochs: 30

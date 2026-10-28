@@ -1,0 +1,8 @@
+{
+  "experiment": "custom_30_epochs",
+  "epochs": 30,
+  "training_seconds": 165.21546747799994,
+  "duration_source": "perf_counter captured from original train call traceback",
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "checkpoint_sha256": "299d3d3b25a0d8b806eb72fd8bdb3685fd14123ac968fe4edd9bab0d5f01b8ea"
+}

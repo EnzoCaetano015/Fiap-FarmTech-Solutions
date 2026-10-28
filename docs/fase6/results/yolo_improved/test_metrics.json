@@ -1,0 +1,17 @@
+{
+  "precision": 0.8204680922958334,
+  "recall": 0.9799404396427691,
+  "map50": 0.995,
+  "map50_95": 0.759696312620182,
+  "box_loss": 0.016924338415265083,
+  "obj_loss": 0.004972620867192745,
+  "cls_loss": 0.0013422972988337278,
+  "metrics_split": "test",
+  "loss_computed": true,
+  "evaluation_precision": "FP32",
+  "images_evaluated": 8,
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "checkpoint_sha256": "6fedc77d0d511c5e86f9fb4a1a6abe8bdc52ef62b6e6e393e1c51b3c68082eb4",
+  "initialization": "COCO pretrained; supplementary fine tuning",
+  "evaluation_note": "Original test images were already examined in the preceding experiment; this is a retrospective supplementary evaluation, not a fresh blind test."
+}

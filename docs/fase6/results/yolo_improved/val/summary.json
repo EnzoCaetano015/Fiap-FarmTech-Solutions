@@ -1,0 +1,23 @@
+{
+  "count": 8,
+  "mean_inference_ms": 18.600652374971105,
+  "median_inference_ms": 17.34115650003787,
+  "std_inference_ms": 3.7339401503533733,
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.5.1+cu124",
+    "cuda": "12.4",
+    "gpu": "Tesla T4",
+    "seed": 42,
+    "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+    "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+    "timestamp_utc": "2026-10-13T18:48:43.674992+00:00",
+    "initialization": "COCO pretrained; supplementary fine tuning",
+    "numpy": "1.26.4",
+    "dataset_location": "local Colab SSD; verified original Make Sense ZIP"
+  },
+  "image_size": 640,
+  "warmup": 1,
+  "timing_scope": "model call including preprocessing and NMS; excludes image loading, model loading, warm-up and saving"
+}

@@ -1,0 +1,26 @@
+{
+  "metodo": "Streamlit AppTest: apenas o conteúdo do widget de upload é injetado; inferência, renderização, evento e fila são reais",
+  "navegador": false,
+  "modelo_mockado": false,
+  "sns_real": false,
+  "inferencias": 1,
+  "deteccoes": [
+    {
+      "classe": "folha_com_sinais_de_doenca",
+      "confianca": 0.6493655443191528,
+      "caixa_xyxy": [
+        0.0,
+        207.81912231445312,
+        1258.1116943359375,
+        1267.0
+      ]
+    }
+  ],
+  "imagem_anotada_renderizada": true,
+  "resultado_persistiu_rerun": true,
+  "evento_visual": true,
+  "alerta_local": true,
+  "arquivo_invalido_rejeitado_sem_travar_dashboard": true,
+  "limite_upload_validado": true,
+  "ok": true
+}

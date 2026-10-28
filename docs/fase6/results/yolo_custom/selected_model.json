@@ -1,0 +1,16 @@
+{
+  "experiment": "custom_60_epochs",
+  "epochs": 60,
+  "metrics_split": "val",
+  "validation_metrics": {
+    "map50_95": 0.040407,
+    "map50": 0.13642,
+    "precision": 0.0020925,
+    "recall": 0.55,
+    "best_epoch": 59,
+    "training_seconds": 294.20896882399984
+  },
+  "criterion": "maior map50_95; maior map50; menor training_seconds; menos epochs; igualdade numérica sem tolerância adicional",
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "checkpoint_sha256": "4ccd1bf101774056b0512031de4d7996dc37612e04cc24e6bb92b6d09dfb2fc9"
+}

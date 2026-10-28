@@ -1,0 +1,35 @@
+{
+  "both_classes_matched": true,
+  "metrics_split": "test",
+  "confidence_threshold": 0.25,
+  "match_iou_threshold": 0.5,
+  "per_class": [
+    {
+      "class_name": "bottle",
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "images": 4,
+      "images_with_matched_detection": 4,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "metrics_split": "test",
+      "confidence_threshold": 0.25,
+      "match_iou_threshold": 0.5
+    },
+    {
+      "class_name": "backpack",
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "images": 4,
+      "images_with_matched_detection": 3,
+      "precision": 1.0,
+      "recall": 0.75,
+      "metrics_split": "test",
+      "confidence_threshold": 0.25,
+      "match_iou_threshold": 0.5
+    }
+  ],
+  "new_blind_test": false
+}

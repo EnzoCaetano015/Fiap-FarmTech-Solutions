@@ -1,0 +1,45 @@
+{
+  "amostra": 2,
+  "classe_rotulada": "folha_saudavel",
+  "arquivo_dataset": "66d8d18b9bf9c8d83efd3a0cf09c53fbbd575795a518b57a66bc338c11c07069.jpg",
+  "evento": "4d6ae96aa36f408c8ef536bf5256744c",
+  "duracao_operacao_s": 0.4751,
+  "deteccoes": [
+    {
+      "classe": "folha_saudavel",
+      "confianca": 0.8360264897346497,
+      "caixa_xyxy": [
+        399.4413146972656,
+        150.7100067138672,
+        524.1975708007812,
+        454.675537109375
+      ]
+    },
+    {
+      "classe": "folha_saudavel",
+      "confianca": 0.8164858222007751,
+      "caixa_xyxy": [
+        208.20849609375,
+        22.08921241760254,
+        488.5920715332031,
+        154.02545166015625
+      ]
+    },
+    {
+      "classe": "folha_saudavel",
+      "confianca": 0.6053146719932556,
+      "caixa_xyxy": [
+        14.192550659179688,
+        120.88333892822266,
+        427.4154052734375,
+        381.1329345703125
+      ]
+    }
+  ],
+  "caixas_anotadas": 3,
+  "tp_iou50_conf25": 3,
+  "fp_iou50_conf25": 0,
+  "fn_iou50_conf25": 0,
+  "regras_acionadas": [],
+  "pixels_entrada_sha256": "9a8425e45346758492e98a57b7e664653ae14610cb94d4d4dbd4464a2c02f37e"
+}

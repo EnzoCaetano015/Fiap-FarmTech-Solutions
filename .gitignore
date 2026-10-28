@@ -1,0 +1,13 @@
+.env
+.venv/
+.runtime/
+__pycache__/
+*.pyc
+*.log
+*.zip
+models/tomate/
+!models/tomate/README.md
+database/*.db
+experiments/
+data/plantdoc/
+.pytest_cache/

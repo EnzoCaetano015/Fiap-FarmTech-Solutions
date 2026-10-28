@@ -1,0 +1,7 @@
+{
+  "experiment": "custom_60_epochs",
+  "epochs": 60,
+  "training_seconds": 294.20896882399984,
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "checkpoint_sha256": "4ccd1bf101774056b0512031de4d7996dc37612e04cc24e6bb92b6d09dfb2fc9"
+}

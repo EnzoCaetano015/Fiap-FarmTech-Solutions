@@ -1,0 +1,13 @@
+{
+  "id": "eae3379e86eb40d886d438fb9b3366df",
+  "servico": "clima",
+  "sucesso": true,
+  "dados": {
+    "nivel_chuva": 0,
+    "descricao": "Sem chuva"
+  },
+  "arquivos": [],
+  "erro": null,
+  "duracao_s": 0.823,
+  "saida": ""
+}

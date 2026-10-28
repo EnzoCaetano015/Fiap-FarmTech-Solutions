@@ -1,0 +1,7 @@
+{
+  "epochs": 30,
+  "training_seconds": 148.12721162100001,
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "initial_weights_sha256": "8b3b748c1e592ddd8868022e8732fde20025197328490623cc16c6f24d0782ee",
+  "checkpoint_sha256": "e76c490c7c11f68b80bde0e6ae11f8e58d0bab8da631b74c58d73b2de5f4f70d"
+}

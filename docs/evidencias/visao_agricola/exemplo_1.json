@@ -1,0 +1,70 @@
+{
+  "amostra": 1,
+  "classe_rotulada": "folha_saudavel",
+  "arquivo_dataset": "36d4cf67739d3d7b079eed20331535674781886f75abbf7f010999a45b00980f.jpg",
+  "evento": "e4597080f51c4bef9b2288c88e60b49f",
+  "duracao_operacao_s": 6.793,
+  "deteccoes": [
+    {
+      "classe": "folha_saudavel",
+      "confianca": 0.6310227513313293,
+      "caixa_xyxy": [
+        221.93099975585938,
+        679.6975708007812,
+        496.7192077636719,
+        799.3314819335938
+      ]
+    },
+    {
+      "classe": "folha_saudavel",
+      "confianca": 0.5379692912101746,
+      "caixa_xyxy": [
+        982.26171875,
+        889.8556518554688,
+        1202.520751953125,
+        1197.09619140625
+      ]
+    },
+    {
+      "classe": "folha_com_sinais_de_doenca",
+      "confianca": 0.5119581818580627,
+      "caixa_xyxy": [
+        361.9212951660156,
+        982.10400390625,
+        554.9029541015625,
+        1191.2994384765625
+      ]
+    },
+    {
+      "classe": "folha_saudavel",
+      "confianca": 0.39003774523735046,
+      "caixa_xyxy": [
+        506.0205078125,
+        790.3610229492188,
+        772.8799438476562,
+        952.4686889648438
+      ]
+    },
+    {
+      "classe": "folha_com_sinais_de_doenca",
+      "confianca": 0.38919761776924133,
+      "caixa_xyxy": [
+        871.0187377929688,
+        380.2944030761719,
+        1085.195068359375,
+        601.1373901367188
+      ]
+    }
+  ],
+  "caixas_anotadas": 10,
+  "tp_iou50_conf25": 3,
+  "fp_iou50_conf25": 2,
+  "fn_iou50_conf25": 7,
+  "regras_acionadas": [
+    [
+      "sinais_doenca",
+      "Registrar a imagem e inspecionar as plantas do talhão com responsável técnico."
+    ]
+  ],
+  "pixels_entrada_sha256": "7b3779a3e96748448be9edfe7cac83832650f19708c6ebbe75f9de6d798b066f"
+}

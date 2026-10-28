@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-27T23:17:57.784467+00:00",
+  "conexao": "validada",
+  "objeto_preexistente": false,
+  "script": "sql/01_create_table.sql",
+  "tabela_criada": "FARMTECH_SENSOR_LEITURA",
+  "constraints_check_e_not_null": 14,
+  "origem_dados": "CSV simulado da Fase 2",
+  "primeira_importacao": {
+    "inseridos": 10,
+    "existentes": 0
+  },
+  "segunda_importacao": {
+    "inseridos": 0,
+    "existentes": 10
+  },
+  "total_apos_repeticao": 10,
+  "consulta_limitada": 5,
+  "credenciais_no_relatorio": false
+}

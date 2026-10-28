@@ -1,0 +1,57 @@
+test_all_sensor_rules_and_strong_rain (test_acceptance.AcceptanceTest.test_all_sensor_rules_and_strong_rain) ... ok
+test_concurrent_workers_publish_once (test_acceptance.AcceptanceTest.test_concurrent_workers_publish_once) ... ok
+test_corrupt_image_fails_before_loading_model (test_acceptance.AcceptanceTest.test_corrupt_image_fails_before_loading_model) ... ok
+test_dashboard_remains_available_without_predictive_models (test_acceptance.AcceptanceTest.test_dashboard_remains_available_without_predictive_models) ... 2026-10-27 21:36:49.498 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_dashboard_vision_result_survives_rerun (test_acceptance.AcceptanceTest.test_dashboard_vision_result_survives_rerun) ... 2026-10-27 21:36:51.221 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_database_migration_preserves_existing_events (test_acceptance.AcceptanceTest.test_database_migration_preserves_existing_events) ... ok
+test_empty_detection_output_is_inconclusive_without_alert (test_acceptance.AcceptanceTest.test_empty_detection_output_is_inconclusive_without_alert) ... ok
+test_empty_plot_fails_before_inference (test_acceptance.AcceptanceTest.test_empty_plot_fails_before_inference) ... ok
+test_invalid_event_does_not_block_valid_event (test_acceptance.AcceptanceTest.test_invalid_event_does_not_block_valid_event) ... Evento inválido isolado: bad (ValueError)
+ok
+test_invalid_json_and_missing_sensor_field_are_isolated (test_acceptance.AcceptanceTest.test_invalid_json_and_missing_sensor_field_are_isolated) ... Evento inválido isolado: missing (KeyError)
+Evento inválido isolado: json (JSONDecodeError)
+ok
+test_invalid_visual_payload_rejected (test_acceptance.AcceptanceTest.test_invalid_visual_payload_rejected) ... ok
+test_large_history_plot_not_hidden (test_acceptance.AcceptanceTest.test_large_history_plot_not_hidden) ... ok
+test_legacy_entrypoints_accept_help_without_side_effects (test_acceptance.AcceptanceTest.test_legacy_entrypoints_accept_help_without_side_effects) ... ok
+test_sns_rejection_remains_pending_without_leaking_error (test_acceptance.AcceptanceTest.test_sns_rejection_remains_pending_without_leaking_error) ... Publicação pendente 10f021f711b34b989305c1ecf6aa16ed: Throttled
+Publicação pendente 10f021f711b34b989305c1ecf6aa16ed: Throttled
+ok
+test_sns_sdk_contract_without_external_publish (test_acceptance.AcceptanceTest.test_sns_sdk_contract_without_external_publish) ... ok
+test_suppression_exact_expiration (test_acceptance.AcceptanceTest.test_suppression_exact_expiration) ... ok
+test_actions_share_service_contract (test_dashboard.DashboardTest.test_actions_share_service_contract) ... 2026-10-27 21:36:59.380 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_monitor_uses_operational_readings_of_selected_plot (test_dashboard.DashboardTest.test_monitor_uses_operational_readings_of_selected_plot) ... ok
+test_grouped_conversion_and_invalid_annotations (test_dataset.DatasetTest.test_grouped_conversion_and_invalid_annotations) ... ok
+test_bad_area (test_services.ServicesTest.test_bad_area) ... ok
+test_circle (test_services.ServicesTest.test_circle) ... ok
+test_cli_failure_contract (test_services.ServicesTest.test_cli_failure_contract) ... ok
+test_cli_success_contract (test_services.ServicesTest.test_cli_success_contract) ... ok
+test_configuration_fills_initially_blank (test_services.ServicesTest.test_configuration_fills_initially_blank) ... ok
+test_configuration_preserves_real_environment (test_services.ServicesTest.test_configuration_preserves_real_environment) ... ok
+test_consolidate_suppress_and_restart (test_services.ServicesTest.test_consolidate_suppress_and_restart) ... ok
+test_event_idempotence (test_services.ServicesTest.test_event_idempotence) ... ok
+test_interrupted_publish_recovers (test_services.ServicesTest.test_interrupted_publish_recovers) ... ok
+test_missing_r (test_services.ServicesTest.test_missing_r) ... ok
+test_new_rule_not_suppressed (test_services.ServicesTest.test_new_rule_not_suppressed) ... ok
+test_oracle_incremental_transaction (test_services.ServicesTest.test_oracle_incremental_transaction) ... ok
+test_oracle_rollback (test_services.ServicesTest.test_oracle_rollback) ... ok
+test_plot_isolation (test_services.ServicesTest.test_plot_isolation) ... ok
+test_rain_changes_action (test_services.ServicesTest.test_rain_changes_action) ... ok
+test_rectangle_and_csv (test_services.ServicesTest.test_rectangle_and_csv) ... ok
+test_replay_repeat_idempotence (test_services.ServicesTest.test_replay_repeat_idempotence) ... ok
+test_rule_boundaries (test_services.ServicesTest.test_rule_boundaries) ... ok
+test_sensor_validation (test_services.ServicesTest.test_sensor_validation) ... ok
+test_service_error_does_not_crash (test_services.ServicesTest.test_service_error_does_not_crash) ... ok
+test_transient_failure_backoff (test_services.ServicesTest.test_transient_failure_backoff) ... Publicação pendente 7f39f9873fdb48899421cce65078cd1d: TimeoutError
+ok
+test_vision_threshold (test_services.ServicesTest.test_vision_threshold) ... ok
+test_weather_levels (test_services.ServicesTest.test_weather_levels) ... ok
+test_weather_unavailable_not_zero (test_services.ServicesTest.test_weather_unavailable_not_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 15.747s
+
+OK

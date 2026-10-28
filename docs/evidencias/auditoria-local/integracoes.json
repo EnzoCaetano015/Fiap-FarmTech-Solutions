@@ -1,0 +1,167 @@
+{
+  "executado_em": "2026-10-27T21:25:13-0300",
+  "checks": [
+    {
+      "nome": "CLI: cálculos, CSV e entradas inválidas",
+      "ok": true,
+      "detalhes": {
+        "retangulo_ha": 2,
+        "insumo_kg": 24,
+        "circulo_m2": 314.1592653589793,
+        "invalidos": 3
+      },
+      "duracao_s": 0.872
+    },
+    {
+      "nome": "CLI: R real e estatísticas conferidas",
+      "ok": true,
+      "detalhes": {
+        "variaveis": 7,
+        "grafico": true,
+        "estatisticas_conferidas_com_pandas": true
+      },
+      "duracao_s": 0.965
+    },
+    {
+      "nome": "CLI: API climática real",
+      "ok": true,
+      "detalhes": {
+        "nivel_chuva": 0,
+        "descricao": "Sem chuva"
+      },
+      "duracao_s": 0.87
+    },
+    {
+      "nome": "CLI: Oracle real sem exclusão ou duplicação",
+      "ok": true,
+      "detalhes": {
+        "antes": 10,
+        "depois": 10,
+        "primeira_repeticao": {
+          "inseridos": 0,
+          "existentes": 10
+        },
+        "segunda_repeticao": {
+          "inseridos": 0,
+          "existentes": 10
+        },
+        "consulta": 10
+      },
+      "duracao_s": 2.414
+    },
+    {
+      "nome": "CLI: replay IoT temporizado e idempotente",
+      "ok": true,
+      "detalhes": {
+        "leituras_por_execucao": 10,
+        "historico_idempotente": true,
+        "replay_temporizado_s": 0.776310499990359,
+        "live_time": true
+      },
+      "duracao_s": 1.245
+    },
+    {
+      "nome": "CLI: inferência CPU e rejeição de imagem inválida; negativos documentados",
+      "ok": true,
+      "detalhes": {
+        "doenca_detectada": true,
+        "arquivo_corrompido_rejeitado": true,
+        "pesos_sha256": "318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832",
+        "imagem_branca_falso_positivo": [
+          {
+            "classe": "folha_com_sinais_de_doenca",
+            "confianca": 0.4092195928096771,
+            "caixa_xyxy": [
+              0.0,
+              0.0,
+              640.0,
+              480.0
+            ]
+          }
+        ],
+        "imagem_branca_alerta_gerado": false,
+        "ruido_falso_positivo": [
+          {
+            "classe": "folha_com_sinais_de_doenca",
+            "confianca": 0.3449593484401703,
+            "caixa_xyxy": [
+              0.0,
+              0.0,
+              615.0256958007812,
+              480.0
+            ]
+          }
+        ],
+        "ruido_alerta_gerado": false,
+        "caso_sem_deteccao": "Coberto por teste com saída controlada; o detector real produziu falsos positivos fracos nestas duas imagens"
+      },
+      "duracao_s": 33.482
+    },
+    {
+      "nome": "Sensores/visão → fila → falha → repetição → publicador local",
+      "ok": true,
+      "detalhes": {
+        "enfileirados": {
+          "enfileirados": 5,
+          "condicoes_suprimidas": 17,
+          "eventos_invalidos": 0
+        },
+        "falha_e_recuperacao": true,
+        "mensagens_capturadas_localmente": 5,
+        "envio_sns_real": false
+      },
+      "duracao_s": 0.523
+    },
+    {
+      "nome": "CLI: treinamento preditivo real em cópia isolada",
+      "ok": true,
+      "detalhes": {
+        "treinos": 6,
+        "modelos_selecionados": 3,
+        "predicoes_finitas": true,
+        "originais_preservados": true
+      },
+      "duracao_s": 7.166
+    },
+    {
+      "nome": "Dashboard: ações reais, previsões e falhas externas isoladas",
+      "ok": true,
+      "detalhes": {
+        "abas": [
+          "Monitoramento",
+          "ML e métricas",
+          "Previsão interativa",
+          "Serviços",
+          "Visão agrícola",
+          "Alertas"
+        ],
+        "botoes_reais": [
+          "area",
+          "analise-r",
+          "clima",
+          "iot",
+          "oracle-importar",
+          "oracle-consultar",
+          "treinar"
+        ],
+        "clima_oracle_indisponiveis_isolados": true,
+        "metricas_predicoes_exibidas": 12
+      },
+      "duracao_s": 8.161
+    },
+    {
+      "nome": "Monitor: processo independente, novas leituras e reinício",
+      "ok": true,
+      "detalhes": {
+        "processo_independente": true,
+        "reinicios": 1,
+        "publicacoes_locais": 2,
+        "dashboard_necessaria": false
+      },
+      "duracao_s": 4.6
+    }
+  ],
+  "sns_real_publicado": false,
+  "aws_implantada": false,
+  "aprovado_integracoes_locais": true
+}

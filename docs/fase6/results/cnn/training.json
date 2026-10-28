@@ -1,0 +1,66 @@
+{
+  "training_seconds": 39.78870389500025,
+  "epochs": 30,
+  "completed_epochs": 30,
+  "best_epoch": 29,
+  "seed": 42,
+  "image_size": [
+    224,
+    224
+  ],
+  "batch_size": 8,
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "checkpoint_sha256": "bb58603de780b5cb02b32b564cb7d0fc444d5055923bb6e72d52edb7e4ac0178",
+  "environment": {
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "torch": "2.5.1+cu124",
+    "tensorflow": "2.17.1",
+    "cuda": "12.4",
+    "gpu": "Tesla T4",
+    "tensorflow_gpu_count": 1,
+    "gpu_smoke_test": "torch operation and TensorFlow convolution passed",
+    "torch_cudnn": 90100,
+    "tensorflow_build": {
+      "cpu_compiler": "/usr/lib/llvm-17/bin/clang",
+      "cuda_compute_capabilities": [
+        "sm_60",
+        "sm_70",
+        "sm_80",
+        "sm_89",
+        "compute_90"
+      ],
+      "cuda_version": "12.3",
+      "cudnn_version": "8",
+      "is_cuda_build": true,
+      "is_rocm_build": false,
+      "is_tensorrt_build": true
+    },
+    "tensorflow_cudnn_package": "8.9.7.29",
+    "timestamp_utc": "2026-10-13T16:52:12.601788+00:00",
+    "seed": 42,
+    "yolov5_ref": "v7.0",
+    "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+    "contract": {
+      "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+      "gpu": "Tesla T4",
+      "cuda": "12.4",
+      "torch": "2.5.1+cu124",
+      "tensorflow": "2.17.1",
+      "python": "3.12.13",
+      "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+      "seed": 42,
+      "model": "yolov5s",
+      "image_size": 640,
+      "batch_size": 16,
+      "patience": 0,
+      "weights": ""
+    },
+    "dataset_counts": {
+      "train": 64,
+      "val": 8,
+      "test": 8
+    },
+    "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1"
+  }
+}

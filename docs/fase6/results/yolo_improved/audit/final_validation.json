@@ -1,0 +1,80 @@
+{
+  "status": "both_classes_demonstrated_in_supplementary_experiment",
+  "date": "2026-10-13",
+  "session": "fase6_transfer_001",
+  "initialization": "COCO pretrained; fine tuning supplementary to preserved scratch baseline",
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "initial_weights_sha256": "8b3b748c1e592ddd8868022e8732fde20025197328490623cc16c6f24d0782ee",
+  "original_zip_sha256": "015cb03cf520f5d788a8cc0fa539a44f921777eb115c973b5dba87ba85833c8b",
+  "original_files_verified": 46,
+  "completed_epochs": [
+    30,
+    60
+  ],
+  "selected_epochs": 60,
+  "selected_best_epoch": 58,
+  "selected_by": "validation only",
+  "raw_option_differences": [
+    "epochs",
+    "name",
+    "save_dir"
+  ],
+  "test_images": [
+    "backpack_719fb10bd1cab470.jpg",
+    "backpack_b47df0cfa900475a.jpg",
+    "backpack_c5a63dc05121e7d4.jpg",
+    "backpack_dd41a62f2347d53d.jpg",
+    "bottle_5838b213e80412de.jpg",
+    "bottle_679d55687eb67ec6.jpg",
+    "bottle_68420c1f7592a8d1.jpg",
+    "bottle_9bd4b9d07153fd3d.jpg"
+  ],
+  "test_confidence_threshold": 0.25,
+  "test_match_iou_threshold": 0.5,
+  "both_classes_matched": true,
+  "new_blind_test": false,
+  "original_baseline_modified": false,
+  "per_class": [
+    {
+      "class_name": "bottle",
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "images": 4,
+      "images_with_matched_detection": 4,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "metrics_split": "test",
+      "confidence_threshold": 0.25,
+      "match_iou_threshold": 0.5
+    },
+    {
+      "class_name": "backpack",
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "images": 4,
+      "images_with_matched_detection": 3,
+      "precision": 1.0,
+      "recall": 0.75,
+      "metrics_split": "test",
+      "confidence_threshold": 0.25,
+      "match_iou_threshold": 0.5
+    }
+  ],
+  "main_notebook_cells": 61,
+  "notebook_error_outputs": 0,
+  "original_outputs_preserved": true,
+  "local_code_cells_executed": 36,
+  "actual_iou_matches_recomputed": true,
+  "baseline_files_sha256_verified": 41,
+  "supplementary_files_sha256_verified": 46,
+  "notebook_sha256": "bbd5d8fbce909fad80217bc66931db97f666bc7fc9f41a713777b90a26da78af",
+  "gallery_sha256": "e0ccc6b330c67c9e9116d2698a0c29049aef290dbddcf4d953ef2456d4f9d259",
+  "diff_only_fase6": true,
+  "git_diff_check": "passed",
+  "pending": [
+    "student video and URL",
+    "student commit/push and public link"
+  ]
+}

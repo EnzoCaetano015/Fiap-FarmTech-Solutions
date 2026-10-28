@@ -1,0 +1,51 @@
+{
+  "images": 80,
+  "classes": {
+    "bottle": 40,
+    "backpack": 40
+  },
+  "splits": {
+    "train": {
+      "bottle": 32,
+      "backpack": 32
+    },
+    "val": {
+      "bottle": 4,
+      "backpack": 4
+    },
+    "test": {
+      "bottle": 4,
+      "backpack": 4
+    }
+  },
+  "labels": 80,
+  "bounding_boxes": 91,
+  "unique_authors": 79,
+  "seed": 42,
+  "source_dataset": "Open Images",
+  "source_split_counts": {
+    "test": 75,
+    "validation": 5
+  },
+  "collected_on": "2026-10-02",
+  "annotation_method": "Open Images labels imported, visually reviewed and corrected in Make Sense by Codex via browser automation, then exported as YOLO",
+  "images_ignored_by_git": true,
+  "labels_ignored_by_git": true,
+  "makesense_review": {
+    "date": "2026-10-02",
+    "tool": "https://www.makesense.ai/",
+    "images_reviewed": 80,
+    "changed_images": 13,
+    "changed_classes": 0,
+    "invalid_labels": 0,
+    "export_sha256": {
+      "train": "3320e5cc7c872a6dc4e4c8fecfd05c2659c704d72ff58024b44c750ae763f7e7",
+      "val_test": "c4db38f4ce99be9a109c0bcfbd881209e305597e034ed04be35deaf540e6ee3b"
+    }
+  },
+  "boxes_by_split": {
+    "train": 73,
+    "val": 9,
+    "test": 9
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "amostra": 3,
+  "classe_rotulada": "folha_com_sinais_de_doenca",
+  "arquivo_dataset": "0024d2b0e3bd578375ffb676d5c5a20c3f6d82d335f8758a215a539ac3a27ff6.jpg",
+  "evento": "1ca3ae3de7c74964981eaadbc411b8d9",
+  "duracao_operacao_s": 0.8237,
+  "deteccoes": [
+    {
+      "classe": "folha_com_sinais_de_doenca",
+      "confianca": 0.6493655443191528,
+      "caixa_xyxy": [
+        0.0,
+        207.81912231445312,
+        1258.1116943359375,
+        1267.0
+      ]
+    }
+  ],
+  "caixas_anotadas": 1,
+  "tp_iou50_conf25": 1,
+  "fp_iou50_conf25": 0,
+  "fn_iou50_conf25": 0,
+  "regras_acionadas": [
+    [
+      "sinais_doenca",
+      "Registrar a imagem e inspecionar as plantas do talhão com responsável técnico."
+    ]
+  ],
+  "pixels_entrada_sha256": "74ba382dfcf9f978193dda072acb3c0ee966dc0730d8001efc6b91eda21e18c7"
+}

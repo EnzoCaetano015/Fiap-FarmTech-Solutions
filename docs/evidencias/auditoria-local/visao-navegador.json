@@ -1,0 +1,28 @@
+{
+  "validado": true,
+  "metodo": "Upload manual pelo usuário; botão Analisar imagem acionado no Chrome pelo agente",
+  "url": "http://127.0.0.1:8501/",
+  "evento": "f1f2b0c990f448c2b068a981aa1ecf18",
+  "execucao": "19594bb4ab32477296f17537894ad340",
+  "deteccoes": [
+    {
+      "caixa_xyxy": [
+        0.0,
+        207.81912231445312,
+        1258.1116943359375,
+        1267.0
+      ],
+      "classe": "folha_com_sinais_de_doenca",
+      "confianca": 0.6493655443191528
+    }
+  ],
+  "imagem_sha256": "74ba382dfcf9f978193dda072acb3c0ee966dc0730d8001efc6b91eda21e18c7",
+  "pesos_sha256": "318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832",
+  "imagem_anotada_exibida": true,
+  "evento_preservado_apos_reinicio": true,
+  "regra_avaliada": {
+    "sinais_doenca": "Registrar a imagem e inspecionar as plantas do talhão com responsável técnico."
+  },
+  "publicacao_sns_real": false,
+  "observacao": "Inferência e imagem foram verificadas na sessão aberta antes do reinício; depois o servidor foi reiniciado para carregar as correções finais. Persistência do resultado em reruns da versão final foi validada por AppTest; reinício cria nova sessão de upload."
+}

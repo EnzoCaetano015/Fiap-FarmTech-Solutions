@@ -1,0 +1,835 @@
+{
+  "filename": "dataset_fase6_final.zip",
+  "bytes": 18258978,
+  "sha256": "51a01c51862133478be8927768c61364411cd137a893fe62171c281ecffb59fd",
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "images": 80,
+  "labels": 80,
+  "split_images": {
+    "train": 64,
+    "val": 8,
+    "test": 8
+  },
+  "files": [
+    {
+      "path": "data/README.md",
+      "bytes": 3470,
+      "sha256": "42b867913df74f046b436cd5b8a142c224074dc48e1912a4805ccbdfd51ea4c9"
+    },
+    {
+      "path": "data/annotations_source.json",
+      "bytes": 55988,
+      "sha256": "14e919774a18757d58e5d97ae15b147922da8a60f16d0863c710b31309bd6078"
+    },
+    {
+      "path": "data/dataset_summary.json",
+      "bytes": 1231,
+      "sha256": "6afd8383d14cc13fc84d9feaf95324c74d6578976d043fc95a9e06a4388ebc16"
+    },
+    {
+      "path": "data/sources.csv",
+      "bytes": 54179,
+      "sha256": "65fad3679ccbe101ff0788ff6918ba2100158aceb18a8b5c23b38aec8557d366"
+    },
+    {
+      "path": "data/test/images/backpack_719fb10bd1cab470.jpg",
+      "bytes": 189359,
+      "sha256": "286129df9371641af41b396df394aa419df816c45259c307c0858391b290276f"
+    },
+    {
+      "path": "data/test/images/backpack_b47df0cfa900475a.jpg",
+      "bytes": 72593,
+      "sha256": "f5dcbbe9a9208102b76744cd466478dc342d043ce93dbfa698a1c01ffb788192"
+    },
+    {
+      "path": "data/test/images/backpack_c5a63dc05121e7d4.jpg",
+      "bytes": 179535,
+      "sha256": "ad97adebc44a621926e8fa175c40fff9a6d87e589a579be697f9e2338d563876"
+    },
+    {
+      "path": "data/test/images/backpack_dd41a62f2347d53d.jpg",
+      "bytes": 123430,
+      "sha256": "49258603c39c364c953c5a5e1948505519db3f6c97c39909ede834bfc0c9aa8a"
+    },
+    {
+      "path": "data/test/images/bottle_5838b213e80412de.jpg",
+      "bytes": 430321,
+      "sha256": "38b3fdacd4880fc132b2163967fb54a48242c032f6eea1cfeac85bf2bdcd0a13"
+    },
+    {
+      "path": "data/test/images/bottle_679d55687eb67ec6.jpg",
+      "bytes": 192641,
+      "sha256": "6f243bdeb0c9679ee5d15c20be0f2c9c90b2744219cc992d586f2d50de5b8bd5"
+    },
+    {
+      "path": "data/test/images/bottle_68420c1f7592a8d1.jpg",
+      "bytes": 133117,
+      "sha256": "aa7515205190cd2c896263dd1311300776284ce090fcad757193465f8504de92"
+    },
+    {
+      "path": "data/test/images/bottle_9bd4b9d07153fd3d.jpg",
+      "bytes": 253925,
+      "sha256": "f552a01545168d0e8aeccbe5f8f2ff490136014870a91e18f393bdf2ad9449f2"
+    },
+    {
+      "path": "data/test/labels/backpack_719fb10bd1cab470.txt",
+      "bytes": 37,
+      "sha256": "9bab965586c866a93c862aa3acd5277e5a4ed48b1c3889b5050af407010f4ed5"
+    },
+    {
+      "path": "data/test/labels/backpack_b47df0cfa900475a.txt",
+      "bytes": 37,
+      "sha256": "826cc13a5eeb2c86265a4c73f056e197bb5cc6af355308e883f45ebde473c6c8"
+    },
+    {
+      "path": "data/test/labels/backpack_c5a63dc05121e7d4.txt",
+      "bytes": 37,
+      "sha256": "f971331203929e9c2dc4201fe97e185d2362917e292a25310e955325c302c807"
+    },
+    {
+      "path": "data/test/labels/backpack_dd41a62f2347d53d.txt",
+      "bytes": 37,
+      "sha256": "6c9ea14771d86cfae99f9ad50c32728d8dfd853f3b41bb5c27eae2d51fa69069"
+    },
+    {
+      "path": "data/test/labels/bottle_5838b213e80412de.txt",
+      "bytes": 37,
+      "sha256": "6eb2a5826d42d53be18605aeaeb2db069beb636dbae7ff946bf8ec4b68b16190"
+    },
+    {
+      "path": "data/test/labels/bottle_679d55687eb67ec6.txt",
+      "bytes": 37,
+      "sha256": "2a43f645a839e6629aa5ca07c7fdde87eaee8dc7301e88c0e6a030879a94471f"
+    },
+    {
+      "path": "data/test/labels/bottle_68420c1f7592a8d1.txt",
+      "bytes": 37,
+      "sha256": "82a67ca12a3d2e891af033f6fffe4d65063a7b2cc399b7a732046dfaa248ae5c"
+    },
+    {
+      "path": "data/test/labels/bottle_9bd4b9d07153fd3d.txt",
+      "bytes": 75,
+      "sha256": "48565382db634631331d6678df22b39124d44bcf139494494a366a79681310b2"
+    },
+    {
+      "path": "data/train/images/backpack_1c6cef0118791af9.jpg",
+      "bytes": 243135,
+      "sha256": "0dbf26119da39e9800438dd625793c777e6e86da02023e5c9a9b598187046cfd"
+    },
+    {
+      "path": "data/train/images/backpack_20d393f65a9807c9.jpg",
+      "bytes": 128024,
+      "sha256": "77ec4a0e1ee9905fae70285007d9bc9279ccf7d52fe37ed3c98bf9d3f5bc6b7f"
+    },
+    {
+      "path": "data/train/images/backpack_23487f4bf993138c.jpg",
+      "bytes": 448361,
+      "sha256": "433495bb6a927607e95382e1b814b7c823c17d96f4ba3294017b83b512a90f2e"
+    },
+    {
+      "path": "data/train/images/backpack_2edc0212721c4f22.jpg",
+      "bytes": 340104,
+      "sha256": "6a4d34cd2c0bbccb40528b3d39decd3e09a99675dbe20ed4c979e4c17db78722"
+    },
+    {
+      "path": "data/train/images/backpack_3a8eacfce3f15a7a.jpg",
+      "bytes": 334805,
+      "sha256": "2bdca0d0ed3a4d8d57236aa93a2f11e3e572ac7f14f6155e1a8e835f6843ec32"
+    },
+    {
+      "path": "data/train/images/backpack_425e746b1b3ff4d8.jpg",
+      "bytes": 280182,
+      "sha256": "88f5893f9e97262d306701e1f1a1c31f1583ae320d6900e8cea95c45fece2b8b"
+    },
+    {
+      "path": "data/train/images/backpack_4491ce28dbbaf88d.jpg",
+      "bytes": 560214,
+      "sha256": "acc2e83c18e5a4f79c4c3476ef6970f7962387342d4d32792aa3e524048b2c5f"
+    },
+    {
+      "path": "data/train/images/backpack_528219663af7c0d2.jpg",
+      "bytes": 398016,
+      "sha256": "a9cec1e38fb1f0af429fbc747cb810b5f4e290932bfe7aca9ca6840cf6a3d4ae"
+    },
+    {
+      "path": "data/train/images/backpack_560a2687acc7642d.jpg",
+      "bytes": 205956,
+      "sha256": "7238c08662148aaf7ca18d3b38d6a9ec1858fd8a0511ed9e82b7546b8c44962a"
+    },
+    {
+      "path": "data/train/images/backpack_5a6a4b7bb3362ff0.jpg",
+      "bytes": 173412,
+      "sha256": "5520c2e45290e5b57d755643c7ba5003afd3f0aa426d3bab10bae4eb44763e9f"
+    },
+    {
+      "path": "data/train/images/backpack_6148451becf88ccf.jpg",
+      "bytes": 747857,
+      "sha256": "431fc842fc9016223f2680fb732e36294cdc7f072fe9d9dd84fa6d7c09151588"
+    },
+    {
+      "path": "data/train/images/backpack_6ea3590bdc6f214a.jpg",
+      "bytes": 320038,
+      "sha256": "7dae346e59a8f1258d0152973cb33cdf11de1ae9364b093e1b96170addd661b1"
+    },
+    {
+      "path": "data/train/images/backpack_723e70fe85e0da69.jpg",
+      "bytes": 97277,
+      "sha256": "160ec97158670f2bcd0f4e41b4ddd8bc0a9b4ff1ab9951fe939c84729bb39ae3"
+    },
+    {
+      "path": "data/train/images/backpack_7491dc5b881626cd.jpg",
+      "bytes": 297537,
+      "sha256": "63c153d37aef667d07c623ccbee941199cdc5ce412ca23fb5f10537a363cd78f"
+    },
+    {
+      "path": "data/train/images/backpack_756ded8d34dfe17f.jpg",
+      "bytes": 263319,
+      "sha256": "49e5bdf189ae745880912826513582a4c67347ddf0958fc298b5263269fd2c58"
+    },
+    {
+      "path": "data/train/images/backpack_76b8f1a90bcf997d.jpg",
+      "bytes": 172087,
+      "sha256": "33e49e2e50ac64b0667cd9cdf0481cac9750ca7348a99b54f435e3f7fcea6f7d"
+    },
+    {
+      "path": "data/train/images/backpack_80e7f359721d28d1.jpg",
+      "bytes": 143424,
+      "sha256": "5478535fb556c36b0d80f1cf813b38173102b11275d262d55c8e6ffc089be01c"
+    },
+    {
+      "path": "data/train/images/backpack_838932fef9f0d687.jpg",
+      "bytes": 409079,
+      "sha256": "c42d33c1591878aa7faa8359f2264d837454260dd382dbffb67ccb1ba4064cf9"
+    },
+    {
+      "path": "data/train/images/backpack_85afb20c62ea8d90.jpg",
+      "bytes": 280386,
+      "sha256": "11073e427bd15c43272aba990557ffda87453688d9b99a502dc1a8ad7d1616ff"
+    },
+    {
+      "path": "data/train/images/backpack_8eb63dd5f3f7b7f4.jpg",
+      "bytes": 94169,
+      "sha256": "723f1a7a595812fc6668dfc2d187794c7f5853175e5a01351d7651a61265ba78"
+    },
+    {
+      "path": "data/train/images/backpack_99c396d655c7f4bb.jpg",
+      "bytes": 152852,
+      "sha256": "505d997725faeb192ffbf46e1a7b04cdc7630366fffcd9369aa7bf41fb9ef8ce"
+    },
+    {
+      "path": "data/train/images/backpack_a3ffd4ecf28e61e4.jpg",
+      "bytes": 171969,
+      "sha256": "b954fe8fd4d1bea3f3285cd5e88079234f999141a4825c2de53e4d40180979f7"
+    },
+    {
+      "path": "data/train/images/backpack_b1e29913cc7b71c8.jpg",
+      "bytes": 75469,
+      "sha256": "cd3f00bef97556c7b3d39c23776e4eeb560125b28fe3b8c5c40f9c79f6402591"
+    },
+    {
+      "path": "data/train/images/backpack_b33b34153db3acdd.jpg",
+      "bytes": 345857,
+      "sha256": "b8189a6f500cd441cbe04922c5f1e18a34919d405406010cf19e23e8faafa5f2"
+    },
+    {
+      "path": "data/train/images/backpack_ba17a42100323ba3.jpg",
+      "bytes": 185457,
+      "sha256": "687892ab4b6a3813be0ecd77054180ffe861ca6d4c745b30bce615a51dd760a2"
+    },
+    {
+      "path": "data/train/images/backpack_c028944212bdc80c.jpg",
+      "bytes": 61403,
+      "sha256": "6145fa4ecc6f1fd4127315ce2946f309d91683bc079c31a43a29362bd78d116a"
+    },
+    {
+      "path": "data/train/images/backpack_e19f1889000fc327.jpg",
+      "bytes": 453023,
+      "sha256": "6a313bba1ee604d697fc2abd0cea1ddf07aefa3118f6f42497bd99a0b46cedfd"
+    },
+    {
+      "path": "data/train/images/backpack_e61a9a29b7d22c3f.jpg",
+      "bytes": 191244,
+      "sha256": "274654ccb93c767c7e35582db5a10b3386e3cb872abe682fc21dadade062a2f4"
+    },
+    {
+      "path": "data/train/images/backpack_f46abc3b39b2f1e4.jpg",
+      "bytes": 211331,
+      "sha256": "6c768b4e5e416aa7721e4be60f4fc7e2faa220980511eef9582129ee3c003c3c"
+    },
+    {
+      "path": "data/train/images/backpack_f96e6b95f8e12bf4.jpg",
+      "bytes": 393790,
+      "sha256": "004baa60e50eaa2f7a898097557113608e3f1d4b381f06f32a82e4c0690a6d92"
+    },
+    {
+      "path": "data/train/images/backpack_f9ecba243c6b8a07.jpg",
+      "bytes": 212008,
+      "sha256": "df9daf4ec3142d575cc9b2ab705a8337d55bbacba08d4a3150d790bdd4d480c6"
+    },
+    {
+      "path": "data/train/images/backpack_ffa382be7e2deb98.jpg",
+      "bytes": 317856,
+      "sha256": "bb94248fae0141d0684b264dc320e7eb722adb06063817aa395520ebc6590d20"
+    },
+    {
+      "path": "data/train/images/bottle_004a9745418ba5a6.jpg",
+      "bytes": 339524,
+      "sha256": "efc42bb3262048b5666d4b5254cb77765b83c788f7226ab0899743d7f920a173"
+    },
+    {
+      "path": "data/train/images/bottle_01495549e1f4fd2e.jpg",
+      "bytes": 216170,
+      "sha256": "11d54e6aaf93d81cda9903992ace4ddfe8a69a4a9ba036857aec03cf0a645480"
+    },
+    {
+      "path": "data/train/images/bottle_049d99faa622b032.jpg",
+      "bytes": 229299,
+      "sha256": "0bae3771e59900b8c5781aaf5df226525d7473c6f4b4c5f2a39d619035ebb096"
+    },
+    {
+      "path": "data/train/images/bottle_084b363c71a7f958.jpg",
+      "bytes": 333348,
+      "sha256": "100c384321e31666b6eddd3420f164edc7c531bf2fee0afd7733140f62c93350"
+    },
+    {
+      "path": "data/train/images/bottle_0cda3f209a5461ed.jpg",
+      "bytes": 330184,
+      "sha256": "1e5331744f8baa941268594452a1f1882db869a5d1ba13e04cd5d886403f8580"
+    },
+    {
+      "path": "data/train/images/bottle_108d661a10bfef01.jpg",
+      "bytes": 127171,
+      "sha256": "ab1cd71ba1839a35258172b2713e59bbe712371d222a6587e9b4222d4a6e3a1d"
+    },
+    {
+      "path": "data/train/images/bottle_1cbdc945d69244da.jpg",
+      "bytes": 270814,
+      "sha256": "16a69481cd875ab6b06bcfd1510206b512cef4bf5832fb7ffb348268e64bb57a"
+    },
+    {
+      "path": "data/train/images/bottle_26c4922f39ba3313.jpg",
+      "bytes": 195085,
+      "sha256": "0478591df133ab50ff95caa996b13d80dcdda6a17db91a43c71709ef235c7a47"
+    },
+    {
+      "path": "data/train/images/bottle_367204f9e7deeed5.jpg",
+      "bytes": 159617,
+      "sha256": "6e70960b8545525f8297f77dffdc4423518651bf5c6f0e55d4087a5ed0f66205"
+    },
+    {
+      "path": "data/train/images/bottle_376df24f5de612c2.jpg",
+      "bytes": 158320,
+      "sha256": "21bd389c8c931ccdc0915641681b8a8ffd28dda75a13eefe462a8ed7043ee81a"
+    },
+    {
+      "path": "data/train/images/bottle_3b2ad72f79a67af1.jpg",
+      "bytes": 114348,
+      "sha256": "b3ce8e5db1b55c8b0e01a578f3cbaf984b779a0dab017e8e82f330bf0c3ca995"
+    },
+    {
+      "path": "data/train/images/bottle_3cf987ac62a42adf.jpg",
+      "bytes": 39232,
+      "sha256": "bbe68e841ec0e253ad01749ddc33bef2e733d1b33127fa72798ab3c2adb856c1"
+    },
+    {
+      "path": "data/train/images/bottle_3d045770d7284126.jpg",
+      "bytes": 236196,
+      "sha256": "36ae5e900dc68e7907b8a11fbe2913edc23bd411e824101e6de7d5d09b9e0a12"
+    },
+    {
+      "path": "data/train/images/bottle_3f4c7f5c63e82ab5.jpg",
+      "bytes": 131190,
+      "sha256": "37567ec1508d8024648a864e6c43159df0ac4efaec9abd77b2a59fe3ac8c416c"
+    },
+    {
+      "path": "data/train/images/bottle_45cdb780d849d2f7.jpg",
+      "bytes": 232093,
+      "sha256": "9bd91d7f9c79057ad0acc6b8227e176e5cbf07a439d20a78c7a03e0b825ad21e"
+    },
+    {
+      "path": "data/train/images/bottle_4ff79076428f2f9d.jpg",
+      "bytes": 56975,
+      "sha256": "f9bde251e953dfa2c821daf09db8e85cf353e8bf8c4215cbe60eb308ef18226f"
+    },
+    {
+      "path": "data/train/images/bottle_514428973df647c8.jpg",
+      "bytes": 181063,
+      "sha256": "75d7de813709dbefe089c2e0b505cb57934433c2138205f18259f9f6a6c8ece5"
+    },
+    {
+      "path": "data/train/images/bottle_5f8d3927e65e93fd.jpg",
+      "bytes": 47182,
+      "sha256": "70450835619a65706b0e0da82ad1f1bacaa15007c4819b99a0cd7dd1dd7f93de"
+    },
+    {
+      "path": "data/train/images/bottle_69ebf1893ec9592b.jpg",
+      "bytes": 157282,
+      "sha256": "8f4686d84999ea2ffdece0afd44a72dd18085e9d4a6706d37d3c36e507994817"
+    },
+    {
+      "path": "data/train/images/bottle_6a022a9e9f413293.jpg",
+      "bytes": 234046,
+      "sha256": "c5024fc7ca0e407bd09c31485efaf386c3c8d0378246e3d8a60a29479f8f0d3e"
+    },
+    {
+      "path": "data/train/images/bottle_8abdcea0613ddf9c.jpg",
+      "bytes": 141915,
+      "sha256": "18d1fa22933424986242f616a0dbe416e254ad6ff01e8bd0a2f3943be428cee2"
+    },
+    {
+      "path": "data/train/images/bottle_8be3c2ce1345f643.jpg",
+      "bytes": 158337,
+      "sha256": "e97be36997ef1bf973b7cdef9867b71b16531594029cff43be4e23d0ed436bb9"
+    },
+    {
+      "path": "data/train/images/bottle_95dfd67c5a379231.jpg",
+      "bytes": 73430,
+      "sha256": "7359558591beb45006069ac5b7aa7ddd22a699145cd3749c80959a7ddeac2058"
+    },
+    {
+      "path": "data/train/images/bottle_a47d8017a8106c57.jpg",
+      "bytes": 448582,
+      "sha256": "fc3c01f9c83ddec1155b65f91b6703194123bccd33e6d15edde5582988e78bb0"
+    },
+    {
+      "path": "data/train/images/bottle_a9ddf2c5d2a3325b.jpg",
+      "bytes": 144583,
+      "sha256": "bf85f97398ee3472491fa6f089977550981d9f01623035ecf2090b353e04e64a"
+    },
+    {
+      "path": "data/train/images/bottle_b02546fa8b0787a2.jpg",
+      "bytes": 163845,
+      "sha256": "5ce2f793d807acf636d3389db57206d8ff278ccb3c60d2429bd92b979a83eb73"
+    },
+    {
+      "path": "data/train/images/bottle_c6e01d1d78d12de9.jpg",
+      "bytes": 213524,
+      "sha256": "31a8485e7957419e12e55bd56f2df01fdee054d4268d3ad97b7c517e8275ec8e"
+    },
+    {
+      "path": "data/train/images/bottle_c8083badcd41c574.jpg",
+      "bytes": 296691,
+      "sha256": "45a5d7e9cf46294fb6f603bf7c9fe16295ff7415f166d68835c2ed9fd16d480b"
+    },
+    {
+      "path": "data/train/images/bottle_c95dcaa35f454f83.jpg",
+      "bytes": 100302,
+      "sha256": "c06f259b6476b6f2edff8d0e9269ef24f480c88328b09fce8d1f38275a5211f1"
+    },
+    {
+      "path": "data/train/images/bottle_f454e8c8bec256ca.jpg",
+      "bytes": 73889,
+      "sha256": "d47988c289dffebf8c12114a2fa89ecb61e38bb23931107fa318cce9168032d8"
+    },
+    {
+      "path": "data/train/images/bottle_f96ef0bd271fb933.jpg",
+      "bytes": 95552,
+      "sha256": "2ef0f5259e9b15143a12d99bbe97b7511cef784bee6516506b8499158116ba82"
+    },
+    {
+      "path": "data/train/images/bottle_fe771761597be821.jpg",
+      "bytes": 318429,
+      "sha256": "01236529d4070baf6a0f84c28fb0082621544d722f1d9bb92e9011e0b447a90c"
+    },
+    {
+      "path": "data/train/labels/backpack_1c6cef0118791af9.txt",
+      "bytes": 75,
+      "sha256": "42e10394bc041762ff7fd587944b429d946c4ac00429a323c7149ab29491db39"
+    },
+    {
+      "path": "data/train/labels/backpack_20d393f65a9807c9.txt",
+      "bytes": 37,
+      "sha256": "9ccc698275b1ada49a7290d72d7eba4167faf0e63e37f56ba8c5aa3e90ed7f15"
+    },
+    {
+      "path": "data/train/labels/backpack_23487f4bf993138c.txt",
+      "bytes": 37,
+      "sha256": "24a67ec8cf99ac3b4ef24ace7ff2545301b8ffea0d67e20c38e6372482bde272"
+    },
+    {
+      "path": "data/train/labels/backpack_2edc0212721c4f22.txt",
+      "bytes": 37,
+      "sha256": "6119782d09d2ca4f95dd96510b41f20d92780205de3a13cf871c1b6e86d4602f"
+    },
+    {
+      "path": "data/train/labels/backpack_3a8eacfce3f15a7a.txt",
+      "bytes": 37,
+      "sha256": "8eec9b239514de993816a1db5a1eaba62e9cc8f4ec84668af2a2d82e26badf27"
+    },
+    {
+      "path": "data/train/labels/backpack_425e746b1b3ff4d8.txt",
+      "bytes": 37,
+      "sha256": "8ae7e55d8c696f2dc279f4ae2c9d8f1ecea2a11efcc75274d7b943a5ce717231"
+    },
+    {
+      "path": "data/train/labels/backpack_4491ce28dbbaf88d.txt",
+      "bytes": 37,
+      "sha256": "3b34f4f7a05ae9ee9a7877eb307e045558f904f2335f3fb489687e0ebaa8ffcf"
+    },
+    {
+      "path": "data/train/labels/backpack_528219663af7c0d2.txt",
+      "bytes": 75,
+      "sha256": "93487f8537c313bfc6ae45ab89f01a7b62baba5be1c266370d126f23d2534778"
+    },
+    {
+      "path": "data/train/labels/backpack_560a2687acc7642d.txt",
+      "bytes": 37,
+      "sha256": "8028896b06b9d8b1d96aa03778b75ff25cc906a881cfe976edb3521dfe6855c7"
+    },
+    {
+      "path": "data/train/labels/backpack_5a6a4b7bb3362ff0.txt",
+      "bytes": 37,
+      "sha256": "109f1b8c5f15b64ccbf239cb53ae9b50c6253d08c651f695c0ddea1b67c20fa5"
+    },
+    {
+      "path": "data/train/labels/backpack_6148451becf88ccf.txt",
+      "bytes": 37,
+      "sha256": "23d37220ce86dd99e68fd46eba1a2a80eff7e5d2e5c3f68697a583ef84bccf7e"
+    },
+    {
+      "path": "data/train/labels/backpack_6ea3590bdc6f214a.txt",
+      "bytes": 37,
+      "sha256": "5eecbeddea3be34fd7cc35824438794e19246ce12a2f40421527cf5d0fddd36d"
+    },
+    {
+      "path": "data/train/labels/backpack_723e70fe85e0da69.txt",
+      "bytes": 75,
+      "sha256": "d244dd493ec6a966416d4c8b92e29fc7ebeee7f72382a7f240c219e2fd7fe3c1"
+    },
+    {
+      "path": "data/train/labels/backpack_7491dc5b881626cd.txt",
+      "bytes": 37,
+      "sha256": "e6a47fa8d6cfcff2e30bbf210de7f852ac551d052c7df3f31ee5bed6da5e4708"
+    },
+    {
+      "path": "data/train/labels/backpack_756ded8d34dfe17f.txt",
+      "bytes": 37,
+      "sha256": "c73ce533498911e564f597e4e1cd2424066e9d3a98e9ffe7bca56f50632b5eb5"
+    },
+    {
+      "path": "data/train/labels/backpack_76b8f1a90bcf997d.txt",
+      "bytes": 37,
+      "sha256": "8b5942233dc05b95bbb87170ba6d744edee2980ff1f6b7db75a5b0895ff20d5d"
+    },
+    {
+      "path": "data/train/labels/backpack_80e7f359721d28d1.txt",
+      "bytes": 37,
+      "sha256": "83c082fe903155292141e1a7ee86f944abe02def0e389e45c07d84f471ae90f1"
+    },
+    {
+      "path": "data/train/labels/backpack_838932fef9f0d687.txt",
+      "bytes": 37,
+      "sha256": "c609b0f5a50d25ec6a2708db801d811161e724a6d1e4b115557f19acbaa303ce"
+    },
+    {
+      "path": "data/train/labels/backpack_85afb20c62ea8d90.txt",
+      "bytes": 37,
+      "sha256": "7dcd8827d6c83840085e9f5b320f41b0d90d6327f39d7c86dbab7162e501f7dd"
+    },
+    {
+      "path": "data/train/labels/backpack_8eb63dd5f3f7b7f4.txt",
+      "bytes": 37,
+      "sha256": "55a4e5b5b7ca5aab3aa3a565fff33ea26b7cb8110be33423e32ce77dcb001f9f"
+    },
+    {
+      "path": "data/train/labels/backpack_99c396d655c7f4bb.txt",
+      "bytes": 37,
+      "sha256": "589905dfbaf41ed7d224eb6088e3a06d170d20297c02ff21c25977aacdc6c096"
+    },
+    {
+      "path": "data/train/labels/backpack_a3ffd4ecf28e61e4.txt",
+      "bytes": 37,
+      "sha256": "8bac7f97d89616a66fb4f2d69e2d0555f36169e455e04a24fd22589f27abebad"
+    },
+    {
+      "path": "data/train/labels/backpack_b1e29913cc7b71c8.txt",
+      "bytes": 37,
+      "sha256": "06898588985416a0f3fa4379d7336e19f9eecd917533fd435f39558c59a6aeb7"
+    },
+    {
+      "path": "data/train/labels/backpack_b33b34153db3acdd.txt",
+      "bytes": 37,
+      "sha256": "72534df26b3e441c477967f360915e843bb1f02d7738d75db082c227164aca2e"
+    },
+    {
+      "path": "data/train/labels/backpack_ba17a42100323ba3.txt",
+      "bytes": 37,
+      "sha256": "bde346510b4298fabfaaf393a5630ec0924a2e57c6a640557b889cc9f6d320f2"
+    },
+    {
+      "path": "data/train/labels/backpack_c028944212bdc80c.txt",
+      "bytes": 37,
+      "sha256": "9c501a104179e69511777bff4bf6194b3c46271f796ace138b8c5c17ad3a3999"
+    },
+    {
+      "path": "data/train/labels/backpack_e19f1889000fc327.txt",
+      "bytes": 37,
+      "sha256": "2413d0d6a220842581bc57ce321e698233d8ee1b4fb5c6649d27634803c5136a"
+    },
+    {
+      "path": "data/train/labels/backpack_e61a9a29b7d22c3f.txt",
+      "bytes": 37,
+      "sha256": "e4a1e2f4ac03bc1cc7bfc04ff098f624a8e6a10cd9ba74428d376ceb7b10853e"
+    },
+    {
+      "path": "data/train/labels/backpack_f46abc3b39b2f1e4.txt",
+      "bytes": 37,
+      "sha256": "829cd58ddc6bfd8eea1b9b0066245ead112230a202091a38704fcc3043d21e90"
+    },
+    {
+      "path": "data/train/labels/backpack_f96e6b95f8e12bf4.txt",
+      "bytes": 37,
+      "sha256": "4b2534938699f67a0ae0ba27ad9e78aaa007c297babe9ef3abd815f4bc1bb1a4"
+    },
+    {
+      "path": "data/train/labels/backpack_f9ecba243c6b8a07.txt",
+      "bytes": 37,
+      "sha256": "5e70a6b017be88a4a57adac9d5254991fe7636ed05362f1244a97a83440cd1f2"
+    },
+    {
+      "path": "data/train/labels/backpack_ffa382be7e2deb98.txt",
+      "bytes": 37,
+      "sha256": "424f50e2a7494a136adb28a24d48fea5d3a53e290bd6ac3866ba05d1e30ca38d"
+    },
+    {
+      "path": "data/train/labels/bottle_004a9745418ba5a6.txt",
+      "bytes": 37,
+      "sha256": "9e5022345c5569f0b3513d6b6d29148ec504e48ae6684e084dd200d9f8c548f5"
+    },
+    {
+      "path": "data/train/labels/bottle_01495549e1f4fd2e.txt",
+      "bytes": 37,
+      "sha256": "81fb32cce23fc7fc00d1b3a5537c90d84472e8fac2ac5e0af5e945bcdb7c975c"
+    },
+    {
+      "path": "data/train/labels/bottle_049d99faa622b032.txt",
+      "bytes": 75,
+      "sha256": "5eab7fa34f4825b8021b194f1d249fefa84686a40addcec8b6c0f6a5ee693ab9"
+    },
+    {
+      "path": "data/train/labels/bottle_084b363c71a7f958.txt",
+      "bytes": 37,
+      "sha256": "1d9b6ccd8575c8b410a0aebe1451ec9fe46d2a77c60a1cc296f82d049addde2e"
+    },
+    {
+      "path": "data/train/labels/bottle_0cda3f209a5461ed.txt",
+      "bytes": 37,
+      "sha256": "784ca1bf29438701a55e50f326675c8c0c6787f1f5cedcb1a3898178ac2a7b82"
+    },
+    {
+      "path": "data/train/labels/bottle_108d661a10bfef01.txt",
+      "bytes": 37,
+      "sha256": "5bd0287af55c7711b58ab8d9b1f385266057a6771a0ec1398239db95c18ba935"
+    },
+    {
+      "path": "data/train/labels/bottle_1cbdc945d69244da.txt",
+      "bytes": 37,
+      "sha256": "b659894632581bc028d7fa782459419a276bf9fa6f3a1be469e20e42e25bd305"
+    },
+    {
+      "path": "data/train/labels/bottle_26c4922f39ba3313.txt",
+      "bytes": 75,
+      "sha256": "48b67c28e0bb2786a6bfcbc242e56cc6672cc47f9380c23b4e5f0a7d83a6c5da"
+    },
+    {
+      "path": "data/train/labels/bottle_367204f9e7deeed5.txt",
+      "bytes": 75,
+      "sha256": "9eeb80a8311c0817885e4f8da0b447fe17b9dbce17f78db540ee1d0efa85536e"
+    },
+    {
+      "path": "data/train/labels/bottle_376df24f5de612c2.txt",
+      "bytes": 37,
+      "sha256": "c91b1c1c1980f4e0e21a83ae9c9b40af001a94197b60a546f504539f55e06aa9"
+    },
+    {
+      "path": "data/train/labels/bottle_3b2ad72f79a67af1.txt",
+      "bytes": 37,
+      "sha256": "4eb1d97ff2ee91526abc135d21b701fd31b33cadb58ee74b82d58cc506f43715"
+    },
+    {
+      "path": "data/train/labels/bottle_3cf987ac62a42adf.txt",
+      "bytes": 37,
+      "sha256": "3574f73faf13052f4d9ac260810e1b87aabe3b3aa7f5ea177d729614b1f02c68"
+    },
+    {
+      "path": "data/train/labels/bottle_3d045770d7284126.txt",
+      "bytes": 37,
+      "sha256": "329e7626f9f5b96e04f3140041d39f23b6d5e9c38455207f22a93ef3506a1125"
+    },
+    {
+      "path": "data/train/labels/bottle_3f4c7f5c63e82ab5.txt",
+      "bytes": 113,
+      "sha256": "9478881d87ed6b192227dafc2250d67d59cc1f3a4284f465ae4cb1b37b86da3c"
+    },
+    {
+      "path": "data/train/labels/bottle_45cdb780d849d2f7.txt",
+      "bytes": 37,
+      "sha256": "e63cb2314725997d8bb6ee3e67e563698146db517715cb4fc6c8078df297b02c"
+    },
+    {
+      "path": "data/train/labels/bottle_4ff79076428f2f9d.txt",
+      "bytes": 37,
+      "sha256": "0984ce815c40f9229951ff5d0ed88692d16bfee537f5a0d201be914b708730f4"
+    },
+    {
+      "path": "data/train/labels/bottle_514428973df647c8.txt",
+      "bytes": 37,
+      "sha256": "6ef0c4608f6f58f6b3e427db0e8a416e1bc9aa48af1fc262618ec16aa1500825"
+    },
+    {
+      "path": "data/train/labels/bottle_5f8d3927e65e93fd.txt",
+      "bytes": 37,
+      "sha256": "6072d20b45f76fdb98b70e3a685311ac2dde4e8170e81f299680138f3d440324"
+    },
+    {
+      "path": "data/train/labels/bottle_69ebf1893ec9592b.txt",
+      "bytes": 37,
+      "sha256": "3d21876a7556b4ce7b032f8a242661ae09c1ae3987ec5c23cb0e77b12fafff42"
+    },
+    {
+      "path": "data/train/labels/bottle_6a022a9e9f413293.txt",
+      "bytes": 37,
+      "sha256": "94395e5e8dc23da0157beb13910602ba797150525f9deec87816e63d40df409e"
+    },
+    {
+      "path": "data/train/labels/bottle_8abdcea0613ddf9c.txt",
+      "bytes": 37,
+      "sha256": "810011a9e337c126205d61c8b7cbdeca342f5702703ba0a22956736039c4f431"
+    },
+    {
+      "path": "data/train/labels/bottle_8be3c2ce1345f643.txt",
+      "bytes": 37,
+      "sha256": "871d6ca677eb9f28d160ebb3186d5a456eb110d1a24d22af2c3a68979de3ddc0"
+    },
+    {
+      "path": "data/train/labels/bottle_95dfd67c5a379231.txt",
+      "bytes": 37,
+      "sha256": "f039ecaaca3c70ae90e1c8ff0dc306158839af51e63b3fb60e4ffbe103675f62"
+    },
+    {
+      "path": "data/train/labels/bottle_a47d8017a8106c57.txt",
+      "bytes": 37,
+      "sha256": "3ea58cee39f42eba03bfb4ba5d5855523dc2b418dda04b0630a4475bc791c244"
+    },
+    {
+      "path": "data/train/labels/bottle_a9ddf2c5d2a3325b.txt",
+      "bytes": 37,
+      "sha256": "559fdf0561347cf6179efed62ab0bae53b97c40355d97f972dd71e674080084a"
+    },
+    {
+      "path": "data/train/labels/bottle_b02546fa8b0787a2.txt",
+      "bytes": 37,
+      "sha256": "45f6846ebce83f434ab56ad8003b175bd61a6bcbc64fae28cae48221832bf794"
+    },
+    {
+      "path": "data/train/labels/bottle_c6e01d1d78d12de9.txt",
+      "bytes": 37,
+      "sha256": "1f5bc256c3e1967efa8cda0e0c30785e18b4d348a575b3a2aa7b4fcedb0a9ded"
+    },
+    {
+      "path": "data/train/labels/bottle_c8083badcd41c574.txt",
+      "bytes": 37,
+      "sha256": "9212b11c222ab582baaefd93177a36250bd27a018cce90aad9f00f2d59c2744c"
+    },
+    {
+      "path": "data/train/labels/bottle_c95dcaa35f454f83.txt",
+      "bytes": 75,
+      "sha256": "7bfc5907b534b98d0935694b34406fab8bd56ce5206ee6d6154922d4c979a037"
+    },
+    {
+      "path": "data/train/labels/bottle_f454e8c8bec256ca.txt",
+      "bytes": 37,
+      "sha256": "32498b5c363f5fbd1b4f92f865cf8f29e9f56dc954fb72c3b464168107af1bc0"
+    },
+    {
+      "path": "data/train/labels/bottle_f96ef0bd271fb933.txt",
+      "bytes": 37,
+      "sha256": "f7bc6106db1b47545525bfab72c7ff70c3c90989f8d9241d6cd1833d10677a30"
+    },
+    {
+      "path": "data/train/labels/bottle_fe771761597be821.txt",
+      "bytes": 37,
+      "sha256": "49cb4103d161a7273f505992cc93b93fed9a49fa8d5e0a56b63a47e556d3f7d8"
+    },
+    {
+      "path": "data/val/images/backpack_2fdfbd153b29517b.jpg",
+      "bytes": 153532,
+      "sha256": "31ed486340ed912ded6d2f8b0f01944c22b57bfb2f14e797f22c1bab81975cc3"
+    },
+    {
+      "path": "data/val/images/backpack_42ff928c38bdfcae.jpg",
+      "bytes": 174188,
+      "sha256": "2e1dbc56662a00574ab07711b8db3ef31c72ac1d9f0cc0545b3201633c881d17"
+    },
+    {
+      "path": "data/val/images/backpack_5b286cb11a433cf2.jpg",
+      "bytes": 173102,
+      "sha256": "dee5b4561757a7395970438d10b980240cca38854b2ca28809a8a0d80e3227b9"
+    },
+    {
+      "path": "data/val/images/backpack_fe5a65073bd23137.jpg",
+      "bytes": 46207,
+      "sha256": "9539a6a0cbbbc06b026baed90ce822c9b8729d1b64186ddbaaa389fd98d0f4e3"
+    },
+    {
+      "path": "data/val/images/bottle_00b729b5187a1898.jpg",
+      "bytes": 327459,
+      "sha256": "62e91f49d6ab43636237d1acafa14c15001f167143a282a25157725645bfb30b"
+    },
+    {
+      "path": "data/val/images/bottle_a47b5dcfa59cf85a.jpg",
+      "bytes": 227645,
+      "sha256": "2ed89a374797ecaf459fccdef6bf019c30708421bf97058a0ef16dcf810c0641"
+    },
+    {
+      "path": "data/val/images/bottle_cb490b8a63050d2d.jpg",
+      "bytes": 459013,
+      "sha256": "01304f283bd9028d26266ab35af131aa5d87f12ce8b4295eb5c3bfa0a3f56bd0"
+    },
+    {
+      "path": "data/val/images/bottle_ead01475dcbe96b3.jpg",
+      "bytes": 431154,
+      "sha256": "91751ae853fc83c43ab21ce87ac924980dbe5e41b2db974f35ebe8e367a99a65"
+    },
+    {
+      "path": "data/val/labels/backpack_2fdfbd153b29517b.txt",
+      "bytes": 37,
+      "sha256": "641602fd929d91132ba77c1fde917001ecc52dc29670f800670ad61bf7572743"
+    },
+    {
+      "path": "data/val/labels/backpack_42ff928c38bdfcae.txt",
+      "bytes": 37,
+      "sha256": "65bd61b3340c1c553a704ec8b312fcc60c8fff9c6e67b19f53d4019703a95d0b"
+    },
+    {
+      "path": "data/val/labels/backpack_5b286cb11a433cf2.txt",
+      "bytes": 37,
+      "sha256": "5bd82d5adcc9f59d43bbf67c7c0aae1fdfed7e58ec379b1ae4c9d464de346d34"
+    },
+    {
+      "path": "data/val/labels/backpack_fe5a65073bd23137.txt",
+      "bytes": 37,
+      "sha256": "f77161992053c0c727b9e1a93e98ffd1d39dd646f69ce5afa63768b9a16bf4a0"
+    },
+    {
+      "path": "data/val/labels/bottle_00b729b5187a1898.txt",
+      "bytes": 37,
+      "sha256": "b0625a2d7e5404a249ccc528c777be2490ff2fcb3482123be594b1a5e422835a"
+    },
+    {
+      "path": "data/val/labels/bottle_a47b5dcfa59cf85a.txt",
+      "bytes": 37,
+      "sha256": "d53036216f3279d9be1a821db492b4c53231d296fbb967a7fa978bdf1c9a70ea"
+    },
+    {
+      "path": "data/val/labels/bottle_cb490b8a63050d2d.txt",
+      "bytes": 37,
+      "sha256": "6d69757f62ef87c45d1a4044e0b3723db5fe1db83ee75ff7e473145cf6f5cb02"
+    },
+    {
+      "path": "data/val/labels/bottle_ead01475dcbe96b3.txt",
+      "bytes": 75,
+      "sha256": "0d78aac0c659f73cee8b374e3127126b4b07dee412f0529e875f5078f2441227"
+    }
+  ]
+}

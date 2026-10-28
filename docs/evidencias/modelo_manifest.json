@@ -1,0 +1,35 @@
+{
+  "classes": [
+    "folha_saudavel",
+    "folha_com_sinais_de_doenca"
+  ],
+  "yolo_version": "v7.0",
+  "yolo_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+  "weights_sha256": "318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832",
+  "dataset_fingerprint": "270ea348033b00506793efd022cbfd1416f312a7d7fe1377bd60abd2e850b509",
+  "versions": {
+    "torch": "2.5.1",
+    "torchvision": "0.20.1",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "Pillow": "11.1.0"
+  },
+  "selected_epochs": 30,
+  "test_metrics": {
+    "precision": 0.5566540278317976,
+    "recall": 0.6262626262626263,
+    "map50": 0.61147417645599,
+    "map50_95": 0.37583436123058017,
+    "timing_ms": [
+      0.3037521804588429,
+      6.745248601056527,
+      3.296807192373967
+    ],
+    "map50_95_por_classe": {
+      "folha_saudavel": 0.26720319759932976,
+      "folha_com_sinais_de_doenca": 0.4844655248618306
+    }
+  },
+  "alert_confidence": 0.5,
+  "device": "Tesla T4"
+}

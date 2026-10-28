@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "executados": [
+    "docs/fase6/notebooks/fase6_revisada.ipynb",
+    "notebooks/resultados_tomate.ipynb"
+  ]
+}

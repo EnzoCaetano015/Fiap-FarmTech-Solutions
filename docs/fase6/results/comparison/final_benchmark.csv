@@ -1,0 +1,4 @@
+approach,task_type,training_seconds,mean_inference_ms,median_inference_ms,std_inference_ms,primary_metric,primary_metric_value,precision,recall,f1,map50,map50_95,notes
+yolo_custom,detection,294.20896882399984,34.22255749995884,35.99341850008386,6.733129515945234,map50_95,0.005039173957851236,0.0020524113661964686,0.525,,0.013059191143228482,0.005039173957851236,60 épocas; seleção em val; teste reservado; imagem 640; integração exige labels e treino
+yolo_standard,detection,,20.967936374859164,20.216365499891253,3.5945229180835456,,,,,,,,COCO; sem treino nesta base; mAP não calculado; imagem 640; uso direto com filtro por nomes
+cnn,classification,39.78870389500025,16.986262374928174,16.302937999853384,2.473944186413185,accuracy,0.875,0.9,0.875,0.873015873015873,,,Do zero; métricas macro; teste comum; 224x224; requer classe única e pipeline próprio

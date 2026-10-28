@@ -1,0 +1,206 @@
+{
+  "precision": 0.0020524113661964686,
+  "recall": 0.525,
+  "map50": 0.013059191143228482,
+  "map50_95": 0.005039173957851236,
+  "box_loss": 0.0587373748421669,
+  "obj_loss": 0.014763751067221165,
+  "cls_loss": 0.01799142174422741,
+  "metrics_split": "test",
+  "loss_computed": true,
+  "evaluation_precision": "FP32",
+  "images_evaluated": 8,
+  "count": 8,
+  "mean_inference_ms": 34.22255749995884,
+  "median_inference_ms": 35.99341850008386,
+  "std_inference_ms": 6.733129515945234,
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "environment": {
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "torch": "2.5.1+cu124",
+    "tensorflow": "2.17.1",
+    "cuda": "12.4",
+    "gpu": "Tesla T4",
+    "tensorflow_gpu_count": 1,
+    "gpu_smoke_test": "torch operation and TensorFlow convolution passed",
+    "torch_cudnn": 90100,
+    "tensorflow_build": {
+      "cpu_compiler": "/usr/lib/llvm-17/bin/clang",
+      "cuda_compute_capabilities": [
+        "sm_60",
+        "sm_70",
+        "sm_80",
+        "sm_89",
+        "compute_90"
+      ],
+      "cuda_version": "12.3",
+      "cudnn_version": "8",
+      "is_cuda_build": true,
+      "is_rocm_build": false,
+      "is_tensorrt_build": true
+    },
+    "tensorflow_cudnn_package": "8.9.7.29",
+    "timestamp_utc": "2026-10-13T16:52:12.601788+00:00",
+    "seed": 42,
+    "yolov5_ref": "v7.0",
+    "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+    "contract": {
+      "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+      "gpu": "Tesla T4",
+      "cuda": "12.4",
+      "torch": "2.5.1+cu124",
+      "tensorflow": "2.17.1",
+      "python": "3.12.13",
+      "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+      "seed": 42,
+      "model": "yolov5s",
+      "image_size": 640,
+      "batch_size": 16,
+      "patience": 0,
+      "weights": ""
+    },
+    "dataset_counts": {
+      "train": 64,
+      "val": 8,
+      "test": 8
+    },
+    "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1"
+  },
+  "image_size": 640,
+  "warmup": 1,
+  "timing_scope": "model call including preprocessing and NMS; excludes image loading, model loading, warm-up and saving",
+  "experiment": "custom_60_epochs",
+  "checkpoint_sha256": "4ccd1bf101774056b0512031de4d7996dc37612e04cc24e6bb92b6d09dfb2fc9"
+}
+{
+  "accuracy": 0.875,
+  "precision": 0.9,
+  "recall": 0.875,
+  "f1": 0.873015873015873,
+  "averaging": "macro",
+  "confusion_matrix": [
+    [
+      4,
+      0
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "class_names": [
+    "bottle",
+    "backpack"
+  ],
+  "metrics_split": "test",
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "environment": {
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "torch": "2.5.1+cu124",
+    "tensorflow": "2.17.1",
+    "cuda": "12.4",
+    "gpu": "Tesla T4",
+    "tensorflow_gpu_count": 1,
+    "gpu_smoke_test": "torch operation and TensorFlow convolution passed",
+    "torch_cudnn": 90100,
+    "tensorflow_build": {
+      "cpu_compiler": "/usr/lib/llvm-17/bin/clang",
+      "cuda_compute_capabilities": [
+        "sm_60",
+        "sm_70",
+        "sm_80",
+        "sm_89",
+        "compute_90"
+      ],
+      "cuda_version": "12.3",
+      "cudnn_version": "8",
+      "is_cuda_build": true,
+      "is_rocm_build": false,
+      "is_tensorrt_build": true
+    },
+    "tensorflow_cudnn_package": "8.9.7.29",
+    "timestamp_utc": "2026-10-13T16:52:12.601788+00:00",
+    "seed": 42,
+    "yolov5_ref": "v7.0",
+    "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+    "contract": {
+      "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+      "gpu": "Tesla T4",
+      "cuda": "12.4",
+      "torch": "2.5.1+cu124",
+      "tensorflow": "2.17.1",
+      "python": "3.12.13",
+      "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+      "seed": 42,
+      "model": "yolov5s",
+      "image_size": 640,
+      "batch_size": 16,
+      "patience": 0,
+      "weights": ""
+    },
+    "dataset_counts": {
+      "train": 64,
+      "val": 8,
+      "test": 8
+    },
+    "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1"
+  },
+  "count": 8,
+  "mean_inference_ms": 16.986262374928174,
+  "median_inference_ms": 16.302937999853384,
+  "std_inference_ms": 2.473944186413185,
+  "warmup": 1,
+  "timing_scope": "preprocessing and model call; excludes image loading, model loading, warm-up and saving",
+  "checkpoint_sha256": "bb58603de780b5cb02b32b564cb7d0fc444d5055923bb6e72d52edb7e4ac0178"
+}
+{
+  "precision": 0.8204680922958334,
+  "recall": 0.9799404396427691,
+  "map50": 0.995,
+  "map50_95": 0.759696312620182,
+  "box_loss": 0.016924338415265083,
+  "obj_loss": 0.004972620867192745,
+  "cls_loss": 0.0013422972988337278,
+  "metrics_split": "test",
+  "loss_computed": true,
+  "evaluation_precision": "FP32",
+  "images_evaluated": 8,
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "checkpoint_sha256": "6fedc77d0d511c5e86f9fb4a1a6abe8bdc52ef62b6e6e393e1c51b3c68082eb4",
+  "initialization": "COCO pretrained; supplementary fine tuning",
+  "evaluation_note": "Original test images were already examined in the preceding experiment; this is a retrospective supplementary evaluation, not a fresh blind test."
+}
+{
+  "epocas_selecionadas": 30,
+  "validacao": [
+    {
+      "epochs": 30,
+      "map50": 0.7131074383363978,
+      "map50_95": 0.4092268133408298,
+      "training_seconds": 978.3884159280001
+    },
+    {
+      "epochs": 60,
+      "map50": 0.6990951205377655,
+      "map50_95": 0.3970759753191296,
+      "training_seconds": 1865.3859104010003
+    }
+  ]
+}
+{
+  "precision": 0.5566540278317976,
+  "recall": 0.6262626262626263,
+  "map50": 0.61147417645599,
+  "map50_95": 0.37583436123058017,
+  "timing_ms": [
+    0.3037521804588429,
+    6.745248601056527,
+    3.296807192373967
+  ],
+  "map50_95_por_classe": {
+    "folha_saudavel": 0.26720319759932976,
+    "folha_com_sinais_de_doenca": 0.4844655248618306
+  }
+}

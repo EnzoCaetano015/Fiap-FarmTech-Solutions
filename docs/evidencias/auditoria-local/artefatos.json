@@ -1,0 +1,29 @@
+{
+  "python_compilado": 32,
+  "notebooks_validos": [
+    "notebooks\\resultados_tomate.ipynb",
+    "notebooks\\treino_tomate_colab.ipynb",
+    "docs\\fase6\\notebooks\\fase6_original.ipynb",
+    "docs\\fase6\\notebooks\\fase6_revisada.ipynb",
+    "docs\\fase6\\notebooks\\reproducao_fase6.ipynb"
+  ],
+  "links_locais_ausentes": [],
+  "plantdoc": {
+    "imagens": {
+      "train": 530,
+      "val": 134,
+      "test": 69
+    },
+    "caixas": {
+      "train": 2188,
+      "val": 506,
+      "test": 192
+    },
+    "sem_sobreposicao": true,
+    "hashes_dos_733_exports_verificados": true,
+    "classes_tomate": 8,
+    "acaros_excluidos": true
+  },
+  "peso_sha256": "318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832",
+  "ok": true
+}

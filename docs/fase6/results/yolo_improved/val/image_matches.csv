@@ -1,0 +1,17 @@
+image,class_name,ground_truth_objects,tp,fp,fn,confidence_threshold,match_iou_threshold
+backpack_2fdfbd153b29517b.jpg,bottle,0,0,0,0,0.25,0.5
+backpack_2fdfbd153b29517b.jpg,backpack,1,1,0,0,0.25,0.5
+backpack_42ff928c38bdfcae.jpg,bottle,0,0,0,0,0.25,0.5
+backpack_42ff928c38bdfcae.jpg,backpack,1,1,0,0,0.25,0.5
+backpack_5b286cb11a433cf2.jpg,bottle,0,0,0,0,0.25,0.5
+backpack_5b286cb11a433cf2.jpg,backpack,1,1,0,0,0.25,0.5
+backpack_fe5a65073bd23137.jpg,bottle,0,0,0,0,0.25,0.5
+backpack_fe5a65073bd23137.jpg,backpack,1,0,1,1,0.25,0.5
+bottle_00b729b5187a1898.jpg,bottle,1,1,0,0,0.25,0.5
+bottle_00b729b5187a1898.jpg,backpack,0,0,0,0,0.25,0.5
+bottle_a47b5dcfa59cf85a.jpg,bottle,1,1,0,0,0.25,0.5
+bottle_a47b5dcfa59cf85a.jpg,backpack,0,0,0,0,0.25,0.5
+bottle_cb490b8a63050d2d.jpg,bottle,1,1,1,0,0.25,0.5
+bottle_cb490b8a63050d2d.jpg,backpack,0,0,0,0,0.25,0.5
+bottle_ead01475dcbe96b3.jpg,bottle,2,2,0,0,0.25,0.5
+bottle_ead01475dcbe96b3.jpg,backpack,0,0,0,0,0.25,0.5

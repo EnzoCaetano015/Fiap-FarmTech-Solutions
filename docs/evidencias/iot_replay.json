@@ -1,0 +1,26 @@
+{
+  "id": "ed92961bf0b345adb74f63519e406f69",
+  "servico": "iot",
+  "sucesso": true,
+  "dados": {
+    "eventos": [
+      "d8d1ad8014cf3060a37c4dd9e82bc3525800fcfae1fa611185c46953d97b04d1",
+      "2811744fac2a7165aae6cf026d3ae3d1560e5ca3eccb3b7ec04e906aedfb984b",
+      "0c24328a05db762773f8333eadacd97d4943387266a4cde6fb667a5f832fac06",
+      "8b1cd9cbe3f2f330f9a7e66a8066e1e4089524a8762e8f5d714bf8652ca68893",
+      "8f9646688b033264483d467783b08913532c57e28ee27c770ba0476eb52f8269",
+      "7c8358454c350805462b1eec3e6b4209f0d038fdc9209452fd3dc271a9c787e2",
+      "7d8f0d560aa7462e3e56b9e42662fcc1cae029e8e217349418afba4aa15dd43c",
+      "5600a5667d540e2f2c4a004fef578360d5a521ea622c88e2af911d2ad15b4e42",
+      "8df74d93671e2a1a377cc39365cf5638793bc9ea49a86ca7a0096848e99de06d",
+      "7b63165227e17930438e793a029e794de92af17509298b457c6b4e5dba454a13"
+    ],
+    "leituras": 10,
+    "simulado": true,
+    "horario": "atual"
+  },
+  "arquivos": [],
+  "erro": null,
+  "duracao_s": 0.1452,
+  "saida": ""
+}

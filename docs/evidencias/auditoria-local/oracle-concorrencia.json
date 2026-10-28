@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "importacoes_simultaneas": [
+    {
+      "inseridos": 0,
+      "existentes": 10
+    },
+    {
+      "inseridos": 0,
+      "existentes": 10
+    }
+  ]
+}

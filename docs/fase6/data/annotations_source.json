@@ -1,0 +1,2023 @@
+{
+  "sources": {
+    "test": {
+      "classes.csv": "https://storage.googleapis.com/openimages/v7/oidv7-class-descriptions-boxable.csv",
+      "metadata.csv": "https://storage.googleapis.com/openimages/2018_04/test/test-images-with-rotation.csv",
+      "boxes.csv": "https://storage.googleapis.com/openimages/v5/test-annotations-bbox.csv",
+      "labels.csv": "https://storage.googleapis.com/openimages/v5/test-annotations-human-imagelabels-boxable.csv"
+    },
+    "validation": {
+      "classes.csv": "https://storage.googleapis.com/openimages/v7/oidv7-class-descriptions-boxable.csv",
+      "metadata.csv": "https://storage.googleapis.com/openimages/2018_04/validation/validation-images-with-rotation.csv",
+      "boxes.csv": "https://storage.googleapis.com/openimages/v5/validation-annotations-bbox.csv",
+      "labels.csv": "https://storage.googleapis.com/openimages/v5/validation-annotations-human-imagelabels-boxable.csv"
+    }
+  },
+  "annotations": [
+    {
+      "image_id": "084b363c71a7f958",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "084b363c71a7f958",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.11875",
+          "XMax": "0.71458334",
+          "YMin": "0",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "108d661a10bfef01",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "108d661a10bfef01",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.30833334",
+          "XMax": "0.62291664",
+          "YMin": "0.04375",
+          "YMax": "0.975",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "95dfd67c5a379231",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "95dfd67c5a379231",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.3375",
+          "XMax": "0.8208333",
+          "YMin": "0",
+          "YMax": "0.9734375",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "c95dcaa35f454f83",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "c95dcaa35f454f83",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.22382672",
+          "XMax": "0.4801444",
+          "YMin": "0.15884477",
+          "YMax": "0.9368231",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "c95dcaa35f454f83",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.5306859",
+          "XMax": "0.8032491",
+          "YMin": "0.16064982",
+          "YMax": "0.9548736",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "3d045770d7284126",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "3d045770d7284126",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.27272728",
+          "XMax": "0.5654102",
+          "YMin": "0.060382918",
+          "YMax": "0.82474226",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "6a022a9e9f413293",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "6a022a9e9f413293",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.054466233",
+          "XMax": "0.33551198",
+          "YMin": "0.019431988",
+          "YMax": "0.8729447",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "004a9745418ba5a6",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "004a9745418ba5a6",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.035555556",
+          "XMax": "0.9711111",
+          "YMin": "0.02496329",
+          "YMax": "0.958884",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "c8083badcd41c574",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "c8083badcd41c574",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.13465783",
+          "XMax": "0.44812363",
+          "YMin": "0.16248153",
+          "YMax": "0.9970458",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "fe771761597be821",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "fe771761597be821",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.22787611",
+          "XMax": "0.75663716",
+          "YMin": "0.07964602",
+          "YMax": "0.8923304",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "5f8d3927e65e93fd",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "5f8d3927e65e93fd",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.28519857",
+          "XMax": "0.6859206",
+          "YMin": "0.036101084",
+          "YMax": "0.9422383",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "376df24f5de612c2",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "376df24f5de612c2",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.5562914",
+          "XMax": "0.98234",
+          "YMin": "0.104719765",
+          "YMax": "0.9306785",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "69ebf1893ec9592b",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "69ebf1893ec9592b",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.46666667",
+          "XMax": "0.90833336",
+          "YMin": "0",
+          "YMax": "0.91875",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "01495549e1f4fd2e",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "01495549e1f4fd2e",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.26666668",
+          "XMax": "0.68125",
+          "YMin": "0.0265625",
+          "YMax": "0.9296875",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "26c4922f39ba3313",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "26c4922f39ba3313",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.2546875",
+          "XMax": "0.5265625",
+          "YMin": "0.23125",
+          "YMax": "0.875",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "26c4922f39ba3313",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.5296875",
+          "XMax": "0.7859375",
+          "YMin": "0.22291666",
+          "YMax": "0.85833335",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "c6e01d1d78d12de9",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "c6e01d1d78d12de9",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.5379061",
+          "XMax": "0.78519857",
+          "YMin": "0.23826715",
+          "YMax": "0.9620939",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "8abdcea0613ddf9c",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "8abdcea0613ddf9c",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.1875",
+          "XMax": "0.71875",
+          "YMin": "0",
+          "YMax": "0.9875",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "514428973df647c8",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "514428973df647c8",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.1101083",
+          "XMax": "0.46389893",
+          "YMin": "0.027075812",
+          "YMax": "0.566787",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "f96ef0bd271fb933",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "f96ef0bd271fb933",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.24729241",
+          "XMax": "0.5866426",
+          "YMin": "0.092057765",
+          "YMax": "0.94404334",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "3b2ad72f79a67af1",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "3b2ad72f79a67af1",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.23465703",
+          "XMax": "0.72924185",
+          "YMin": "0",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "b02546fa8b0787a2",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "b02546fa8b0787a2",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.3318584",
+          "XMax": "0.71460176",
+          "YMin": "0.084070794",
+          "YMax": "0.93510324",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "4ff79076428f2f9d",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "4ff79076428f2f9d",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.21568628",
+          "XMax": "0.78711486",
+          "YMin": "0.08614668",
+          "YMax": "0.9161816",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "0cda3f209a5461ed",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "0cda3f209a5461ed",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.28541666",
+          "XMax": "0.4875",
+          "YMin": "0.0609375",
+          "YMax": "0.665625",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "8be3c2ce1345f643",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "8be3c2ce1345f643",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.20100503",
+          "XMax": "0.6507538",
+          "YMin": "0.018181818",
+          "YMax": "0.94935066",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "a9ddf2c5d2a3325b",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "a9ddf2c5d2a3325b",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.15240084",
+          "XMax": "0.4572025",
+          "YMin": "0.0453125",
+          "YMax": "0.8859375",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "f454e8c8bec256ca",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "f454e8c8bec256ca",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.51666665",
+          "XMax": "0.8645833",
+          "YMin": "0.003125",
+          "YMax": "0.9984375",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "45cdb780d849d2f7",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "45cdb780d849d2f7",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.34750733",
+          "XMax": "0.56891495",
+          "YMin": "0.104444444",
+          "YMax": "1",
+          "IsOccluded": "1",
+          "IsTruncated": "1",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "3cf987ac62a42adf",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "3cf987ac62a42adf",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.33712122",
+          "XMax": "0.6931818",
+          "YMin": "0.03640777",
+          "YMax": "0.9708738",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "049d99faa622b032",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "049d99faa622b032",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.048387095",
+          "XMax": "0.3824885",
+          "YMin": "0.4858357",
+          "YMax": "0.9291785",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "049d99faa622b032",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.437788",
+          "XMax": "0.8894009",
+          "YMin": "0.05240793",
+          "YMax": "0.9759207",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "3f4c7f5c63e82ab5",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "3f4c7f5c63e82ab5",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.13247173",
+          "XMax": "0.44426495",
+          "YMin": "0.092929296",
+          "YMax": "0.93737376",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "3f4c7f5c63e82ab5",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.45880452",
+          "XMax": "0.65912765",
+          "YMin": "0.084848486",
+          "YMax": "0.93333334",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "3f4c7f5c63e82ab5",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.68497574",
+          "XMax": "0.8336026",
+          "YMin": "0.16161616",
+          "YMax": "0.9292929",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "a47d8017a8106c57",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "a47d8017a8106c57",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.0828125",
+          "XMax": "0.3296875",
+          "YMin": "0.10208333",
+          "YMax": "0.58958334",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "1cbdc945d69244da",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "1cbdc945d69244da",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.035416666",
+          "XMax": "0.52708334",
+          "YMin": "0",
+          "YMax": "0.9265625",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "367204f9e7deeed5",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "367204f9e7deeed5",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.14440434",
+          "XMax": "0.4404332",
+          "YMin": "0.054151624",
+          "YMax": "0.9404332",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "367204f9e7deeed5",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.5306859",
+          "XMax": "0.83212996",
+          "YMin": "0.066787004",
+          "YMax": "0.9368231",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "ead01475dcbe96b3",
+      "project_split": "val",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "ead01475dcbe96b3",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.2875",
+          "XMax": "0.4734375",
+          "YMin": "0.06458333",
+          "YMax": "0.8645833",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "ead01475dcbe96b3",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.5859375",
+          "XMax": "0.778125",
+          "YMin": "0.072916664",
+          "YMax": "0.8666667",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "a47b5dcfa59cf85a",
+      "project_split": "val",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "a47b5dcfa59cf85a",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.30752212",
+          "XMax": "0.69911504",
+          "YMin": "0.061946902",
+          "YMax": "0.9336283",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "cb490b8a63050d2d",
+      "project_split": "val",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "cb490b8a63050d2d",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.40929204",
+          "XMax": "0.6814159",
+          "YMin": "0.11356932",
+          "YMax": "0.8761062",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "00b729b5187a1898",
+      "project_split": "val",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "00b729b5187a1898",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.4625",
+          "XMax": "0.68333334",
+          "YMin": "0.0953125",
+          "YMax": "0.853125",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "9bd4b9d07153fd3d",
+      "project_split": "test",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "9bd4b9d07153fd3d",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.296875",
+          "XMax": "0.53125",
+          "YMin": "0.06875",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "9bd4b9d07153fd3d",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.5546875",
+          "XMax": "0.790625",
+          "YMin": "0.05625",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "68420c1f7592a8d1",
+      "project_split": "test",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "68420c1f7592a8d1",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.51292247",
+          "XMax": "0.9602386",
+          "YMin": "0",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "679d55687eb67ec6",
+      "project_split": "test",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "679d55687eb67ec6",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.24578314",
+          "XMax": "0.7253012",
+          "YMin": "0.020325202",
+          "YMax": "0.9688347",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "5838b213e80412de",
+      "project_split": "test",
+      "source_split": "test",
+      "class_name": "bottle",
+      "original_annotations": [
+        {
+          "ImageID": "5838b213e80412de",
+          "Source": "xclick",
+          "LabelName": "/m/04dr76w",
+          "Confidence": "1",
+          "XMin": "0.19583334",
+          "XMax": "0.48541668",
+          "YMin": "0.0328125",
+          "YMax": "0.8421875",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "2edc0212721c4f22",
+      "project_split": "train",
+      "source_split": "validation",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "2edc0212721c4f22",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.125",
+          "XMax": "0.8229167",
+          "YMin": "0.2140625",
+          "YMax": "0.8421875",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "5a6a4b7bb3362ff0",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "5a6a4b7bb3362ff0",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.16787003",
+          "XMax": "0.71119136",
+          "YMin": "0.12815884",
+          "YMax": "0.9801444",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "e61a9a29b7d22c3f",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "e61a9a29b7d22c3f",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0",
+          "XMax": "1",
+          "YMin": "0.075",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "1",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "ba17a42100323ba3",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "ba17a42100323ba3",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.039711192",
+          "XMax": "0.900722",
+          "YMin": "0.0054151625",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "6ea3590bdc6f214a",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "6ea3590bdc6f214a",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.24669604",
+          "XMax": "0.75477237",
+          "YMin": "0.013333334",
+          "YMax": "0.97333336",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "838932fef9f0d687",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "838932fef9f0d687",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.24475524",
+          "XMax": "0.758042",
+          "YMin": "0.2027972",
+          "YMax": "0.974359",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "f9ecba243c6b8a07",
+      "project_split": "train",
+      "source_split": "validation",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "f9ecba243c6b8a07",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0",
+          "XMax": "0.9977876",
+          "YMin": "0",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "1",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "e19f1889000fc327",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "e19f1889000fc327",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.17872968",
+          "XMax": "0.8788774",
+          "YMin": "0.0022075055",
+          "YMax": "1",
+          "IsOccluded": "1",
+          "IsTruncated": "1",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "756ded8d34dfe17f",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "756ded8d34dfe17f",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.065625",
+          "XMax": "1",
+          "YMin": "0",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "1",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "23487f4bf993138c",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "23487f4bf993138c",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.122599706",
+          "XMax": "0.5022157",
+          "YMin": "0.22075056",
+          "YMax": "0.98013246",
+          "IsOccluded": "1",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "560a2687acc7642d",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "560a2687acc7642d",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0",
+          "XMax": "1",
+          "YMin": "0",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "c028944212bdc80c",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "c028944212bdc80c",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.0018050541",
+          "XMax": "0.92238265",
+          "YMin": "0",
+          "YMax": "0.9187726",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "3a8eacfce3f15a7a",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "3a8eacfce3f15a7a",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.06603774",
+          "XMax": "0.8561321",
+          "YMin": "0.0453125",
+          "YMax": "0.96875",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "723e70fe85e0da69",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "723e70fe85e0da69",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.14052288",
+          "XMax": "0.5147059",
+          "YMin": "0.27145708",
+          "YMax": "0.91217566",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "723e70fe85e0da69",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.49509802",
+          "XMax": "0.9705882",
+          "YMin": "0.11177645",
+          "YMax": "0.74451095",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "4491ce28dbbaf88d",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "4491ce28dbbaf88d",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.2015625",
+          "XMax": "0.853125",
+          "YMin": "0.175",
+          "YMax": "0.9166667",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "99c396d655c7f4bb",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "99c396d655c7f4bb",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0",
+          "XMax": "1",
+          "YMin": "0.034375",
+          "YMax": "0.9640625",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "b1e29913cc7b71c8",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "b1e29913cc7b71c8",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.1125",
+          "XMax": "0.99791664",
+          "YMin": "0.0265625",
+          "YMax": "0.9984375",
+          "IsOccluded": "0",
+          "IsTruncated": "1",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "6148451becf88ccf",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "6148451becf88ccf",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.290625",
+          "XMax": "0.5921875",
+          "YMin": "0.020833334",
+          "YMax": "0.7708333",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "85afb20c62ea8d90",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "85afb20c62ea8d90",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.5",
+          "XMax": "0.7599278",
+          "YMin": "0.27436823",
+          "YMax": "0.5631769",
+          "IsOccluded": "1",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "a3ffd4ecf28e61e4",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "a3ffd4ecf28e61e4",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.2202166",
+          "XMax": "0.8140794",
+          "YMin": "0.03068592",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "20d393f65a9807c9",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "20d393f65a9807c9",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.18809202",
+          "XMax": "0.4533153",
+          "YMin": "0.33493975",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "7491dc5b881626cd",
+      "project_split": "train",
+      "source_split": "validation",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "7491dc5b881626cd",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.26144755",
+          "XMax": "0.72082716",
+          "YMin": "0.07726269",
+          "YMax": "0.9249448",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "425e746b1b3ff4d8",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "425e746b1b3ff4d8",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.20588236",
+          "XMax": "0.725",
+          "YMin": "0.09090909",
+          "YMax": "0.94013304",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "b33b34153db3acdd",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "b33b34153db3acdd",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.36956522",
+          "XMax": "0.74347824",
+          "YMin": "0.36336336",
+          "YMax": "0.9474474",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "528219663af7c0d2",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "528219663af7c0d2",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.45625",
+          "XMax": "0.7234375",
+          "YMin": "0.29166666",
+          "YMax": "0.6458333",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "1c6cef0118791af9",
+      "project_split": "train",
+      "source_split": "validation",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "1c6cef0118791af9",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.1201248",
+          "XMax": "0.61622465",
+          "YMin": "0",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "1c6cef0118791af9",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.58970356",
+          "XMax": "0.9173167",
+          "YMin": "0.0020876827",
+          "YMax": "0.97703546",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "76b8f1a90bcf997d",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "76b8f1a90bcf997d",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.37373737",
+          "XMax": "0.82222223",
+          "YMin": "0.037156705",
+          "YMax": "0.6930533",
+          "IsOccluded": "1",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "8eb63dd5f3f7b7f4",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "8eb63dd5f3f7b7f4",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.299639",
+          "XMax": "0.7635379",
+          "YMin": "0.20938627",
+          "YMax": "0.8880866",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "80e7f359721d28d1",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "80e7f359721d28d1",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.253125",
+          "XMax": "0.53125",
+          "YMin": "0.21041666",
+          "YMax": "0.7104167",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        },
+        {
+          "ImageID": "80e7f359721d28d1",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.459375",
+          "XMax": "0.7125",
+          "YMin": "0.35",
+          "YMax": "0.8229167",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "f46abc3b39b2f1e4",
+      "project_split": "train",
+      "source_split": "validation",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "f46abc3b39b2f1e4",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0",
+          "XMax": "0.9145833",
+          "YMin": "0",
+          "YMax": "0.971875",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "ffa382be7e2deb98",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "ffa382be7e2deb98",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0",
+          "XMax": "0.9749478",
+          "YMin": "0.08892356",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "f96e6b95f8e12bf4",
+      "project_split": "train",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "f96e6b95f8e12bf4",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.34583333",
+          "XMax": "0.63958335",
+          "YMin": "0.2890625",
+          "YMax": "0.578125",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "2fdfbd153b29517b",
+      "project_split": "val",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "2fdfbd153b29517b",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.104166664",
+          "XMax": "0.92083335",
+          "YMin": "0",
+          "YMax": "1",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "42ff928c38bdfcae",
+      "project_split": "val",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "42ff928c38bdfcae",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.075",
+          "XMax": "0.99791664",
+          "YMin": "0.0734375",
+          "YMax": "0.9328125",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "fe5a65073bd23137",
+      "project_split": "val",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "fe5a65073bd23137",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.14380531",
+          "XMax": "1",
+          "YMin": "0.21238938",
+          "YMax": "0.9424779",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "5b286cb11a433cf2",
+      "project_split": "val",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "5b286cb11a433cf2",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0",
+          "XMax": "1",
+          "YMin": "0.038348082",
+          "YMax": "0.84513277",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "dd41a62f2347d53d",
+      "project_split": "test",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "dd41a62f2347d53d",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.026548672",
+          "XMax": "0.88274336",
+          "YMin": "0.100294985",
+          "YMax": "0.91150445",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "b47df0cfa900475a",
+      "project_split": "test",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "b47df0cfa900475a",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0",
+          "XMax": "0.9863281",
+          "YMin": "0.016694492",
+          "YMax": "0.9933222",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "719fb10bd1cab470",
+      "project_split": "test",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "719fb10bd1cab470",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.27314815",
+          "XMax": "0.9837963",
+          "YMin": "0.011111111",
+          "YMax": "0.9611111",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    },
+    {
+      "image_id": "c5a63dc05121e7d4",
+      "project_split": "test",
+      "source_split": "test",
+      "class_name": "backpack",
+      "original_annotations": [
+        {
+          "ImageID": "c5a63dc05121e7d4",
+          "Source": "xclick",
+          "LabelName": "/m/01940j",
+          "Confidence": "1",
+          "XMin": "0.08303249",
+          "XMax": "0.86823106",
+          "YMin": "0.025270758",
+          "YMax": "0.9494585",
+          "IsOccluded": "0",
+          "IsTruncated": "0",
+          "IsGroupOf": "0",
+          "IsDepiction": "0",
+          "IsInside": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+approach,task_type,training_seconds,mean_inference_ms,median_inference_ms,std_inference_ms,primary_metric,primary_metric_value,precision,recall,f1,map50,map50_95,notes
+yolo_custom,detection,294.20896882399984,34.22255749995884,35.99341850008386,6.733129515945234,map50_95,0.0050391739578512,0.0020524113661964,0.525,,0.0130591911432284,0.0050391739578512,60 épocas; seleção em val; teste reservado; imagem 640; integração exige labels e treino
+yolo_standard,detection,,20.967936374859164,20.216365499891253,3.5945229180835456,,,,,,,,COCO; sem treino nesta base; mAP não calculado; imagem 640; uso direto com filtro por nomes
+cnn,classification,39.78870389500025,16.986262374928174,16.302937999853384,2.473944186413185,accuracy,0.875,0.9,0.875,0.873015873015873,,,Do zero; métricas macro; teste comum; 224x224; requer classe única e pipeline próprio
+yolo_improved,detection,234.42782436999983,27.506975124993005,28.233354500116548,11.894482672629282,map50_95,0.759696312620182,0.8204680922958334,0.9799404396427691,,0.995,0.759696312620182,Fine tuning COCO complementar 60 epocas; checkpoint58; mesmos oito arquivos; sessao T4 distinta; 640; avaliacao retrospectiva

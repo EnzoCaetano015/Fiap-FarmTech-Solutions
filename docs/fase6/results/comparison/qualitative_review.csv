@@ -1,0 +1,9 @@
+image,true_focus_class,cnn_prediction,cnn_confidence,cnn_correct,yolo_custom_classes,yolo_custom_focus_present,yolo_standard_classes,yolo_standard_focus_present,qualitative_note
+backpack_719fb10bd1cab470.jpg,backpack,backpack,0.5345006585121155,True,[],False,"[""bottle""]",False,Garrafa incidental real detectada pela COCO; mochila de foco não detectada.
+backpack_b47df0cfa900475a.jpg,backpack,backpack,0.7556099891662598,True,[],False,[],False,
+backpack_c5a63dc05121e7d4.jpg,backpack,bottle,0.8267725706100464,False,[],False,[],False,
+backpack_dd41a62f2347d53d.jpg,backpack,backpack,0.6665281653404236,True,[],False,[],False,
+bottle_5838b213e80412de.jpg,bottle,bottle,0.5181450247764587,True,[],False,"[""bottle""]",True,
+bottle_679d55687eb67ec6.jpg,bottle,bottle,0.6349828839302063,True,[],False,"[""bottle""]",True,
+bottle_68420c1f7592a8d1.jpg,bottle,bottle,0.5875095129013062,True,[],False,"[""bottle""]",True,
+bottle_9bd4b9d07153fd3d.jpg,bottle,bottle,0.8587052226066589,True,[],False,"[""bottle"", ""bottle""]",True,

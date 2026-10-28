@@ -1,0 +1,3 @@
+class_name,tp,fp,fn,images,images_with_matched_detection,precision,recall,metrics_split,confidence_threshold,match_iou_threshold
+bottle,5,1,0,4,4,0.8333333333333334,1.0,test,0.25,0.5
+backpack,3,0,1,4,3,1.0,0.75,test,0.25,0.5

@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-13",
+  "session": "fase6_final_001",
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+  "dataset_package_sha256": "51a01c51862133478be8927768c61364411cd137a893fe62171c281ecffb59fd",
+  "original_results_zip_sha256": "409e9509adef1d841c3282ad4e933bfdbe1cc94c3baec646eb453be2ea40168e",
+  "original_files_verified": 41,
+  "original_metrics_modified": false,
+  "new_inferences_during_review": false,
+  "colab_environment": {
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "torch": "2.5.1+cu124",
+    "tensorflow": "2.17.1",
+    "cuda": "12.4",
+    "gpu": "Tesla T4",
+    "tensorflow_gpu_count": 1,
+    "gpu_smoke_test": "torch operation and TensorFlow convolution passed",
+    "torch_cudnn": 90100,
+    "tensorflow_build": {
+      "cpu_compiler": "/usr/lib/llvm-17/bin/clang",
+      "cuda_compute_capabilities": [
+        "sm_60",
+        "sm_70",
+        "sm_80",
+        "sm_89",
+        "compute_90"
+      ],
+      "cuda_version": "12.3",
+      "cudnn_version": "8",
+      "is_cuda_build": true,
+      "is_rocm_build": false,
+      "is_tensorrt_build": true
+    },
+    "tensorflow_cudnn_package": "8.9.7.29",
+    "timestamp_utc": "2026-10-13T16:52:12.601788+00:00",
+    "seed": 42,
+    "yolov5_ref": "v7.0",
+    "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+    "contract": {
+      "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1",
+      "gpu": "Tesla T4",
+      "cuda": "12.4",
+      "torch": "2.5.1+cu124",
+      "tensorflow": "2.17.1",
+      "python": "3.12.13",
+      "yolov5_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+      "seed": 42,
+      "model": "yolov5s",
+      "image_size": 640,
+      "batch_size": 16,
+      "patience": 0,
+      "weights": ""
+    },
+    "dataset_counts": {
+      "train": 64,
+      "val": 8,
+      "test": 8
+    },
+    "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1"
+  },
+  "completed_epochs": {
+    "yolo_30": 30,
+    "yolo_60": 60,
+    "cnn": 30
+  },
+  "best_epochs": {
+    "yolo_30": 30,
+    "yolo_60": 59,
+    "cnn": 29
+  },
+  "raw_yolo_option_differences": [
+    "epochs",
+    "name",
+    "save_dir"
+  ],
+  "option_difference_note": "save_dir is derived from experiment name; epochs and name are the only independent changes",
+  "selection": "validation only; custom_60_epochs; checkpoint epoch 59",
+  "test_images": [
+    "backpack_719fb10bd1cab470.jpg",
+    "backpack_b47df0cfa900475a.jpg",
+    "backpack_c5a63dc05121e7d4.jpg",
+    "backpack_dd41a62f2347d53d.jpg",
+    "bottle_5838b213e80412de.jpg",
+    "bottle_679d55687eb67ec6.jpg",
+    "bottle_68420c1f7592a8d1.jpg",
+    "bottle_9bd4b9d07153fd3d.jpg"
+  ],
+  "cnn_correct": 7,
+  "cnn_confusion_matrix": [
+    [
+      4,
+      0
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "unavailable_coco_metrics": [
+    "map50",
+    "map50_95",
+    "precision",
+    "recall",
+    "f1"
+  ],
+  "yolo30_recovery": "Original perf_counter duration recovered from train call traceback; execution.json persisted; CSV/checkpoint verified; no retraining",
+  "review_execution": "Real local Jupyter Python 3.11.17 over SHA-256 verified Colab results; qualitative table and figure only",
+  "pending": [
+    "human video recording, unlisted publication and URL",
+    "positive backpack detection evidence not demonstrated by these test predictions",
+    "student commit/push and public GitHub link verification"
+  ]
+}

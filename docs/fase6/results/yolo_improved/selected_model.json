@@ -1,0 +1,10 @@
+{
+  "experiment": "transfer_60_epochs",
+  "epochs": 60,
+  "best_epoch": 58,
+  "metrics_split": "val",
+  "criterion": "map50_95, map50, menor tempo, menos epocas",
+  "initialization": "COCO pretrained; supplementary fine tuning",
+  "checkpoint_sha256": "6fedc77d0d511c5e86f9fb4a1a6abe8bdc52ef62b6e6e393e1c51b3c68082eb4",
+  "dataset_fingerprint": "f8bb47c02934ae7bf3b4d2256eed4ec062bec252e1f6411d1cfecc90f67d3cc1"
+}

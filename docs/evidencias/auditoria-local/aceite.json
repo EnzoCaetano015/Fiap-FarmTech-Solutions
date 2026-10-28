@@ -1,0 +1,17 @@
+{
+  "testes_ambiente_atual": 43,
+  "testes_ambiente_limpo": 43,
+  "python": "3.11.18",
+  "integracoes_locais": true,
+  "upload_streamlit_com_modelo_real": true,
+  "firmware_compilado": true,
+  "firmware_sha256": "ea9d7e898c62f6762d17fe1893051279a13b6cb84910738d2513594cee483850",
+  "browser_upload_manual": "validado: imagem anotada e evento confirmados no Chrome",
+  "aws_validada": false,
+  "email_recebido_validado": false,
+  "liberacao_incondicional_aws": false,
+  "motivo_pendencia_local": null,
+  "aceite_funcional_local_aprovado": true,
+  "apto_para_etapa_validacao_aws": true,
+  "observacao_aws": "Implantação depende de permissões e validação real no laboratório; não foi iniciada nesta etapa"
+}

@@ -1,0 +1,3 @@
+experiment,epochs,best_epoch,precision,recall,map50,map50_95,box_loss,obj_loss,cls_loss,training_seconds
+transfer_30_epochs,30,28,0.92899,0.875,0.97,0.70062,0.017626,0.0067112,0.0017354,148.12721162100001
+transfer_60_epochs,60,58,0.87486,0.85017,0.92556,0.70512,0.01458,0.0047457,0.00051708,234.42782436999983

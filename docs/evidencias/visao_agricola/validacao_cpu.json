@@ -1,0 +1,192 @@
+{
+  "criterio": "Duas primeiras imagens de cada classe exclusiva, ordenadas pelo nome/hash, sem filtrar por predição",
+  "observacao": "Revisão qualitativa após avaliação final; quatro imagens não substituem as métricas dos 69 testes",
+  "alertas_aws_enviados": false,
+  "amostras": [
+    {
+      "amostra": 1,
+      "classe_rotulada": "folha_saudavel",
+      "arquivo_dataset": "36d4cf67739d3d7b079eed20331535674781886f75abbf7f010999a45b00980f.jpg",
+      "evento": "e4597080f51c4bef9b2288c88e60b49f",
+      "duracao_operacao_s": 6.793,
+      "deteccoes": [
+        {
+          "classe": "folha_saudavel",
+          "confianca": 0.6310227513313293,
+          "caixa_xyxy": [
+            221.93099975585938,
+            679.6975708007812,
+            496.7192077636719,
+            799.3314819335938
+          ]
+        },
+        {
+          "classe": "folha_saudavel",
+          "confianca": 0.5379692912101746,
+          "caixa_xyxy": [
+            982.26171875,
+            889.8556518554688,
+            1202.520751953125,
+            1197.09619140625
+          ]
+        },
+        {
+          "classe": "folha_com_sinais_de_doenca",
+          "confianca": 0.5119581818580627,
+          "caixa_xyxy": [
+            361.9212951660156,
+            982.10400390625,
+            554.9029541015625,
+            1191.2994384765625
+          ]
+        },
+        {
+          "classe": "folha_saudavel",
+          "confianca": 0.39003774523735046,
+          "caixa_xyxy": [
+            506.0205078125,
+            790.3610229492188,
+            772.8799438476562,
+            952.4686889648438
+          ]
+        },
+        {
+          "classe": "folha_com_sinais_de_doenca",
+          "confianca": 0.38919761776924133,
+          "caixa_xyxy": [
+            871.0187377929688,
+            380.2944030761719,
+            1085.195068359375,
+            601.1373901367188
+          ]
+        }
+      ],
+      "caixas_anotadas": 10,
+      "tp_iou50_conf25": 3,
+      "fp_iou50_conf25": 2,
+      "fn_iou50_conf25": 7,
+      "regras_acionadas": [
+        [
+          "sinais_doenca",
+          "Registrar a imagem e inspecionar as plantas do talhão com responsável técnico."
+        ]
+      ],
+      "pixels_entrada_sha256": "7b3779a3e96748448be9edfe7cac83832650f19708c6ebbe75f9de6d798b066f"
+    },
+    {
+      "amostra": 2,
+      "classe_rotulada": "folha_saudavel",
+      "arquivo_dataset": "66d8d18b9bf9c8d83efd3a0cf09c53fbbd575795a518b57a66bc338c11c07069.jpg",
+      "evento": "4d6ae96aa36f408c8ef536bf5256744c",
+      "duracao_operacao_s": 0.4751,
+      "deteccoes": [
+        {
+          "classe": "folha_saudavel",
+          "confianca": 0.8360264897346497,
+          "caixa_xyxy": [
+            399.4413146972656,
+            150.7100067138672,
+            524.1975708007812,
+            454.675537109375
+          ]
+        },
+        {
+          "classe": "folha_saudavel",
+          "confianca": 0.8164858222007751,
+          "caixa_xyxy": [
+            208.20849609375,
+            22.08921241760254,
+            488.5920715332031,
+            154.02545166015625
+          ]
+        },
+        {
+          "classe": "folha_saudavel",
+          "confianca": 0.6053146719932556,
+          "caixa_xyxy": [
+            14.192550659179688,
+            120.88333892822266,
+            427.4154052734375,
+            381.1329345703125
+          ]
+        }
+      ],
+      "caixas_anotadas": 3,
+      "tp_iou50_conf25": 3,
+      "fp_iou50_conf25": 0,
+      "fn_iou50_conf25": 0,
+      "regras_acionadas": [],
+      "pixels_entrada_sha256": "9a8425e45346758492e98a57b7e664653ae14610cb94d4d4dbd4464a2c02f37e"
+    },
+    {
+      "amostra": 3,
+      "classe_rotulada": "folha_com_sinais_de_doenca",
+      "arquivo_dataset": "0024d2b0e3bd578375ffb676d5c5a20c3f6d82d335f8758a215a539ac3a27ff6.jpg",
+      "evento": "1ca3ae3de7c74964981eaadbc411b8d9",
+      "duracao_operacao_s": 0.8237,
+      "deteccoes": [
+        {
+          "classe": "folha_com_sinais_de_doenca",
+          "confianca": 0.6493655443191528,
+          "caixa_xyxy": [
+            0.0,
+            207.81912231445312,
+            1258.1116943359375,
+            1267.0
+          ]
+        }
+      ],
+      "caixas_anotadas": 1,
+      "tp_iou50_conf25": 1,
+      "fp_iou50_conf25": 0,
+      "fn_iou50_conf25": 0,
+      "regras_acionadas": [
+        [
+          "sinais_doenca",
+          "Registrar a imagem e inspecionar as plantas do talhão com responsável técnico."
+        ]
+      ],
+      "pixels_entrada_sha256": "74ba382dfcf9f978193dda072acb3c0ee966dc0730d8001efc6b91eda21e18c7"
+    },
+    {
+      "amostra": 4,
+      "classe_rotulada": "folha_com_sinais_de_doenca",
+      "arquivo_dataset": "038898eee33130b1e02ecee95413923d4c51b9f81bd0277c29381a479bf53f2c.jpg",
+      "evento": "beef1669376141c6ac3656862d5add4d",
+      "duracao_operacao_s": 0.5012,
+      "deteccoes": [
+        {
+          "classe": "folha_com_sinais_de_doenca",
+          "confianca": 0.6681756377220154,
+          "caixa_xyxy": [
+            34.205421447753906,
+            12.080254554748535,
+            235.91639709472656,
+            133.32769775390625
+          ]
+        },
+        {
+          "classe": "folha_com_sinais_de_doenca",
+          "confianca": 0.270192950963974,
+          "caixa_xyxy": [
+            24.623737335205078,
+            86.36849212646484,
+            83.86520385742188,
+            144.06858825683594
+          ]
+        }
+      ],
+      "caixas_anotadas": 1,
+      "tp_iou50_conf25": 1,
+      "fp_iou50_conf25": 1,
+      "fn_iou50_conf25": 0,
+      "regras_acionadas": [
+        [
+          "sinais_doenca",
+          "Registrar a imagem e inspecionar as plantas do talhão com responsável técnico."
+        ]
+      ],
+      "pixels_entrada_sha256": "02454bcf0008405857ab231888a335f492d255c31ba8c1b90a5d87ad3e3c5f8f"
+    }
+  ]
+}

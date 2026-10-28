@@ -1,0 +1,20 @@
+[Unit]
+Description=FarmTech independent sensor and vision monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/farmtech
+EnvironmentFile=/opt/farmtech/.env
+Environment=FARMTECH_STATE_DIR=/var/lib/farmtech
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/farmtech/.venv/bin/python -m farmtech monitor --interval 10
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

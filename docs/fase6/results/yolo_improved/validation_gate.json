@@ -1,0 +1,6 @@
+{
+  "metrics_split": "val",
+  "both_classes_matched": true,
+  "confidence_threshold": 0.25,
+  "match_iou_threshold": 0.5
+}

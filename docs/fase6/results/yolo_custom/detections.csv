@@ -1,0 +1,9 @@
+image,predicted_class,confidence,xmin,ymin,xmax,ymax,inference_ms
+backpack_719fb10bd1cab470.jpg,,,,,,,18.133338999632542
+backpack_b47df0cfa900475a.jpg,,,,,,,37.309186999664234
+backpack_c5a63dc05121e7d4.jpg,,,,,,,40.007536000302935
+backpack_dd41a62f2347d53d.jpg,,,,,,,35.539536000214866
+bottle_5838b213e80412de.jpg,,,,,,,36.936704000254394
+bottle_679d55687eb67ec6.jpg,,,,,,,34.004843999809964
+bottle_68420c1f7592a8d1.jpg,,,,,,,35.40201299983892
+bottle_9bd4b9d07153fd3d.jpg,,,,,,,36.44730099995286

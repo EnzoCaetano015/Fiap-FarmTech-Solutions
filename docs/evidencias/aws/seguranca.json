@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "instance_id": "i-09a66c2f286224171",
+  "state": "running",
+  "instance_checks": [
+    {
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "AttachedEbsStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    }
+  ],
+  "ingress_only_presenter_ipv4_32": true,
+  "ingress_ports": [
+    22,
+    8501
+  ],
+  "imds_v2_required": true,
+  "ebs_encrypted_gp3_30gb": true,
+  "instance_profile": "LabInstanceProfile",
+  "sns_email_confirmed": true,
+  "artifact_bucket_public_access_blocked": {
+    "BlockPublicAcls": true,
+    "IgnorePublicAcls": true,
+    "BlockPublicPolicy": true,
+    "RestrictPublicBuckets": true
+  },
+  "artifact_encryption": "AES256",
+  "artifact_expiration_days": 7,
+  "temporary_install_transport_only": true,
+  "iam_roles_created": false
+}

@@ -1,0 +1,6 @@
+{
+  "parameter": "/farmtech/fase7/oracle",
+  "type": "SecureString",
+  "version": 1,
+  "secrets_printed": false
+}

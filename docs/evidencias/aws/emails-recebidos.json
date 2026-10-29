@@ -1,0 +1,34 @@
+{
+  "verified_by": "Gmail API; conteúdo e cabeçalho x-amz-sns-message-id",
+  "received_count": 2,
+  "receipts": [
+    {
+      "gmail_message_id": "1a184dd0094390e4",
+      "gmail_thread_id": "1a184dd0094390e4",
+      "received_at_utc": "2026-10-28T23:33:58.000Z",
+      "sender": "AWS Notifications <no-reply@sns.amazonaws.com>",
+      "recipient_confirmed": true,
+      "recipient_masked": "p***@gmail.com",
+      "subject": "FarmTech: alerta e ação corretiva",
+      "sns_message_id": "c4912498-5e18-5ce8-b4f9-47c4d6bedf57",
+      "event_id": "cb03c0dffc0eefa51b6476e5becff4a1bdf2bc118e2d3681e6100e7411c6a93c",
+      "source": "sensores",
+      "body_without_unsubscribe_link": "FarmTech Solutions — SIMULAÇÃO\r\nTalhão: talhao-aws-demo\r\nOrigem: sensores\r\nHorário observado: 2026-10-28T23:33:55.438718+00:00\r\nEvento: cb03c0dffc0eefa51b6476e5becff4a1bdf2bc118e2d3681e6100e7411c6a93c\r\nDados: {\"data_hora\": \"2026-10-28T23:33:55.438718+00:00\", \"data_hora_original\": \"2026-10-28T23:33:55.419081+00:00\", \"k\": 0, \"n\": 0, \"nivel_chuva\": 2, \"p\": 0, \"ph\": 5.4, \"simulado\": true, \"status_irrigacao\": \"DESLIGADA\", \"sugestao\": \"Demonstração AWS: leitura simulada crítica; chuva forte, adiar irrigação\", \"temperatura\": 30.0, \"umidade\": 25.0}\r\n\r\numidade_baixa: Verificar o talhão e adiar irrigação: chuva forte prevista.\r\nph_fora_faixa: Conferir medição e avaliar correção do solo com responsável técnico.\r\nausencia_n: Verificar disponibilidade de N e avaliar manejo nutricional.\r\nausencia_p: Verificar disponibilidade de P e avaliar manejo nutricional.\r\nausencia_k: Verificar disponibilidade de K e avaliar manejo nutricional.",
+      "inbox": true
+    },
+    {
+      "gmail_message_id": "1a184dd2ad994351",
+      "gmail_thread_id": "1a184dd0094390e4",
+      "received_at_utc": "2026-10-28T23:34:08.000Z",
+      "sender": "AWS Notifications <no-reply@sns.amazonaws.com>",
+      "recipient_confirmed": true,
+      "recipient_masked": "p***@gmail.com",
+      "subject": "FarmTech: alerta e ação corretiva",
+      "sns_message_id": "f906d166-2a46-56d9-9ad6-b23aa2f60eac",
+      "event_id": "107f32b64e05462cb10af4be2e8712d1",
+      "source": "visao",
+      "body_without_unsubscribe_link": "FarmTech Solutions — MONITORAMENTO\r\nTalhão: talhao-aws-demo\r\nOrigem: visao\r\nHorário observado: 2026-10-28T23:34:05.579686+00:00\r\nEvento: 107f32b64e05462cb10af4be2e8712d1\r\nDados: {\"deteccoes\": [{\"caixa_xyxy\": [0.0, 207.81912231445312, 1258.1116943359375, 1267.0], \"classe\": \"folha_com_sinais_de_doenca\", \"confianca\": 0.6493655443191528}], \"imagem\": \"/var/lib/farmtech/visao/107f32b64e05462cb10af4be2e8712d1/entrada.png\", \"imagem_original_sha256\": \"74ba382dfcf9f978193dda072acb3c0ee966dc0730d8001efc6b91eda21e18c7\", \"imagem_sha256\": \"1fdb4091458cef99801d26340d535c10bac05f804bb75db9bae54fb6a4afd87d\", \"pesos_sha256\": \"318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832\", \"resultado\": \"Detecções observadas\", \"simulado\": false}\r\n\r\nsinais_doenca: Registrar a imagem e inspecionar as plantas do talhão com responsável técnico.",
+      "inbox": true
+    }
+  ]
+}

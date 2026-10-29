@@ -1,0 +1,88 @@
+{
+  "platform": "linux",
+  "python": "3.11.18",
+  "checks": {
+    "area": {
+      "ok": true,
+      "data": {
+        "data_hora": "2026-10-28T23:32:44.135814+00:00",
+        "formato": "retangulo",
+        "area_m2": 20000.0,
+        "area_ha": 2.0,
+        "dose_kg_ha": 12.0,
+        "insumo_kg": 24.0
+      }
+    },
+    "R": {
+      "ok": true,
+      "data": {
+        "files": [
+          "/tmp/tmphkbt59lx/analise_r_cd5da41a73c649f1abce8b4cb24c83c4/sensores.png",
+          "/tmp/tmphkbt59lx/analise_r_cd5da41a73c649f1abce8b4cb24c83c4/estatisticas.csv"
+        ]
+      }
+    },
+    "weather": {
+      "ok": true,
+      "data": {
+        "nivel_chuva": 1,
+        "descricao": "Chuva fraca/moderada"
+      }
+    },
+    "oracle": {
+      "ok": true,
+      "data": {
+        "first": {
+          "inseridos": 0,
+          "existentes": 10
+        },
+        "second": {
+          "inseridos": 0,
+          "existentes": 10
+        },
+        "rows": 10
+      }
+    },
+    "predictions": {
+      "ok": true,
+      "data": {
+        "synthetic": true,
+        "predictions": {
+          "umidade_prevista": 46.908708763453106,
+          "ph_previsto": 6.722299452189103,
+          "produtividade_estimada": 67.61970179832419
+        }
+      }
+    },
+    "bundle_cpu": {
+      "ok": true,
+      "data": {
+        "torch": "2.5.1+cpu",
+        "yolo_commit": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+        "weights_sha256": "318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832"
+      }
+    },
+    "http_local": {
+      "ok": true,
+      "data": {
+        "status": 200
+      }
+    },
+    "dashboard": {
+      "ok": true,
+      "data": {
+        "tabs": [
+          "Monitoramento",
+          "ML e métricas",
+          "Previsão interativa",
+          "Serviços",
+          "Visão agrícola",
+          "Alertas"
+        ],
+        "oracle_rows": 10
+      }
+    }
+  },
+  "aws_credentials_provider": "iam-role",
+  "all_checks_passed": true
+}

@@ -82,3 +82,12 @@ Trocar de setor exige ajustar esquema de dados, regras e classes/modelos quando
 necessário; não é suficiente trocar valores de CSV quando a semântica muda.
 
 Eventos inválidos ficam preservados com `processed=-1` e `error`, visíveis no histórico; o monitor continua processando os demais. A migração do SQLite acrescenta essa coluna sem apagar registros.
+
+
+## Implantação comprovada
+
+EC2 usa LabInstanceProfile/LabRole e IMDSv2, sem chaves AWS na aplicação. A
+configuração Oracle foi transferida, mediante autorização específica, como
+SecureString em Parameter Store e instalada no .env de permissão 600. O bucket
+privado é transporte de instalação/evidências com expiração, não uma dependência
+da aplicação em operação. Veja [implantação AWS](implantacao-aws.md).

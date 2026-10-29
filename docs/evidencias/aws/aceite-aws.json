@@ -1,0 +1,26 @@
+{
+  "validated_on": "2026-10-28",
+  "region": "us-east-1",
+  "instance_id": "i-09a66c2f286224171",
+  "cloud_deployment_validated": true,
+  "linux_tests_passed": 43,
+  "all_cloud_service_checks_passed": true,
+  "sns_publications_accepted": 2,
+  "emails_received_verified": 2,
+  "receipt_match_by_sns_message_id": true,
+  "dashboard_stopped_during_publication": true,
+  "monitor_restart_validated": true,
+  "suppression_validated": true,
+  "security_audit_passed": true,
+  "oracle_real_connected_from_ec2": true,
+  "new_iam_roles_created": false,
+  "aws_access_keys_in_project": false,
+  "oracle_secure_string_authorized_by_user": true,
+  "dashboard_url": "http://54.166.136.107:8501",
+  "limitations": [
+    "ESP32 físico/Wokwi não executados; replay CSV e compilação validados",
+    "Detector com falsos positivos/omissões documentados",
+    "IP público e disponibilidade dependem da sessão do Learner Lab"
+  ],
+  "instance_left_running": true
+}

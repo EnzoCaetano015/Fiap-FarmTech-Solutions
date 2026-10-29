@@ -1,0 +1,97 @@
+{
+  "sensor": {
+    "execution": {
+      "id": "9ab30429a12d4e908356d05cf448b4d8",
+      "servico": "iot",
+      "sucesso": true,
+      "dados": {
+        "eventos": [
+          "cb03c0dffc0eefa51b6476e5becff4a1bdf2bc118e2d3681e6100e7411c6a93c"
+        ],
+        "leituras": 1,
+        "simulado": true,
+        "horario": "atual"
+      },
+      "arquivos": [],
+      "erro": null,
+      "duracao_s": 0.0119,
+      "saida": ""
+    },
+    "outbox": {
+      "id": "67aa46f56e6f45a7b57d5fa4b72242e5",
+      "event_id": "cb03c0dffc0eefa51b6476e5becff4a1bdf2bc118e2d3681e6100e7411c6a93c",
+      "plot": "talhao-aws-demo",
+      "rules": "[\"umidade_baixa\", \"ph_fora_faixa\", \"ausencia_n\", \"ausencia_p\", \"ausencia_k\"]",
+      "body": "FarmTech Solutions — SIMULAÇÃO\nTalhão: talhao-aws-demo\nOrigem: sensores\nHorário observado: 2026-10-28T23:33:55.438718+00:00\nEvento: cb03c0dffc0eefa51b6476e5becff4a1bdf2bc118e2d3681e6100e7411c6a93c\nDados: {\"data_hora\": \"2026-10-28T23:33:55.438718+00:00\", \"data_hora_original\": \"2026-10-28T23:33:55.419081+00:00\", \"k\": 0, \"n\": 0, \"nivel_chuva\": 2, \"p\": 0, \"ph\": 5.4, \"simulado\": true, \"status_irrigacao\": \"DESLIGADA\", \"sugestao\": \"Demonstração AWS: leitura simulada crítica; chuva forte, adiar irrigação\", \"temperatura\": 30.0, \"umidade\": 25.0}\n\numidade_baixa: Verificar o talhão e adiar irrigação: chuva forte prevista.\nph_fora_faixa: Conferir medição e avaliar correção do solo com responsável técnico.\nausencia_n: Verificar disponibilidade de N e avaliar manejo nutricional.\nausencia_p: Verificar disponibilidade de P e avaliar manejo nutricional.\nausencia_k: Verificar disponibilidade de K e avaliar manejo nutricional.",
+      "status": "published",
+      "created": 1793230438.1382055,
+      "updated": 1793230438.149601,
+      "attempts": 1,
+      "next_attempt": 0.0,
+      "message_id": "c4912498-5e18-5ce8-b4f9-47c4d6bedf57",
+      "error": null
+    }
+  },
+  "dashboard_stopped_during_sensor_publish": true,
+  "vision": {
+    "execution": {
+      "id": "c0366b2cf7574619a8984d4bb1f15cdf",
+      "servico": "visao",
+      "sucesso": true,
+      "dados": {
+        "deteccoes": [
+          {
+            "classe": "folha_com_sinais_de_doenca",
+            "confianca": 0.6493655443191528,
+            "caixa_xyxy": [
+              0.0,
+              207.81912231445312,
+              1258.1116943359375,
+              1267.0
+            ]
+          }
+        ],
+        "imagem": "/var/lib/farmtech/visao/107f32b64e05462cb10af4be2e8712d1/entrada.png",
+        "imagem_sha256": "1fdb4091458cef99801d26340d535c10bac05f804bb75db9bae54fb6a4afd87d",
+        "imagem_original_sha256": "74ba382dfcf9f978193dda072acb3c0ee966dc0730d8001efc6b91eda21e18c7",
+        "pesos_sha256": "318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832",
+        "resultado": "Detecções observadas",
+        "simulado": false,
+        "evento": "107f32b64e05462cb10af4be2e8712d1"
+      },
+      "arquivos": [
+        "/var/lib/farmtech/visao/107f32b64e05462cb10af4be2e8712d1/entrada.png",
+        "/var/lib/farmtech/visao/107f32b64e05462cb10af4be2e8712d1/resultado.json",
+        "/var/lib/farmtech/visao/107f32b64e05462cb10af4be2e8712d1/anotada.jpg"
+      ],
+      "erro": null,
+      "duracao_s": 6.9902,
+      "saida": ""
+    },
+    "outbox": {
+      "id": "31243f08abae459da2653917389b78e6",
+      "event_id": "107f32b64e05462cb10af4be2e8712d1",
+      "plot": "talhao-aws-demo",
+      "rules": "[\"sinais_doenca\"]",
+      "body": "FarmTech Solutions — MONITORAMENTO\nTalhão: talhao-aws-demo\nOrigem: visao\nHorário observado: 2026-10-28T23:34:05.579686+00:00\nEvento: 107f32b64e05462cb10af4be2e8712d1\nDados: {\"deteccoes\": [{\"caixa_xyxy\": [0.0, 207.81912231445312, 1258.1116943359375, 1267.0], \"classe\": \"folha_com_sinais_de_doenca\", \"confianca\": 0.6493655443191528}], \"imagem\": \"/var/lib/farmtech/visao/107f32b64e05462cb10af4be2e8712d1/entrada.png\", \"imagem_original_sha256\": \"74ba382dfcf9f978193dda072acb3c0ee966dc0730d8001efc6b91eda21e18c7\", \"imagem_sha256\": \"1fdb4091458cef99801d26340d535c10bac05f804bb75db9bae54fb6a4afd87d\", \"pesos_sha256\": \"318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832\", \"resultado\": \"Detecções observadas\", \"simulado\": false}\n\nsinais_doenca: Registrar a imagem e inspecionar as plantas do talhão com responsável técnico.",
+      "status": "published",
+      "created": 1793230448.6003177,
+      "updated": 1793230448.6113586,
+      "attempts": 1,
+      "next_attempt": 0.0,
+      "message_id": "f906d166-2a46-56d9-9ad6-b23aa2f60eac",
+      "error": null
+    }
+  },
+  "repeat_event": "dc267b8dba95142d41cbc95ce3a1a43a57b0b3efef893d535dc410a658d85ae6",
+  "repeat_suppressed": true,
+  "monitor_restarted_between_origins": true,
+  "dashboard_stopped_during_vision_publish": true,
+  "sns_accepted": true,
+  "email_received": {
+    "verified": true,
+    "method": "Gmail API; body event ID and x-amz-sns-message-id match outbox",
+    "count": 2,
+    "receipt_file": "emails-recebidos.json"
+  }
+}

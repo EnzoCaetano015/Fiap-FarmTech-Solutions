@@ -1,0 +1,28 @@
+{
+  "region": "us-east-1",
+  "instance_id": "i-09a66c2f286224171",
+  "ami": "ami-033ea4ff4a9c726dc",
+  "type": "t3.medium",
+  "volume_gb": 30,
+  "volume_encrypted": true,
+  "imds_v2": true,
+  "instance_profile": "LabInstanceProfile",
+  "security_group": "sg-017cf11ead242b775",
+  "presenter_cidr": "190.115.65.134/32",
+  "subnet": "subnet-0fd44727ece4192b9",
+  "topic_arn": "arn:aws:sns:us-east-1:063386412529:farmtech-alertas",
+  "artifact_bucket": "farmtech-fase7-063386412529-us-east-1",
+  "artifact_key": "releases/ead069ea921a4654/FarmTech-Fase7.zip",
+  "package_sha256": "ead069ea921a46545943b7f49f262a2da37ab1e3e51884af7433f6ea584a25bf",
+  "status": "running",
+  "public_ip": "54.166.136.107",
+  "public_dns": "ec2-54-166-136-107.compute-1.amazonaws.com",
+  "ssm": [
+    {
+      "PingStatus": "Online",
+      "AgentVersion": "3.3.4793.0",
+      "PlatformName": "Ubuntu",
+      "PlatformVersion": "22.04"
+    }
+  ]
+}

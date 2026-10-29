@@ -113,14 +113,18 @@ python -m unittest discover -s tests -v
 
 Veja [matriz de atendimento](docs/matriz-entrega.md), [evidências](docs/evidencias/STATUS.md)
 e [roteiro do vídeo](docs/roteiro-video.md). IA na AWS e algoritmos genéticos ficam
-fora do escopo desta entrega. Não foram executados commit, push ou publicação automática.
+fora do escopo desta entrega. A implantação foi autorizada e validada; não houve commit/push automático nesta etapa.
 
 ## Resultados agrícolas e aceite atual
 
 Treinos 30/60 concluídos na T4; validação selecionou **30 épocas**. No teste reservado de 69 imagens: mAP50 **0,6115**, mAP50:95 **0,3758**. Quatro inferências CPU foram verificadas, incluindo erros. Veja [resultados reais](docs/resultados-visao.md).
 
-Oracle real foi validado com dez registros e repetição sem duplicatas. A implantação AWS ficou para depois por solicitação do usuário. O fluxo de upload foi validado em Streamlit AppTest com inferência CPU real e também confirmado no Chrome, com imagem anotada e evento persistido. O critério funcional local está atendido para iniciar a validação da implantação AWS.
+Oracle real foi validado localmente e na EC2, com dez registros e repetição sem duplicatas. A implantação AWS foi concluída em 28/10/2026: dashboard e monitor ativos, 43 testes Linux aprovados e dois e-mails reais recebidos e correlacionados com MessageId SNS. Veja [implantação comprovada](docs/implantacao-aws.md).
 
 ## Auditoria funcional local
 
 43 testes passaram no ambiente atual e em uma instalação limpa. Oracle, R, API climática, treino preditivo, inferência CPU, dashboard e monitor independente foram executados. O firmware ESP32 também compilou. Correções, evidências e pendências de aceite: [validação local](docs/validacao-local.md).
+
+## Acesso AWS validado
+
+[Dashboard EC2](http://54.166.136.107:8501), restrita ao IP autorizado. Use o talhão `talhao-aws-demo` para ver a demonstração. A EC2 permanece ligada; consulte [operação, reinício e encerramento](docs/implantacao-aws.md).

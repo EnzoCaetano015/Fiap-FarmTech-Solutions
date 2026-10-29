@@ -1,4 +1,4 @@
-# Arquitetura integrada — Fase 7
+# Arquitetura geral — FarmTech Solutions
 
 ```mermaid
 flowchart LR
@@ -6,8 +6,8 @@ flowchart LR
     CLI[Terminal Python] --> OPS
     OPS --> F1[Área, R e clima]
     OPS --> IOT[Replay CSV do ESP32]
-    OPS --> ORA[Oracle Fase 3]
-    OPS --> ML[Modelos sintéticos Fase 4]
+    OPS --> ORA[Persistência Oracle]
+    OPS --> ML[Modelos preditivos sintéticos]
     OPS --> CV[Inferência YOLO tomate]
     IOT --> DB[(SQLite operacional)]
     CV --> DB
@@ -72,9 +72,9 @@ do Wokwi. O replay integra o CSV; imagens são submetidas na dashboard ou CLI.
 
 ## Modelos e adaptação
 
-Fase 4: a base ampliada e seus alvos são sintéticos; as métricas medem esse experimento.
-Fase 6: os resultados de garrafas/mochilas permanecem históricos e separados.
-Fase 7: o detector agrícola precisa de pesos produzidos pelo novo treino PlantDoc.
+A base ampliada e os alvos dos modelos preditivos são sintéticos; suas métricas medem
+esse experimento. Os resultados históricos de garrafas/mochilas ficam separados
+do detector agrícola, que utiliza pesos produzidos pelo treinamento PlantDoc.
 Nenhum resultado anterior substitui sua avaliação. Sem bundle, a interface informa
 indisponibilidade; sem caixas detectadas, mostra resultado inconclusivo.
 
@@ -83,11 +83,13 @@ necessário; não é suficiente trocar valores de CSV quando a semântica muda.
 
 Eventos inválidos ficam preservados com `processed=-1` e `error`, visíveis no histórico; o monitor continua processando os demais. A migração do SQLite acrescenta essa coluna sem apagar registros.
 
+## Infraestrutura e documentação
 
-## Implantação comprovada
+Na AWS, dashboard e monitor executam como serviços independentes na EC2. O SDK
+obtém credenciais pelo perfil da instância. O Parameter Store guarda a configuração
+Oracle criptografada; o bucket privado transporta os artefatos de instalação.
+O treinamento com GPU ocorre no Colab, fora da EC2.
 
-EC2 usa LabInstanceProfile/LabRole e IMDSv2, sem chaves AWS na aplicação. A
-configuração Oracle foi transferida, mediante autorização específica, como
-SecureString em Parameter Store e instalada no .env de permissão 600. O bucket
-privado é transporte de instalação/evidências com expiração, não uma dependência
-da aplicação em operação. Veja [implantação AWS](implantacao-aws.md).
+- [Arquitetura AWS](aws.md): componentes, rede, identidade e fluxo de alertas.
+- [Colab](colab.md): dados, preparação, treinamento e exportação do detector.
+- [Resultados de visão](resultados-visao.md): métricas, exemplos e limitações.

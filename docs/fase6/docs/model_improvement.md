@@ -1,6 +1,6 @@
 # Melhoria do detector — executada e verificada
 
-## 15. Melhoria complementar — resultados reais
+## Experimento complementar — resultados reais
 
 Executada em 13/10/2026 após autorização do aluno para GPU T4 e pesos COCO,
 sem contratação de recursos pagos. **As duas classes foram demonstradas com
@@ -47,9 +47,10 @@ Runs e checkpoints ficam no Drive em experiments/fase6_transfer_001.
 Resultados pequenos e auditoria em results/yolo_improved. [Assistir ao vídeo de apresentação](https://youtu.be/xQRzp8BzaPY) — **4min34s**, publicação **não listada**. URL, título, duração e indicador de visibilidade conferidos na página do YouTube em 13/10/2026. A conferência de metadados não constitui uma revisão integral do conteúdo do vídeo.
 
 
-A preparação/testes locais de IoU e controles constam em validation.md. Não houve alterações nos labels ou nova rotulação.
+As métricas e a interpretação dos experimentos constam na [análise dos resultados](results_analysis.md).
+A [validação Make Sense](makesense_validation.md) documenta a rotulação.
+Não houve alterações nos labels ou nova rotulação neste experimento complementar.
 
-Commit sugerido: `feat(fase6): melhora deteccao das duas classes com fine tuning validado`.
 
 
 ### Falhas preservadas e diagnóstico
@@ -73,7 +74,16 @@ Nenhuma classe suitcase/handbag foi renomeada para backpack na avaliação.
 
 Checkpoint para uso do modelo melhorado:
 `/content/drive/MyDrive/Faculdade/Fiap/Fase6/experiments/fase6_transfer_001/runs/transfer_60_epochs/weights/best.pt`.
-Use load_improved_yolo e as funções de inferência da seção 15. Pesos não são versionados.
+Para reprodução histórica, use `load_improved_yolo` e as funções do
+[notebook de reprodução](../notebooks/reproducao_fase6.ipynb). Pesos não são versionados.
 O benchmark ampliado está em results/yolo_improved/comparison/benchmark_with_improvement.csv:
 os três resultados originais mais o detector complementar, sem substituir o histórico.
 Medições em sessões T4 distintas, entradas e tarefas diferentes; não são ranking universal.
+
+
+## Relação com o sistema integrado
+
+Este checkpoint detecta garrafas e mochilas. A dashboard agrícola utiliza o bundle
+de tomate, treinado separadamente no PlantDoc. Seus [resultados e limitações](../../resultados-visao.md)
+não são comparáveis diretamente aos deste experimento. A melhoria descrita aqui
+não executou novo treinamento durante a reorganização da documentação.

@@ -55,9 +55,11 @@ correta de sinais de doença. A amostra 4 contém uma caixa correta e uma extra.
 Confiança não é precisão; o resultado é de um protótipo com falsos positivos e falsos
 negativos, e deve sugerir inspeção humana. Não foi feito ajuste pelo teste após essa revisão.
 
-Nenhum e-mail/SMS AWS foi enviado nesta verificação. A regra local de inspeção foi
-avaliada sobre as detecções reais; implantação e comprovação SNS ficam para depois,
-conforme solicitado pelo aluno.
+Nesta verificação local, a regra de inspeção foi avaliada sobre detecções reais.
+Na demonstração posterior na EC2, a inferência agrícola também originou um alerta
+publicado no SNS e recebido por e-mail. O aceite de publicação e o recebimento
+foram registrados separadamente nas [evidências AWS](evidencias/aws/aceite-aws.json)
+e na [correlação dos e-mails](evidencias/aws/emails-recebidos.json).
 
 ## Rastreabilidade
 
@@ -66,3 +68,13 @@ Commit YOLO: `915bbf294bb74c859f0b41f1c23bc395014ea679`.
 Versões e seleção integral ficam no bundle em `models/tomate` e nos arquivos de evidência.
 Os resultados históricos de garrafas/mochilas da Fase 6 usam outro dataset e não são
 atribuídos ao detector agrícola.
+
+## Experimentos históricos
+
+Os experimentos de garrafas e mochilas permanecem documentados separadamente:
+
+- [Análise dos resultados](fase6/docs/results_analysis.md).
+- [Melhoria por transferência de aprendizado](fase6/docs/model_improvement.md).
+- [Validação da rotulação no Make Sense](fase6/docs/makesense_validation.md).
+
+Essas métricas não representam o detector agrícola.

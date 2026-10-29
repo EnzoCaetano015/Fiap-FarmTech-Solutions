@@ -18,8 +18,8 @@ streamlit run dashboard/src/dashboard.py
 Copie `.env.example` para `.env` e configure as integrações disponíveis.
 Não são necessárias credenciais Oracle/AWS nem pesos YOLO para abrir a dashboard.
 Serviços externos indisponíveis informam erro sem interromper as outras funções.
-Detalhes: [Windows](docs/windows.md), [AWS Academy/EC2](docs/aws-academy.md),
-[Colab](docs/colab.md) e [situação de execução real](docs/evidencias/STATUS.md).
+Documentação: [arquitetura geral](docs/arquitetura.md), [Colab](docs/colab.md),
+[resultados de visão](docs/resultados-visao.md) e [arquitetura AWS](docs/aws.md).
 
 ## Serviços e terminal
 
@@ -63,7 +63,7 @@ models/           # modelos preditivos; bundle agrícola local em tomate/
 sql/              # scripts Oracle e evidências anteriores
 notebooks/        # treinamento agrícola no Colab
 deploy/           # preflight AWS, configuração e systemd
-docs/             # arquitetura, execução, revisão Fase 6 e evidências
+docs/             # documentação principal, revisão da visão e evidências
 tests/            # regras e fluxos de integração
 ```
 
@@ -91,7 +91,10 @@ Confiança >=0,50 na classe de doença gera sugestão de inspeção, sem diagnó
 definitivo ou recomendação automática de defensivos.
 
 Os resultados de garrafas/mochilas da Fase 6 estão em um [relatório revisado](docs/fase6/notebooks/fase6_revisada.ipynb),
-com código de reprodução separado e original preservado. Métricas antigas não são
+com código de reprodução separado e original preservado. Consulte também a
+[análise dos resultados](docs/fase6/docs/results_analysis.md), a
+[melhoria do detector](docs/fase6/docs/model_improvement.md) e a
+[validação Make Sense](docs/fase6/docs/makesense_validation.md). Métricas antigas não são
 reutilizadas como resultado agrícola. Fonte e atribuições: [PlantDoc](https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset).
 
 ## Alertas e AWS
@@ -111,20 +114,20 @@ A implantação só é considerada comprovada depois do teste real no AWS Academ
 python -m unittest discover -s tests -v
 ```
 
-Veja [matriz de atendimento](docs/matriz-entrega.md), [evidências](docs/evidencias/STATUS.md)
-e [roteiro do vídeo](docs/roteiro-video.md). IA na AWS e algoritmos genéticos ficam
-fora do escopo desta entrega. A implantação foi autorizada e validada; não houve commit/push automático nesta etapa.
+Veja os registros de [aceite local](docs/evidencias/auditoria-local/aceite.json)
+e [aceite AWS](docs/evidencias/aws/aceite-aws.json). IA na AWS e algoritmos
+genéticos ficam fora do escopo desta entrega.
 
 ## Resultados agrícolas e aceite atual
 
 Treinos 30/60 concluídos na T4; validação selecionou **30 épocas**. No teste reservado de 69 imagens: mAP50 **0,6115**, mAP50:95 **0,3758**. Quatro inferências CPU foram verificadas, incluindo erros. Veja [resultados reais](docs/resultados-visao.md).
 
-Oracle real foi validado localmente e na EC2, com dez registros e repetição sem duplicatas. A implantação AWS foi concluída em 28/10/2026: dashboard e monitor ativos, 43 testes Linux aprovados e dois e-mails reais recebidos e correlacionados com MessageId SNS. Veja [implantação comprovada](docs/implantacao-aws.md).
+Oracle real foi validado localmente e na EC2, com dez registros e repetição sem duplicatas. A implantação AWS foi concluída em 28/10/2026: dashboard e monitor ativos, 43 testes Linux aprovados e dois e-mails reais recebidos e correlacionados com MessageId SNS. Veja [evidências AWS](docs/evidencias/aws/aceite-aws.json).
 
 ## Auditoria funcional local
 
-43 testes passaram no ambiente atual e em uma instalação limpa. Oracle, R, API climática, treino preditivo, inferência CPU, dashboard e monitor independente foram executados. O firmware ESP32 também compilou. Correções, evidências e pendências de aceite: [validação local](docs/validacao-local.md).
+43 testes passaram no ambiente atual e em uma instalação limpa. Oracle, R, API climática, treino preditivo, inferência CPU, dashboard e monitor independente foram executados. O firmware ESP32 também compilou. Registros: [aceite local](docs/evidencias/auditoria-local/aceite.json).
 
 ## Acesso AWS validado
 
-[Dashboard EC2](http://54.166.136.107:8501), restrita ao IP autorizado. Use o talhão `talhao-aws-demo` para ver a demonstração. A EC2 permanece ligada; consulte [operação, reinício e encerramento](docs/implantacao-aws.md).
+[Dashboard EC2](http://54.166.136.107:8501), restrita ao IP autorizado. Use o talhão `talhao-aws-demo` para ver a demonstração. Consulte a [arquitetura AWS](docs/aws.md).

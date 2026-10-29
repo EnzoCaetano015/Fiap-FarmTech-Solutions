@@ -6,8 +6,7 @@ controles do site. Referência inicial: caixas do Open Images, sem detector.
 
 Foram revisadas 80 imagens e obtidas duas exportações YOLO reais (64 + 16).
 Os 80 labels oficiais foram substituídos somente após a validação dos ZIPs.
-O pedido atual do usuário de revisar as imagens coletadas ampliou a revisão
-para validação/teste; as fotos, a distribuição e a separação dos splits foram
+A revisão realizada em outubro de 2026 também abrangeu validação/teste; as fotos, a distribuição e a separação dos splits foram
 preservadas. O backup mantém todos os labels originais.
 
 | Split | Imagens/labels | bottle | backpack | Caixas |
@@ -72,16 +71,29 @@ em uma máquina; `backpack_b33b34153db3acdd.jpg` é uma candidata a mochila com
 rodinhas. Esses casos da seleção original foram preservados e devem ser
 considerados nas conclusões. Não foi executado treinamento nesta revisão.
 
-## Verificações após integração
+## Verificações registradas na revisão original
 
 O validador do notebook retornou `ready`, com 80 imagens, 80 labels e manifesto
 de 80 linhas. As 22 células de código foram executadas localmente com
 `RUN_EXPERIMENTS=False`; o smoke test real da CNN em CPU produziu `(1, 2)`.
-O schema nbformat está válido e os outputs do notebook permaneceram vazios.
+Naquela etapa, o schema nbformat foi validado e os outputs permaneceram vazios.
+Posteriormente, os experimentos foram executados e suas saídas reais foram
+preservadas no notebook revisado; a ausência de outputs descreve apenas a etapa inicial.
 Os hashes das 80 fotos correspondem à proveniência original. Os 160 arquivos
 de fotos/labels e os ZIPs locais continuam ignorados. O diff ficou limitado
 a `fase6/`, sem erros de whitespace, treinamento, pesos ou resultados fictícios.
 
-Commit sugerido: `feat(fase6): revisa rotulos no Make Sense e registra evidencias`.
 
 Evidência complementar da lista de classes, recarregada no site nesta preparação: [bottle e backpack](evidencias/makesense/classes_bottle_backpack.png). Esta captura documenta a configuração, sem substituir as exportações e evidências da revisão original.
+
+
+## Documentação e escopo atuais
+
+As métricas posteriores estão na [análise dos resultados](results_analysis.md) e
+a transferência de aprendizado está em [melhoria do modelo](model_improvement.md).
+O [notebook revisado](../notebooks/fase6_revisada.ipynb) separa a leitura dos
+resultados dos comandos de reprodução.
+
+Esta revisão Make Sense se refere exclusivamente às 80 imagens de garrafas e
+mochilas. As folhas de tomate vêm das anotações do PlantDoc, com preparação
+descrita em [Colab](../../colab.md), sem alegação de revisão Make Sense desse dataset.

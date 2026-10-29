@@ -85,12 +85,10 @@ A revisão Make Sense documenta também uma representação impressa de garrafa
 em bottle_084b363c71a7f958.jpg e uma candidata a mochila com rodinhas em
 backpack_b33b34153db3acdd.jpg, ambas do treino. Foram preservadas da seleção
 original; são limitações do dataset, assim como a anotação de objetos de foco
-sem cobertura exaustiva dos objetos incidentais. Consulte makesense_validation.md.
+sem cobertura exaustiva dos objetos incidentais. Consulte a [validação da rotulação](makesense_validation.md).
 
 
-## Atualização complementar
-
-## 15. Melhoria complementar — resultados reais
+## Melhoria complementar — resultados reais
 
 Executada em 13/10/2026 após autorização do aluno para GPU T4 e pesos COCO,
 sem contratação de recursos pagos. **As duas classes foram demonstradas com
@@ -154,3 +152,16 @@ Nenhuma classe suitcase/handbag foi renomeada para backpack na avaliação.
 
 
 ![Painel dos resultados complementares](../results/yolo_improved/test/gallery.png)
+
+
+## Integração atual
+
+O [notebook revisado](../notebooks/fase6_revisada.ipynb) apresenta os resultados
+registrados; os comandos de reprodução ficam no [notebook auxiliar](../notebooks/reproducao_fase6.ipynb).
+Instalação e diagnósticos foram separados do roteiro principal. A seção 9.3 foi
+substituída pela comparação executada, preservando métricas e conclusões.
+
+O detector agrícola usa outro conjunto de dados e outro modelo. Consulte seus
+[resultados](../../resultados-visao.md), sem atribuir a ele as métricas históricas
+de garrafas e mochilas. Detalhes do experimento complementar estão em
+[melhoria do modelo](model_improvement.md).

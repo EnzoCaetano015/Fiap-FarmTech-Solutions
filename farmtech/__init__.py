@@ -1,1 +1,1 @@
-"""FarmTech Solutions: integração acadêmica da Fase 7."""
+"""FarmTech Solutions: sistema integrado de gestão da fazenda."""

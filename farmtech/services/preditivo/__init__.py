@@ -5,6 +5,6 @@ def train():
     from .training import treinar
     metrics = treinar()
     return {"dados": {"metricas": metrics.to_dict(orient="records"), "dados_sinteticos": True},
-            "arquivos": [str(ROOT / "data/sensores_fase4_ml.csv"),
-                         str(ROOT / "relatorios/fase4/metricas_modelos.csv"),
-                         *[str(p) for p in (ROOT / "models").glob("modelo_*")]]}
+            "arquivos": [str(ROOT / "data/sensores/treino_sintetico.csv"),
+                         str(ROOT / "relatorios/preditivo/metricas_modelos.csv"),
+                         *[str(p) for p in (ROOT / "models/preditivo").glob("modelo_*")]]}

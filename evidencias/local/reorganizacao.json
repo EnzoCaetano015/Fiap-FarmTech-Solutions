@@ -1,0 +1,80 @@
+{
+  "organizacao": "por componente e dominio",
+  "checks": {
+    "links_locais": {
+      "ok": true,
+      "erros": []
+    },
+    "sintaxe_python_e_notebooks": {
+      "ok": true
+    },
+    "preservacao_artefatos": {
+      "ok": true,
+      "arquivos_identicos": 213,
+      "notebooks_com_saidas_preservadas": 5
+    },
+    "replay_e_fila": {
+      "ok": true,
+      "replay": {
+        "eventos": [
+          "14e32596ce3a2c75bafb5051f2a01b99002d57ac8f22e32aac6aeab3df2621dd",
+          "d394cc45c02c4f88f63b45066598f32f5bc0d083398aa918b877897fee01b3e8",
+          "44cb97cd02988445adaa078a83c5cc4bd217202423b53faa1f401b397fcf7a21",
+          "658a5d4928c900985443f44f6f0bb28eb7f1b43f208a69e54c5c2b29e84edac1",
+          "2c57133444df992bb67b1e8cf7165c7da3c7a62451ae9ec638aae580cb68c906",
+          "67e8935ec07693cbeadb2fd0dbe359fdedf849b8263bb36b99b3b2cf68b629ec",
+          "69a28265cc1a961ada3aafefcf25db54ebaf27c97984d85fbc2cd2f6e8ed6424",
+          "a48f8360c3cc81f05d401c8b971268cbd193cb217920840630af1ac2d368d477",
+          "856160e1e7a59f8694597db5ab6cf01933f6a1bf56014d5758a71dd933e68ce2",
+          "b2dd2caa0dcb419e7871da9dc7d9f7e50b6ec20bbe80062dcff7cae5574ae43d"
+        ],
+        "leituras": 10,
+        "simulado": true,
+        "horario": "histórico"
+      },
+      "fila": {
+        "enfileirados": 4,
+        "condicoes_suprimidas": 6,
+        "eventos_invalidos": 0
+      }
+    },
+    "R": {
+      "ok": true,
+      "arquivos": [
+        "estatisticas.csv",
+        "sensores.png"
+      ]
+    },
+    "modelos_preditivos": {
+      "ok": true,
+      "predicoes_sinteticas": {
+        "umidade_prevista": 46.908708763453106,
+        "ph_previsto": 6.722299452189103,
+        "produtividade_estimada": 67.61970179832419
+      }
+    },
+    "treino_preditivo_isolado": {
+      "ok": true,
+      "modelos": 3,
+      "avaliacoes": 6
+    },
+    "inferencia_cpu_real": {
+      "ok": true,
+      "deteccoes": 1,
+      "pesos_sha256": "318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832"
+    },
+    "notebooks_resultados": {
+      "ok": true,
+      "execucoes": 4,
+      "saidas_em_disco_preservadas": true
+    },
+    "suite_funcional": {
+      "ok": true,
+      "testes": 43,
+      "log": "testes-reorganizacao.txt"
+    }
+  },
+  "all_checks_passed": true,
+  "verificado_em_utc": "2026-10-29T00:21:06.963337+00:00",
+  "aws": "Reorganização local; recursos e aplicação implantada na AWS não foram alterados nesta tarefa."
+}

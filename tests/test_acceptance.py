@@ -84,7 +84,7 @@ class AcceptanceTest(unittest.TestCase):
             stub.assert_no_pending_responses()
 
     def test_large_history_plot_not_hidden(self):
-        from dashboard.src.integrada import monitoring_frame
+        from dashboard.interface import monitoring_frame
         add_event("sensores", "antigo", sensor()["data_hora"], sensor(), "first")
         with connect() as db:
             db.executemany("INSERT INTO events(id,source,plot,observed_at,payload,created) VALUES (?,?,?,?,?,?)",
@@ -129,8 +129,8 @@ class AcceptanceTest(unittest.TestCase):
         record = {"id": "ui-test", "servico": "visao", "sucesso": True, "duracao_s": .01,
                   "dados": {"resultado": "Inconclusivo: nenhuma detecção", "deteccoes": []},
                   "arquivos": [str(annotated)], "erro": None}
-        with patch("streamlit.file_uploader", return_value=upload), patch("dashboard.src.integrada.execute", return_value=record):
-            app = AppTest.from_file(str(ROOT / "dashboard/src/dashboard.py"), default_timeout=30).run()
+        with patch("streamlit.file_uploader", return_value=upload), patch("dashboard.interface.execute", return_value=record):
+            app = AppTest.from_file(str(ROOT / "dashboard/app.py"), default_timeout=30).run()
             app.button(key="action_visao").click().run()
             self.assertEqual(app.session_state["result_visao"], record)
             app.run()
@@ -162,8 +162,8 @@ class AcceptanceTest(unittest.TestCase):
     def test_dashboard_remains_available_without_predictive_models(self):
         from farmtech.config import ROOT
         from streamlit.testing.v1 import AppTest
-        with patch("dashboard.src.fase4.carregar_modelos", return_value={}):
-            app = AppTest.from_file(str(ROOT / "dashboard/src/dashboard.py"), default_timeout=30).run()
+        with patch("dashboard.paineis.carregar_modelos", return_value={}):
+            app = AppTest.from_file(str(ROOT / "dashboard/app.py"), default_timeout=30).run()
             self.assertFalse(app.exception)
             self.assertTrue(any("Modelos não encontrados" in w.value for w in app.warning))
             app.button(key="action_area").click().run()
@@ -218,12 +218,12 @@ class AcceptanceTest(unittest.TestCase):
         self.assertIn("Inconclusivo", record["dados"]["resultado"])
         self.assertEqual(enqueue()["enfileirados"], 0)
 
-    def test_legacy_entrypoints_accept_help_without_side_effects(self):
+    def test_script_entrypoints_accept_help_without_side_effects(self):
         import subprocess
         import sys
         from farmtech.config import ROOT
-        for relative in ("database/ingestao_iot_sqlite.py", "dashboard/src/importar_csv_oracle.py",
-                         "api-clima/clima.py", "ml/treinar_modelos.py"):
+        for relative in ("scripts/simular_sensores.py", "scripts/importar_oracle.py",
+                         "scripts/consultar_clima.py", "scripts/treinar_modelos.py"):
             with self.subTest(entrypoint=relative):
                 process = subprocess.run([sys.executable, str(ROOT/relative), "--help"],
                     cwd=self.temp.name, capture_output=True, encoding="utf-8", timeout=20)

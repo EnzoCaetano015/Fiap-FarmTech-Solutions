@@ -1,7 +1,8 @@
 # Detector agrícola — preparação, treinamento e inferência
 
-Use `notebooks/treino_tomate_colab.ipynb` no Colab com GPU T4 e runtime Python
-3.11/3.12. O notebook recebe o ZIP do projeto, instala as dependências fixadas,
+Use `notebooks/tomate/treinamento_colab.ipynb` no Colab com GPU T4 e runtime Python
+3.11/3.12. O notebook recebe `FarmTech.zip`, com a pasta `FarmTech/` na raiz do
+arquivo, instala as dependências fixadas,
 prepara dados, treina e exporta um bundle real. Se o runtime tiver outra versão,
 selecione um runtime compatível antes de prosseguir.
 

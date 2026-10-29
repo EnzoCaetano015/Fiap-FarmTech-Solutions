@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 class DashboardTest(unittest.TestCase):
     def test_monitor_uses_operational_readings_of_selected_plot(self):
-        from dashboard.src.integrada import monitoring_frame
+        from dashboard.interface import monitoring_frame
         from farmtech.storage import add_event
         from test_services import sensor
         with tempfile.TemporaryDirectory() as directory, patch.dict(os.environ, {"FARMTECH_STATE_DIR": directory}):
@@ -26,7 +26,7 @@ class DashboardTest(unittest.TestCase):
         from streamlit.testing.v1 import AppTest
         from farmtech.config import ROOT
         with tempfile.TemporaryDirectory() as directory, patch.dict(os.environ, {"FARMTECH_STATE_DIR": directory}):
-            app = AppTest.from_file(str(ROOT / "dashboard/src/dashboard.py"), default_timeout=30).run()
+            app = AppTest.from_file(str(ROOT / "dashboard/app.py"), default_timeout=30).run()
             self.assertEqual(len(app.exception), 0)
             self.assertEqual(len(app.tabs), 6)
             app.button(key="action_area").click().run()

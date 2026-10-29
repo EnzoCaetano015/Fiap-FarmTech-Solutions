@@ -14,18 +14,18 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
 BASE_DIR = Path(__file__).resolve().parents[3]
-DATA_DIR = BASE_DIR / "data"
-MODELS_DIR = BASE_DIR / "models"
-RELATORIOS_DIR = BASE_DIR / "relatorios" / "fase4"
+DATA_DIR = BASE_DIR / "data" / "sensores"
+MODELS_DIR = BASE_DIR / "models" / "preditivo"
+RELATORIOS_DIR = BASE_DIR / "relatorios" / "preditivo"
 
 FEATURES = ["umidade", "temperatura", "ph", "n", "p", "k", "nivel_chuva", "irrigacao_ligada"]
 TARGETS = ["umidade_prevista", "ph_previsto", "produtividade_estimada"]
 
 
-def carregar_base_fase3() -> pd.DataFrame:
-    caminho = DATA_DIR / "sensores_fase2.csv"
+def carregar_base_sensores() -> pd.DataFrame:
+    caminho = DATA_DIR / "leituras.csv"
     if not caminho.exists():
-        raise FileNotFoundError(f"Base da Fase 3 não encontrada: {caminho}")
+        raise FileNotFoundError(f"Base de sensores não encontrada: {caminho}")
     df = pd.read_csv(caminho)
     df["data_hora"] = pd.to_datetime(df["data_hora"])
     df["irrigacao_ligada"] = (df["status_irrigacao"].str.upper() == "LIGADA").astype(int)
@@ -97,7 +97,7 @@ def gerar_dataset_ml(df_base: pd.DataFrame, amostras_por_linha: int = 25) -> pd.
             )
 
     df_ml = pd.DataFrame(registros)
-    caminho_ml = DATA_DIR / "sensores_fase4_ml.csv"
+    caminho_ml = DATA_DIR / "treino_sintetico.csv"
     df_ml.to_csv(caminho_ml, index=False)
     return df_ml
 
@@ -118,7 +118,7 @@ def treinar() -> pd.DataFrame:
     MODELS_DIR.mkdir(exist_ok=True)
     RELATORIOS_DIR.mkdir(parents=True, exist_ok=True)
 
-    df_base = carregar_base_fase3()
+    df_base = carregar_base_sensores()
     df_ml = gerar_dataset_ml(df_base)
 
     X = df_ml[FEATURES]
@@ -164,7 +164,7 @@ def treinar() -> pd.DataFrame:
     df_metricas = df_metricas[["alvo", "modelo", "MAE", "MSE", "RMSE", "R2"]]
     df_metricas.to_csv(RELATORIOS_DIR / "metricas_modelos.csv", index=False)
     print("Treinamento concluído.")
-    print(f"Dataset ML salvo em: {DATA_DIR / 'sensores_fase4_ml.csv'}")
+    print(f"Dataset ML salvo em: {DATA_DIR / 'treino_sintetico.csv'}")
     print(f"Métricas salvas em: {RELATORIOS_DIR / 'metricas_modelos.csv'}")
     print(df_metricas)
     return df_metricas

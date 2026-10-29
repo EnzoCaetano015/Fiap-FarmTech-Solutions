@@ -4,7 +4,7 @@
 flowchart LR
     UI[Dashboard Streamlit] --> OPS[Operações compartilhadas]
     CLI[Terminal Python] --> OPS
-    OPS --> F1[Área, R e clima]
+    OPS --> AGR[Área, R e clima]
     OPS --> IOT[Replay CSV do ESP32]
     OPS --> ORA[Persistência Oracle]
     OPS --> ML[Modelos preditivos sintéticos]
@@ -19,8 +19,8 @@ flowchart LR
 ```
 
 O projeto mantém dados, modelos, SQL, circuito e evidências anteriores. A implementação
-compartilhada fica em `farmtech/services/{inicial,iot,oracle,preditivo,visao,alertas}`.
-Os entrypoints antigos continuam como adaptadores. Não há API HTTP própria: dashboard
+compartilhada fica em `farmtech/services/{agronomia,iot,oracle,preditivo,visao,alertas}`.
+Os atalhos de terminal ficam em `scripts/` e delegam aos mesmos serviços. Não há API HTTP própria: dashboard
 e CLI usam `farmtech.operations.execute(service, **parameters)`.
 
 ## Contratos
@@ -36,7 +36,7 @@ gera novos horários UTC e mantém a data original no payload. Reimportar o CSV
 sem esse argumento é idempotente. Toda leitura reproduzida fica marcada `simulado`.
 
 SQLite em `FARMTECH_STATE_DIR` mantém eventos, execuções e outbox. Oracle mantém a
-tabela acadêmica existente. A importação Oracle usa transação e lock da tabela,
+tabela estruturada de leituras. A importação Oracle usa transação e lock da tabela,
 gera ID por MAX+1 e compara os campos de leitura antes de incluir. Uma falha reverte
 todo o lote; a sugestão textual não define a identidade de uma leitura. Datas Oracle
 são armazenadas como horário de São Paulo em TIMESTAMP sem timezone.
@@ -93,3 +93,23 @@ O treinamento com GPU ocorre no Colab, fora da EC2.
 - [Arquitetura AWS](aws.md): componentes, rede, identidade e fluxo de alertas.
 - [Colab](colab.md): dados, preparação, treinamento e exportação do detector.
 - [Resultados de visão](resultados-visao.md): métricas, exemplos e limitações.
+
+
+## Organização por responsabilidade
+
+A interface fica em `dashboard/`, enquanto `farmtech/` concentra os serviços e a
+CLI. Dados de entrada ficam em `data/sensores`, modelos de regressão em
+`models/preditivo` e suas métricas em `relatorios/preditivo`. O bundle agrícola
+permanece em `models/tomate`, separado dos modelos sintéticos.
+
+`hardware/esp32` contém firmware e circuito; `database/oracle` reúne os scripts
+SQL. `infra/aws` contém instalação, unidades systemd e verificações. Os notebooks
+são organizados por domínio em `notebooks/tomate` e `notebooks/objetos`.
+Configurações e resultados do estudo comparativo ficam em `experiments/objetos`.
+As evidências são agrupadas pelo componente em `evidencias/`, fora da documentação.
+
+O [README](../README.md) apresenta a sequência de avaliação e os comandos atuais.
+Os caminhos antigos presentes em logs, manifests e saídas de notebooks identificam
+o ambiente no qual foram gerados; não devem ser usados como comandos de execução
+da estrutura atual. Os caminhos de recursos AWS já existentes também são mantidos
+para compatibilidade, incluindo o parâmetro Oracle no Parameter Store.

@@ -10,7 +10,7 @@ import unittest
 from unittest.mock import patch, Mock
 
 from farmtech.operations import execute
-from farmtech.services.inicial import area, weather, analysis_r
+from farmtech.services.agronomia import area, weather, analysis_r
 from farmtech.services.iot import replay, validate
 from farmtech.services.alertas import evaluate, enqueue, drain
 from farmtech.storage import add_event, connect, history

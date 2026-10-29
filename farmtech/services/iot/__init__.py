@@ -30,7 +30,7 @@ def validate(row):
 
 
 def read_rows(csv_path=None):
-    with open(csv_path or ROOT / "data/sensores_fase2.csv", encoding="utf-8-sig", newline="") as f:
+    with open(csv_path or ROOT / "data/sensores/leituras.csv", encoding="utf-8-sig", newline="") as f:
         rows = [validate(row) for row in csv.DictReader(f)]
     if not rows:
         raise ValueError("CSV sem leituras")

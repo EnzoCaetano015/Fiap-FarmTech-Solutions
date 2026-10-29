@@ -47,7 +47,7 @@ TP/FP/FN usam confiança >=0,25 e IoU >=0,5. A regra de alerta usa confiança >=
 | 3 | folha_com_sinais_de_doenca | 1 | 0 | 0 | Sim |
 | 4 | folha_com_sinais_de_doenca | 1 | 1 | 0 | Sim |
 
-![Revisão CPU com acertos e erros](evidencias/visao_agricola/galeria_cpu.jpg)
+![Revisão CPU com acertos e erros](../evidencias/visao/agricola/galeria_cpu.jpg)
 
 A amostra 1 gerou um falso alerta em imagem rotulada como saudável, além de omissões.
 A amostra 2 demonstrou as três caixas saudáveis; a amostra 3 demonstrou uma caixa
@@ -58,23 +58,23 @@ negativos, e deve sugerir inspeção humana. Não foi feito ajuste pelo teste ap
 Nesta verificação local, a regra de inspeção foi avaliada sobre detecções reais.
 Na demonstração posterior na EC2, a inferência agrícola também originou um alerta
 publicado no SNS e recebido por e-mail. O aceite de publicação e o recebimento
-foram registrados separadamente nas [evidências AWS](evidencias/aws/aceite-aws.json)
-e na [correlação dos e-mails](evidencias/aws/emails-recebidos.json).
+foram registrados separadamente nas [evidências AWS](../evidencias/aws/aceite-aws.json)
+e na [correlação dos e-mails](../evidencias/aws/emails-recebidos.json).
 
 ## Rastreabilidade
 
 Pesos: SHA-256 `318e984ffa3f07744ebc19ad42c7844da1978208030124e5f34552c53aaa6832`.
 Commit YOLO: `915bbf294bb74c859f0b41f1c23bc395014ea679`.
 Versões e seleção integral ficam no bundle em `models/tomate` e nos arquivos de evidência.
-Os resultados históricos de garrafas/mochilas da Fase 6 usam outro dataset e não são
+Os resultados de garrafas/mochilas usam outro dataset e não são
 atribuídos ao detector agrícola.
 
 ## Experimentos históricos
 
 Os experimentos de garrafas e mochilas permanecem documentados separadamente:
 
-- [Análise dos resultados](fase6/docs/results_analysis.md).
-- [Melhoria por transferência de aprendizado](fase6/docs/model_improvement.md).
-- [Validação da rotulação no Make Sense](fase6/docs/makesense_validation.md).
+- [Análise dos resultados](visao/results_analysis.md).
+- [Melhoria por transferência de aprendizado](visao/model_improvement.md).
+- [Validação da rotulação no Make Sense](visao/makesense_validation.md).
 
 Essas métricas não representam o detector agrícola.

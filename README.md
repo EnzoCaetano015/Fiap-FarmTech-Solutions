@@ -1,133 +1,170 @@
-# FarmTech Solutions — Sistema integrado · Fase 7
+<p align="center">
+  <img src="assets/logo.png" alt="Logo da FarmTech Solutions" width="220">
+</p>
 
-Sistema acadêmico de gestão da fazenda com serviços das fases anteriores reunidos
-em uma pasta: Python/R, ESP32, Oracle, modelos preditivos, Streamlit, visão agrícola
-e alertas por e-mail via Amazon SNS. **Enzo Caetano Peracio Rodrigues — RM 570352.**
+# FarmTech Solutions
 
-## Iniciar
+Sistema integrado de gestão da fazenda: monitoramento de sensores, cálculo de
+área e insumos, análise em R, consulta climática, persistência Oracle, modelos
+preditivos, visão computacional e alertas por e-mail via Amazon SNS.
 
-Use Python 3.11, crie ambiente isolado e instale `requirements.txt`.
+**Enzo Caetano Peracio Rodrigues — RM 570352.** Projeto acadêmico.
+
+## Roteiro para avaliação
+
+1. Leia a [arquitetura geral](docs/arquitetura.md) e abra a dashboard seguindo as
+   instruções abaixo. As seis abas concentram a demonstração do sistema.
+2. Em **Serviços**, calcule área e insumos e reproduza as leituras simuladas.
+   Consulte os dados em **Monitoramento** e os resultados em **ML e métricas** e
+   **Previsão interativa**. Os modelos preditivos utilizam dados e alvos sintéticos.
+3. Em **Visão agrícola**, envie uma [imagem de exemplo](evidencias/visao/agricola/exemplo_3_entrada.png).
+   A inferência exige o bundle agrícola e o runtime YOLO configurados. Confira as
+   [métricas reais, acertos e erros](docs/resultados-visao.md).
+4. Execute o monitor em outro terminal para processar os eventos. A aba **Alertas**
+   apresenta regras, ações sugeridas, tentativas e aceite de publicação no SNS.
+5. Consulte as [evidências locais](evidencias/local/aceite.json), o
+   [aceite AWS](evidencias/aws/aceite-aws.json) e a
+   [comprovação dos e-mails](evidencias/aws/emails-recebidos.json).
+   Esses arquivos registram execuções anteriores; não são uma consulta ao estado
+   atual dos recursos do laboratório.
+
+## Executar localmente
+
+Use Python **3.11** em ambiente isolado. Na raiz do repositório:
 
 ```bash
 python -m venv .venv
-# Ative .venv conforme seu sistema operacional.
-python -m pip install -r requirements.txt
-streamlit run dashboard/src/dashboard.py
 ```
 
-Copie `.env.example` para `.env` e configure as integrações disponíveis.
-Não são necessárias credenciais Oracle/AWS nem pesos YOLO para abrir a dashboard.
-Serviços externos indisponíveis informam erro sem interromper as outras funções.
-Documentação: [arquitetura geral](docs/arquitetura.md), [Colab](docs/colab.md),
-[resultados de visão](docs/resultados-visao.md) e [arquitetura AWS](docs/aws.md).
+Ative o ambiente com `.venv\Scripts\Activate.ps1` no PowerShell ou
+`source .venv/bin/activate` no Linux. Depois:
 
-## Serviços e terminal
+```bash
+python -m pip install -r requirements.txt
+streamlit run dashboard/app.py
+```
 
-| Operação | Comando na raiz |
+Copie `.env.example` para `.env` e preencha somente as integrações que utilizar.
+A dashboard abre sem credenciais Oracle/AWS ou pesos agrícolas. Cada serviço
+informa sua indisponibilidade sem impedir o uso dos demais.
+
+| Integração | Preparação necessária |
+|---|---|
+| Estatística em R | Instalar R e disponibilizar `Rscript` no PATH ou em `FARMTECH_RSCRIPT` |
+| Oracle | Configurar `ORACLE_USER`, `ORACLE_PASSWORD` e `ORACLE_DSN`; scripts em [database/oracle](database/oracle) |
+| Consulta climática | Acesso à internet; falhas são apresentadas como previsão indisponível |
+| Visão agrícola | Instalar `requirements-visao.txt` com `constraints-colab.txt`, preparar YOLOv5 v7.0 e extrair o bundle em `models/tomate`; detalhes em [Colab](docs/colab.md) |
+| Alertas SNS | Credenciais temporárias/perfil da instância, tópico em `FARMTECH_SNS_TOPIC_ARN` e assinatura de e-mail confirmada |
+
+Os pesos agrícolas não são versionados no Git. São fornecidos no bundle de
+entrega quando disponível. Sem eles, o serviço informa detector indisponível.
+O estado operacional e os arquivos gerados ficam em `.runtime/` ou no caminho
+definido por `FARMTECH_STATE_DIR`; esse conteúdo não integra o versionamento.
+
+## Usar pelo terminal
+
+Dashboard, CLI e atalhos de `scripts/` chamam os mesmos serviços.
+Cada execução informa resultado, duração, arquivos gerados e erros.
+
+| Serviço | Comando na raiz |
 |---|---|
 | Área retangular e insumos | `python -m farmtech area --length 100 --width 200 --dose 12` |
 | Área circular | `python -m farmtech area --shape circulo --radius 10 --dose 12` |
 | Estatística e gráficos em R | `python -m farmtech analise-r` |
-| Clima | `python -m farmtech clima --latitude -23.55 --longitude -46.63` |
-| Replay IoT histórico, idempotente | `python -m farmtech iot --interval 1 --plot talhao-demo` |
-| Nova demonstração simulada | `python -m farmtech iot --live-time --plot talhao-demo` |
-| Importação Oracle sem exclusão | `python -m farmtech oracle-importar` |
+| Previsão climática | `python -m farmtech clima --latitude -23.55 --longitude -46.63` |
+| Replay histórico idempotente | `python -m farmtech iot --interval 1 --plot talhao-demo` |
+| Nova leitura simulada | `python -m farmtech iot --live-time --plot talhao-demo` |
+| Importação Oracle incremental | `python -m farmtech oracle-importar` |
 | Consulta Oracle | `python -m farmtech oracle-consultar --limit 100` |
-| Treino preditivo Fase 4 | `python -m farmtech treinar` |
-| Inferência agrícola | `python -m farmtech visao imagem.jpg --plot talhao-1` |
+| Treinamento preditivo sintético | `python -m farmtech treinar` |
+| Inferência agrícola em CPU | `python -m farmtech visao evidencias/visao/agricola/exemplo_3_entrada.png --plot talhao-demo` |
 | Histórico de alertas | `python -m farmtech alertas` |
-| Monitor independente | `python -m farmtech monitor --interval 10` |
-| Ciclo único do monitor | `python -m farmtech monitor-uma-vez` |
+| Monitor em terminal separado | `python -m farmtech monitor --interval 10` |
+| Um ciclo do monitor | `python -m farmtech monitor-uma-vez` |
 
-Dashboard e terminal chamam as mesmas funções. Operações retornam resultado,
-duração, arquivos e erros em JSON e registram a execução. Não é necessário colar
-comandos arbitrários na interface. Fechar a dashboard não encerra o monitor separado.
+O treinamento preditivo atualiza os modelos, o dataset sintético e as métricas.
+Os scripts SQL históricos de recriação de tabelas são material de avaliação;
+não são executados automaticamente pela aplicação. A importação da aplicação
+inclui registros sem apagar a tabela e sem duplicar leituras existentes.
 
-## Organização
+## Organização do repositório
 
-```text
-farmtech/
-  services/
-    inicial/      # cálculo, insumos, R e clima
-    iot/          # validação e replay de sensores simulados
-    oracle/       # persistência acadêmica incremental
-    preditivo/    # modelos e recomendador da Fase 4
-    visao/        # PlantDoc, treinamento e inferência YOLO
-    alertas/      # regras, outbox e SNS
-  operations.py   # contrato compartilhado pela CLI/dashboard
-  storage.py      # SQLite operacional persistente
-dashboard/src/    # dashboard integrada e componentes preservados da Fase 4
-prototipo-ESP32/   # circuito e sketch originais
-data/             # CSVs das fases anteriores
-models/           # modelos preditivos; bundle agrícola local em tomate/
-sql/              # scripts Oracle e evidências anteriores
-notebooks/        # treinamento agrícola no Colab
-deploy/           # preflight AWS, configuração e systemd
-docs/             # documentação principal, revisão da visão e evidências
-tests/            # regras e fluxos de integração
-```
+Clique no nome de uma pasta para abrir seu conteúdo.
 
-Os entrypoints antigos continuam disponíveis como adaptadores. O estado operacional,
-uploads e resultados gerados ficam em `.runtime/`, ou em `FARMTECH_STATE_DIR`.
-O banco operacional SQLite não substitui Oracle. Dados e modelos anteriores foram
-preservados; treinar novamente atualiza os artefatos da Fase 4 por ação explícita.
+| Pasta | O que contém |
+|---|---|
+| [dashboard/](dashboard/) | Aplicação Streamlit: ponto de entrada `app.py`, interface e painéis de monitoramento, previsões e serviços. |
+| [farmtech/](farmtech/) | Núcleo do sistema: CLI, configuração, contrato compartilhado de execução e persistência operacional SQLite. |
+| [farmtech/services/](farmtech/services/) | Implementação dos serviços reutilizados pela dashboard e pelo terminal. |
+| [agronomia/](farmtech/services/agronomia/) | Cálculo de área e insumos, análise estatística em R e consulta climática. |
+| [iot/](farmtech/services/iot/) | Validação dos dados e reprodução temporizada das leituras simuladas. |
+| [oracle/](farmtech/services/oracle/) | Importação incremental sem duplicação e consulta dos registros Oracle. |
+| [preditivo/](farmtech/services/preditivo/) | Treinamento dos modelos com dados sintéticos e recomendações de manejo. |
+| [visao/](farmtech/services/visao/) | Preparação do PlantDoc, treinamento YOLO e inferência agrícola em CPU. |
+| [alertas/](farmtech/services/alertas/) | Regras de alerta, supressão, fila persistente, recuperação de falhas e publicação no SNS. |
+| [scripts/](scripts/) | Atalhos de terminal para clima, simulação de sensores, importação Oracle e treinamento preditivo. |
+| [hardware/](hardware/) | Componente físico e simulado do projeto; [esp32/](hardware/esp32/) reúne firmware, circuito, PlatformIO e Wokwi. |
+| [database/](database/) | Estrutura do banco; [oracle/](database/oracle/) contém scripts SQL e explicação das consultas. |
+| [data/](data/) | Dados de entrada; [sensores/](data/sensores/) contém as leituras simuladas e o dataset sintético de treinamento. |
+| [models/](models/) | Artefatos dos modelos; [preditivo/](models/preditivo/) reúne regressões e metadados. O bundle agrícola fica em `models/tomate/`, fornecido separadamente e não versionado no Git. |
+| [relatorios/](relatorios/) | Resultados tabulares; [preditivo/](relatorios/preditivo/) contém as métricas dos modelos sintéticos. |
+| [notebooks/](notebooks/) | Notebooks por domínio: [tomate/](notebooks/tomate/) para treinamento Colab e resultados agrícolas; [objetos/](notebooks/objetos/) para relatório, reprodução e notebook original de YOLO/CNN. |
+| [experiments/](experiments/) | Artefatos experimentais; [objetos/](experiments/objetos/) reúne configurações, proveniência dos dados, auditorias, curvas e resultados de detecção e classificação. |
+| [infra/](infra/) | Infraestrutura; [aws/](infra/aws/) contém instalação na EC2, unidades systemd, configuração segura e verificações. |
+| [docs/](docs/) | Arquitetura geral, arquitetura AWS, preparação no Colab e resultados agrícolas; [visao/](docs/visao/) contém análise de objetos, melhoria do detector e validação Make Sense. |
+| [evidencias/](evidencias/) | Registros das execuções, capturas e resultados que comprovam o funcionamento. |
+| [local/](evidencias/local/) | Aceite e testes locais, auditoria da reorganização e demonstrações da dashboard. |
+| [aws/](evidencias/aws/) | Infraestrutura validada, testes na EC2, alertas e comprovação do recebimento dos e-mails. |
+| [visao/](evidencias/visao/) | Exemplos de inferência agrícola e capturas da revisão das anotações de objetos. |
+| [oracle/](evidencias/oracle/) | Validação da integração Oracle e capturas das consultas SQL. |
+| [iot/](evidencias/iot/) | Registro da reprodução de leituras simuladas. |
+| [analise/](evidencias/analise/) | Estatísticas descritivas e gráfico de sensores produzidos em R. |
+| [clima/](evidencias/clima/) | Registro da consulta climática real. |
+| [esp32/](evidencias/esp32/) | Imagens do circuito e da simulação do protótipo. |
+| [assets/](assets/) | Identidade visual do projeto, incluindo a logo apresentada neste README. |
+| [tests/](tests/) | Testes de serviços, dashboard, preparação do dataset e fluxos de integração. |
+| [.streamlit/](.streamlit/) | Configuração visual e de execução da dashboard Streamlit. |
 
-## Dashboard
+A organização segue responsabilidades do sistema. O experimento de garrafas e
+mochilas permanece como estudo comparativo de visão, separado do detector de
+tomate usado na operação agrícola. Datas, hashes, identificadores de execução e
+caminhos originais em registros históricos foram preservados para rastreabilidade.
 
-Seis abas: Monitoramento, ML e métricas, Previsão interativa, Serviços, Visão agrícola
-e Alertas. A aba Serviços dispara as fases pelo mesmo contrato da CLI. A aba Alertas
-mostra dados observados, regra, ação sugerida, estado, tentativas e MessageId.
+## Documentação e artefatos para consulta
 
-Os sensores do CSV e do protótipo são simulados. Os dados ampliados e alvos da
-Fase 4 são sintéticos, e suas métricas não comprovam produtividade agrícola real.
-O replay é a entrada integrada do IoT; não há leitura automática de um ESP32 físico.
+| Material | Conteúdo |
+|---|---|
+| [Arquitetura geral](docs/arquitetura.md) | Componentes, contratos, persistência e regras de alerta |
+| [Arquitetura AWS](docs/aws.md) | EC2, rede, identidade, armazenamento e mensageria |
+| [Colab](docs/colab.md) | Origem dos dados, preparação, treinamento e exportação |
+| [Resultados agrícolas](docs/resultados-visao.md) | Validação, teste reservado, exemplos e limitações |
+| [Análise de objetos](docs/visao/results_analysis.md) | Comparação de YOLO e CNN, métricas e tempos |
+| [Melhoria do detector de objetos](docs/visao/model_improvement.md) | Experimento complementar com transferência de aprendizado |
+| [Validação Make Sense](docs/visao/makesense_validation.md) | Revisão da rotulação e evidências |
+| [Relatório de objetos](notebooks/objetos/relatorio.ipynb) | Leitura acadêmica com saídas reais preservadas |
+| [Resultados do tomate](notebooks/tomate/resultados.ipynb) | Síntese do experimento agrícola |
+| [Protótipo ESP32](hardware/esp32/PROTOTIPO.md) | Componentes e uso da simulação Wokwi |
+| [Consultas Oracle](database/oracle/CONSULTAS_FARMTECH.md) | SQL e evidências das consultas |
 
-## Visão computacional
-
-O detector agrícola usa folhas de tomate do PlantDoc e duas classes: saudável e
-com sinais de doença. Treina no Colab e executa inferência CPU na EC2. Sem o bundle
-real, a função informa indisponibilidade. Nenhuma detecção é resultado inconclusivo.
-Confiança >=0,50 na classe de doença gera sugestão de inspeção, sem diagnóstico
-definitivo ou recomendação automática de defensivos.
-
-Os resultados de garrafas/mochilas da Fase 6 estão em um [relatório revisado](docs/fase6/notebooks/fase6_revisada.ipynb),
-com código de reprodução separado e original preservado. Consulte também a
-[análise dos resultados](docs/fase6/docs/results_analysis.md), a
-[melhoria do detector](docs/fase6/docs/model_improvement.md) e a
-[validação Make Sense](docs/fase6/docs/makesense_validation.md). Métricas antigas não são
-reutilizadas como resultado agrícola. Fonte e atribuições: [PlantDoc](https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset).
-
-## Alertas e AWS
-
-EC2 executa dashboard e monitor por systemd. O monitor avalia sensores e resultados
-visuais a cada 10s, consolida condições da leitura e publica no SNS Standard.
-Mensagens equivalentes são suprimidas por talhão durante 30 minutos; falhas ficam
-pendentes com espera progressiva. Configuração e regras: [arquitetura](docs/arquitetura.md).
-
-É preciso confirmar a assinatura de e-mail. `published`/MessageId significa aceite
-pelo SNS; a evidência de recebimento deve ser capturada na caixa do destinatário.
-A implantação só é considerada comprovada depois do teste real no AWS Academy.
-
-## Validação e apresentação
+## Validação e limites
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-Veja os registros de [aceite local](docs/evidencias/auditoria-local/aceite.json)
-e [aceite AWS](docs/evidencias/aws/aceite-aws.json). IA na AWS e algoritmos
-genéticos ficam fora do escopo desta entrega.
+A suíte verifica cálculos, entradas inválidas, importação Oracle transacional,
+simulação idempotente, regras de alerta, supressão, recuperação de falhas e ações
+da dashboard. As integrações externas são isoladas na suíte; comprovações reais
+estão em `evidencias/`.
 
-## Resultados agrícolas e aceite atual
+Os sensores são simulados. O replay CSV é a entrada IoT integrada; não há leitura
+automática de ESP32 físico. As previsões usam alvos sintéticos e não comprovam
+produtividade agrícola real. O detector de tomate selecionou o experimento de
+30 épocas pela validação; no teste reservado, obteve mAP50 **0,6115** e mAP50:95
+**0,3758**, com falsos positivos e omissões documentados.
 
-Treinos 30/60 concluídos na T4; validação selecionou **30 épocas**. No teste reservado de 69 imagens: mAP50 **0,6115**, mAP50:95 **0,3758**. Quatro inferências CPU foram verificadas, incluindo erros. Veja [resultados reais](docs/resultados-visao.md).
-
-Oracle real foi validado localmente e na EC2, com dez registros e repetição sem duplicatas. A implantação AWS foi concluída em 28/10/2026: dashboard e monitor ativos, 43 testes Linux aprovados e dois e-mails reais recebidos e correlacionados com MessageId SNS. Veja [evidências AWS](docs/evidencias/aws/aceite-aws.json).
-
-## Auditoria funcional local
-
-43 testes passaram no ambiente atual e em uma instalação limpa. Oracle, R, API climática, treino preditivo, inferência CPU, dashboard e monitor independente foram executados. O firmware ESP32 também compilou. Registros: [aceite local](docs/evidencias/auditoria-local/aceite.json).
-
-## Acesso AWS validado
-
-[Dashboard EC2](http://54.166.136.107:8501), restrita ao IP autorizado. Use o talhão `talhao-aws-demo` para ver a demonstração. Consulte a [arquitetura AWS](docs/aws.md).
+Detecção de sinais de doença com confiança mínima de 0,50 sugere inspeção humana.
+Ausência de detecção é inconclusiva. O monitor funciona independentemente da
+dashboard. `published` e `MessageId` representam aceite pelo SNS; o recebimento
+do e-mail deve ser comprovado separadamente. IA gerenciada na AWS e algoritmos
+genéticos não integram este escopo.

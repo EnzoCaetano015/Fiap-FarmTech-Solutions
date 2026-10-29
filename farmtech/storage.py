@@ -1,4 +1,4 @@
-"""Estado operacional. Oracle continua sendo o banco acadêmico da Fase 3."""
+"""Estado operacional SQLite, separado da persistência estruturada Oracle."""
 import hashlib
 import json
 import sqlite3

@@ -5,7 +5,7 @@ from .operations import execute
 
 
 def parser():
-    root = argparse.ArgumentParser(description="FarmTech Solutions — Fase 7")
+    root = argparse.ArgumentParser(description="FarmTech Solutions — Gestão integrada da fazenda")
     subs = root.add_subparsers(dest="service", required=True)
     area = subs.add_parser("area")
     area.add_argument("--shape", choices=["retangulo", "circulo"], default="retangulo")

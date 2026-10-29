@@ -7,7 +7,7 @@ __pycache__/
 *.zip
 models/tomate/
 !models/tomate/README.md
-database/*.db
-experiments/
+database/**/*.db
+experiments/**/runs/
 data/plantdoc/
 .pytest_cache/

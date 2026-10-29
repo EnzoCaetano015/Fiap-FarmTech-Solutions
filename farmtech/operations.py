@@ -9,8 +9,8 @@ from .config import initialize_environment
 from .storage import connect
 
 SERVICES = {
-    "area": ("inicial", "area"), "analise-r": ("inicial", "analysis_r"),
-    "clima": ("inicial", "weather"), "iot": ("iot", "replay"),
+    "area": ("agronomia", "area"), "analise-r": ("agronomia", "analysis_r"),
+    "clima": ("agronomia", "weather"), "iot": ("iot", "replay"),
     "oracle-importar": ("oracle", "import_csv"), "oracle-consultar": ("oracle", "query"),
     "treinar": ("preditivo", "train"), "visao": ("visao", "infer"),
     "alertas": ("alertas", "get_history"), "monitor-uma-vez": ("alertas", "monitor_once"),

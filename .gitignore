@@ -5,7 +5,7 @@ __pycache__/
 *.pyc
 *.log
 *.zip
-models/tomate/
+models/tomate/*
 !models/tomate/README.md
 database/**/*.db
 experiments/**/runs/

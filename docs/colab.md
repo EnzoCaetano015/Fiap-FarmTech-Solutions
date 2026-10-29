@@ -57,7 +57,7 @@ python -m farmtech.services.visao.train .runtime/tomate_dataset .runtime/yolov5 
 Execute no Colab GPU, mantendo o destino no Drive. Se falhar, preserve a sessão;
 uma nova execução usa pasta nova e não finge retomar um treino incompleto. Após
 instalações, reinicie o kernel se solicitado e reestabeleça ROOT/runtime/dataset.
-O ambiente usa `constraints-colab.txt`; não reutiliza a complexa configuração
+O ambiente usa `requirements/constraints-colab.txt`; não reutiliza a complexa configuração
 TensorFlow/PyTorch do experimento antigo, pois a nova inferência utiliza só YOLO.
 
 `tomate_bundle.zip` inclui best.pt, hash SHA-256, classes, commit YOLO, versões,
@@ -66,7 +66,8 @@ manualmente; este projeto não contém pesos agrícolas substitutos.
 
 ## Inferência
 
-Instale requirements-visao e requirements do checkout oficial usando as constraints.
+Instale `requirements/visao.txt` e as dependências do checkout oficial usando
+`requirements/constraints-colab.txt`. Execute os comandos na raiz do projeto.
 Extraia o bundle para models/tomate; configure FARMTECH_YOLO_RUNTIME e
 FARMTECH_VISION_BUNDLE se usar outros caminhos.
 

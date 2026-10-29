@@ -1,11 +1,2 @@
-joblib>=1.4,<2
-numpy>=1.26,<2
-oracledb>=2.5,<4
-pandas>=2.2,<3
-python-dotenv>=1,<2
-requests>=2.32,<3
-scikit-learn==1.8.0
-streamlit>=1.49.1,<1.50
-pyarrow>=17,<20
-Pillow>=10,<12
-boto3>=1.35,<2
+# Entrada compatível para instalação e ferramentas de deploy.
+-r requirements/base.txt

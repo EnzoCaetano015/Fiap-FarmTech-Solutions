@@ -14,12 +14,12 @@ python3 -m venv .bootstrap
 .venv/bin/python -m pip install -r requirements.txt
 # PyTorch CPU economiza disco e memória na EC2. Não treinar nesta instância.
 .venv/bin/python -m pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu
-.venv/bin/python -m pip install -r requirements-visao.txt -c constraints-colab.txt
+.venv/bin/python -m pip install -r requirements/visao.txt -c requirements/constraints-colab.txt
 mkdir -p .runtime
 if [ ! -d .runtime/yolov5 ]; then
   git clone --branch v7.0 --depth 1 https://github.com/ultralytics/yolov5.git .runtime/yolov5
 fi
-YOLOv5_AUTOINSTALL=false .venv/bin/python -m pip install -r .runtime/yolov5/requirements.txt -c constraints-colab.txt
+YOLOv5_AUTOINSTALL=false .venv/bin/python -m pip install -r .runtime/yolov5/requirements.txt -c requirements/constraints-colab.txt
 sudo install -d -o ubuntu -g ubuntu -m 700 /var/lib/farmtech
 chmod 600 .env
 sudo install -m 644 infra/aws/farmtech-dashboard.service /etc/systemd/system/

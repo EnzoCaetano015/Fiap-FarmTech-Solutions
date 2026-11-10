@@ -21,3 +21,8 @@ versionados estão em [experiments/objetos](../experiments/objetos/).
 Saídas, métricas e identificadores dos experimentos anteriores são registros
 históricos. Preserve-os ao reorganizar arquivos. Novos treinamentos devem gerar
 novas pastas de sessão conforme o fluxo de cada notebook.
+
+
+## Apresentação final do sistema
+
+[Assistir ao vídeo final do FarmTech Solutions](https://youtu.be/4IpsLGFEJYk).

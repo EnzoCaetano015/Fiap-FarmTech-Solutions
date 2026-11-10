@@ -10,6 +10,13 @@ preditivos, visão computacional e alertas por e-mail via Amazon SNS.
 
 **Enzo Caetano Peracio Rodrigues — RM 570352.** Projeto acadêmico.
 
+## Vídeo final
+
+[**Assistir à apresentação final do FarmTech Solutions no YouTube**](https://youtu.be/4IpsLGFEJYk)
+
+Demonstração do sistema integrado. Os vídeos do estudo de objetos são registros
+históricos dos experimentos e permanecem identificados na documentação específica.
+
 ## Roteiro para avaliação
 
 1. Leia a [arquitetura geral](docs/arquitetura.md) e abra a dashboard seguindo as
@@ -107,6 +114,7 @@ agrícola mantêm dados, modelos e evidências separados por domínio.
 
 | Material | Conteúdo |
 |---|---|
+| [Vídeo final](https://youtu.be/4IpsLGFEJYk) | Apresentação final do sistema integrado |
 | [Arquitetura geral](docs/arquitetura.md) | Componentes, contratos, persistência e regras de alerta |
 | [Arquitetura AWS](docs/aws.md) | EC2, rede, identidade, armazenamento e mensageria |
 | [Colab](docs/colab.md) | Origem dos dados, preparação, treinamento e exportação |

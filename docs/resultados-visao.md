@@ -78,3 +78,8 @@ Os experimentos de garrafas e mochilas permanecem documentados separadamente:
 - [Validação da rotulação no Make Sense](visao/makesense_validation.md).
 
 Essas métricas não representam o detector agrícola.
+
+
+## Apresentação final do sistema
+
+[Assistir ao vídeo final do FarmTech Solutions](https://youtu.be/4IpsLGFEJYk).

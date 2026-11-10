@@ -44,7 +44,7 @@ Referência: [treinamento oficial](https://docs.ultralytics.com/yolov5/tutorials
 
 Controles externos foram resetados False após a execução, mantendo outputs reais.
 Runs e checkpoints ficam no Drive em experiments/fase6_transfer_001.
-Resultados pequenos e auditoria em results/yolo_improved. [Assistir ao vídeo de apresentação](https://youtu.be/xQRzp8BzaPY) — **4min34s**, publicação **não listada**. URL, título, duração e indicador de visibilidade conferidos na página do YouTube em 13/10/2026. A conferência de metadados não constitui uma revisão integral do conteúdo do vídeo.
+Resultados pequenos e auditoria em results/yolo_improved. [Vídeo histórico do experimento de objetos](https://youtu.be/xQRzp8BzaPY) — **4min34s**, publicação **não listada**. URL, título, duração e indicador de visibilidade conferidos na página do YouTube em 13/10/2026. A conferência de metadados não constitui uma revisão integral do conteúdo do vídeo.
 
 
 As métricas e a interpretação dos experimentos constam na [análise dos resultados](results_analysis.md).
@@ -96,3 +96,8 @@ As tabelas, curvas, auditorias e imagens deste estudo ficam em
 e a proveniência estão em [config](../../experiments/objetos/config) e
 [data](../../experiments/objetos/data). Caminhos do Drive citados acima identificam
 as execuções originais e não representam pastas locais do repositório.
+
+
+## Apresentação final do sistema
+
+[Assistir ao vídeo final do FarmTech Solutions](https://youtu.be/4IpsLGFEJYk).
